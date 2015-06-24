@@ -66,13 +66,6 @@ header {
 	font-family: Nevice;
 }
 
-header,
-.main-nav-scrolled {
-  	position: fixed;
-  	width: 100%;
-  	top: 0;
-}
-
 
 /* ======= Navbar Style ======= */
 .main-nav {
@@ -119,51 +112,21 @@ header,
     box-sizing: border-box; 
 }
 
-
-.clearfix() {
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
-}
-
-
-.element {
-  .clearfix();
-}
-
-
-
-.main-nav a:first-child {
-  /*padding-top: 10px;*/
-}
-/*
-.main h2 {
-  column-span: all;
-}*/
-
-/*
+/* ======= Page Style ======= */
 .main-nav,
-.main {
+.page {
   position: relative; 
-}*/
+}
 
-
-
-/*
-h4 {
-  text-transform: uppercase;
-}*/
-
-/*
-.main {
-  background: #ffffff;
+.page {
   padding: 110px 0px 0px;
   padding-bottom: 0;
-  column-count: 2;
-  column-gap: 40px;
-}*/
+}
+
+header,
+.main-nav-scrolled {
+  	position: fixed;
+  	width: 100%;
+  	top: 0;
+}
+
