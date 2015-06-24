@@ -196,8 +196,8 @@ video {
   color: white;
   text-align: center;
   padding-top: 20px;
-  bottom: 0;
-  margin-bottom: -10px;
+  padding-bottom: 0;
+  height: 240px;
 }
 
 .links {
