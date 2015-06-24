@@ -184,3 +184,29 @@ video {
   margin-left: 30%;
   margin-right: 30%;
 }
+
+.jumbotron {
+  text-align: center;
+}
+
+.info {
+  height: 600px;
+}
+
+
+/***************************************************/
+.bottom {
+  height: 200px;
+  background: #2B2B2B;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.links {
+  font-size: 30px;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  border: .3px solid white;
+}
