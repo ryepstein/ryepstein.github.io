@@ -21,7 +21,9 @@ header {
 header {
   height: 200px;
   padding-top: 20px;
-  background: #f07057;
+  background
+  background-image: url("banner.gif");
+  background-color: #f07057;
 }
 
 .main-nav a {
