@@ -107,7 +107,7 @@ header,
 /********************************************/
 #top-page {
   width: inherit;
-  height: 600px;
+  height: 450px;
   margin: 0;
   padding: 0;
   position: relative;
@@ -115,6 +115,7 @@ header,
   bottom: 0;
   left: 0;
   overflow: hidden;
+  margin-top: -29px;
 }
 
 #top-page video {
