@@ -88,7 +88,8 @@ header,
 .main-nav a {
   font-size: .9em; 
   text-decoration: none;
-  color: #444135;
+  /*color: #444135;*/
+  color: #8B4513;
   display: inline-block;
 }
 
@@ -103,9 +104,39 @@ header,
 	margin-left: 20px;
 }
 
+#first-li {
+	background: #909090;
+}
+
 #last-li {
 	margin-right: 20px;
 }
+
+
+* {
+  	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+.element {
+  .clearfix();
+}
+
+
 
 .main-nav a:first-child {
   /*padding-top: 10px;*/
@@ -115,11 +146,6 @@ header,
   column-span: all;
 }*/
 
-* {
-  	-moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-    box-sizing: border-box; 
-}
 /*
 .main-nav,
 .main {
