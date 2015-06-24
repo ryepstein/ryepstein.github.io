@@ -72,10 +72,9 @@ header,
 
 .main {
   background: #ffffff;
-  padding: 110px 0px 50px;
+  padding: 110px 0px 0px;
   column-count: 2;
   column-gap: 40px;
-  height: 2000px;
 }
 /********************************************/
 
@@ -173,4 +172,15 @@ video {
   height: 600px;
   margin-top: -600px;
   color: white;
+}
+
+/************************************/
+
+#cal {
+  height: 430px;
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,.25);
+  background-color: white;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
