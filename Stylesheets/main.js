@@ -10,6 +10,7 @@ $(window).scroll(function() {
   }
 });
 
+/*
 if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
 window.onmousewheel = document.onmousewheel = wheel;
 
@@ -30,4 +31,4 @@ function handle(delta) {
     $('html, body').stop().animate({
         scrollTop: $(window).scrollTop() - (distance * delta)
     }, time );
-}
+}*/
