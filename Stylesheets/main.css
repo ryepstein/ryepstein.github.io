@@ -138,6 +138,7 @@ header,
 
 #cal {
   height: 410px;
+  color: white !important;
 }
 
 .box1 {
@@ -170,10 +171,10 @@ header,
 
 .well {
   /*background: #8d6e63;*/
-  background: #f1f8e9 ;
+  background: #85144b;
   border-radius: 0px;
   border: 0px;
-  color: black;
+  color: white !important;
   font-family: Nevice;
 }
 
