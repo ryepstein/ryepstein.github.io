@@ -24,7 +24,7 @@ function wheel(event) {
 }
 
 function handle(delta) {
-    var time = 1000;
+    var time = 100;
 	var distance = 300;
     
     $('html, body').stop().animate({
