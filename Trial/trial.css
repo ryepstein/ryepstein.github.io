@@ -270,27 +270,15 @@ video {
 	overflow: hidden;
 }
 
+#members h3 {
+	margin-bottom: 40px;
+	font-family: Nevice;
+	color: #8B4513;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#members {
+	margin-bottom: 60px;
+}
 
 /***************************************************/
 .bottom {
