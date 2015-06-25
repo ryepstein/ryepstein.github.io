@@ -109,8 +109,6 @@ header {
 }
 
 * {
-  	-moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
     box-sizing: border-box; 
 }
 
@@ -131,8 +129,9 @@ header,
 .page {
   padding: 110px 0px 0px;
   background: #fff;
-  /*height: 1000px;*/
+  /*height: 2000px;*/
   text-align: center;
+  z-index: 140;
 }
 
 #cal {
@@ -152,10 +151,23 @@ header,
 	font-family: Nevice;
 }
 
+.some-space {
+	height: 50px;
+}
+
+.well {
+	margin-top: 30px;
+}
+
 .box2 {
+	width: 100%;
 	height: 500px;
-	background: grey;
-	margin-top: 500px;
+	background: black;
+}
+
+.box3 {
+	width: 100%;
+	height: 300px;
 }
 
 
@@ -163,6 +175,8 @@ header,
 
 
 
+
+/*
 
 #top-page {
   width: 100%;
@@ -209,7 +223,8 @@ video {
 .overlay {
   z-index: 20;
   height: 600px;
-  opacity: 1;
+  width: 100%;
+  opacity: .6;
   background-color: black;
   position: absolute;
 }
@@ -221,6 +236,80 @@ video {
   color: white;
   position: absolute;
   text-align: center;
-  padding-top: 200px;
-
+  padding-top: 100px;
 }
+
+.overlay-text p {
+	font-size: 50px;
+}
+
+
+$duration: .20;
+$easing: ease-in-out;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 100px;
+  text-align: center;
+  background: #F1F1F2;
+}
+
+[data-wipe] {  
+  display: inline-block;
+  padding: 12px 18px;
+  text-decoration: none;
+  position: relative;
+  border: 2px solid white;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: white;
+  overflow: hidden;
+  
+  &:before, &:after {
+    content: attr(data-wipe);
+    padding-top: inherit;
+    padding-bottom: inherit;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    color: #F1F1F2;
+    background: #445561;
+  }
+  
+  &:before {
+    left: 0;
+    text-indent: 18px;
+    width: 0;
+  }
+  
+  &:after {
+    padding-left: inherit;
+    padding-right: inherit;
+    left: 100%;
+    text-indent: calc(-100% - 36px);
+    transition: $duration + s $easing;
+  }
+  
+  &:hover {
+    &:before {
+      width: 100%;
+      transition: width $duration + s $easing;
+    }
+    
+    &:after {
+      left: 0;
+      text-indent: 0;
+      transition: 0s $duration + s $easing;
+    }
+  }
+}
+
+.btn {
+	margin-top: 150px;
+}*/
