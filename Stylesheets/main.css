@@ -11,17 +11,17 @@ body {
 
 @font-face {
   font-family: Nevice;
-  src: url(nevis.ttf);
+  src: url(../Fonts/nevis.ttf);
 }
 
 @font-face {
   font-family: Champagne;
-  src: url(Champagne & Limousines.ttf);
+  src: url(../Fonts/Champagne & Limousines.ttf);
 }
 
 @font-face {
   font-family: gabo;
-  src: url(gabo.otf);
+  src: url(../Fonts/gabo.otf);
 }
 
 span.tab {
