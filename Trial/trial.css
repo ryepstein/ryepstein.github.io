@@ -132,7 +132,6 @@ header,
   padding: 50px 0px 0px;
   background: #fff;
   text-align: center;
-  border: 1px dashed red;
   position: relative;
 }
 
@@ -142,6 +141,7 @@ header,
 
 .box1 {
 	overflow: auto;
+	margin-bottom: 80px;
 }
 
 .col-md-12 {
@@ -243,73 +243,6 @@ video {
 	font-size: 50px;
 }
 
-/*
-$duration: .20;
-$easing: ease-in-out;
-
-* {
-  box-sizing: border-box;
+#top-page {
+	margin-bottom: 80px;
 }
-
-body {
-  padding-top: 100px;
-  text-align: center;
-  background: #F1F1F2;
-}
-
-[data-wipe] {  
-  display: inline-block;
-  padding: 12px 18px;
-  text-decoration: none;
-  position: relative;
-  border: 2px solid white;
-  border-radius: 3px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  text-align: left;
-  color: white;
-  overflow: hidden;
-  
-  &:before, &:after {
-    content: attr(data-wipe);
-    padding-top: inherit;
-    padding-bottom: inherit;
-    white-space: nowrap;
-    position: absolute;
-    top: 0;
-    overflow: hidden;
-    color: #F1F1F2;
-    background: #445561;
-  }
-  
-  &:before {
-    left: 0;
-    text-indent: 18px;
-    width: 0;
-  }
-  
-  &:after {
-    padding-left: inherit;
-    padding-right: inherit;
-    left: 100%;
-    text-indent: calc(-100% - 36px);
-    transition: $duration + s $easing;
-  }
-  
-  &:hover {
-    &:before {
-      width: 100%;
-      transition: width $duration + s $easing;
-    }
-    
-    &:after {
-      left: 0;
-      text-indent: 0;
-      transition: 0s $duration + s $easing;
-    }
-  }
-}
-
-.btn {
-	margin-top: 150px;
-}*/
