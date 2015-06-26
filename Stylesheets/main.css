@@ -147,7 +147,11 @@ header,
   height: 410px;
 }
 
-.col-md-6 {
+.col-md-8 {
+  padding-top: 20px;
+}
+
+.col-md-4 {
   padding-top: 20px;
 }
 
@@ -179,27 +183,6 @@ header,
   border: 0px;
   color: #00695c;
   font-family: Nevice;
-}
-
-.mybtn {
-  /*padding-left: 40px;
-  padding-right: 40px;*/
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: black;
-  text-decoration: none;
-  margin-top: 70px;
-  background: white;
-  border: 1px solid black;
-  width: 40%;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-bottom: 30px;
-  border-radius: 3px;
-}
-
-.mybtn:hover {
-  background: #C0C0C0;
 }
 
 #top-page {
