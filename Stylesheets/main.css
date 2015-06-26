@@ -136,15 +136,15 @@ header,
   padding-top: 0;
 }
 
-#cal {
-  height: 410px;
-  color: white !important;
-}
-
 .box1 {
   overflow: auto;
   margin-bottom: 80px;
-  background: #efebe9 ;
+  /*background: #F0F8FF ;*/
+  background-image: url("../Images/black_linen_v2.png");
+}
+
+#cal {
+  height: 410px;
 }
 
 .col-md-6 {
@@ -157,24 +157,26 @@ header,
   padding-right: 70px;
   text-align: justify;
   color: #00695c ;
-  /*font-family: 'Roboto', sans-serif;*/
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Oswald', sans-serif;*/
 }
 
 #intro-tag {
   text-align: center;
   /*color: #8B4513;*/
-  color: 4e342e ;
+  color: #4e342e ;
   font-family: 'Oswald', sans-serif;
   /*font-family: Nevice;*/
 }
 
 .well {
-  /*background: #8d6e63;*/
+  /*background: #8d6e63;
   background: #85144b;
+  background: #efebe9;*/
+  background-image: url("../Images/whitey.png");
   border-radius: 0px;
   border: 0px;
-  color: white !important;
+  color: #00695c;
   font-family: Nevice;
 }
 
