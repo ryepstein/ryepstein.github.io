@@ -156,7 +156,8 @@ header,
   padding-left: 70px;
   padding-right: 70px;
   text-align: justify;
-  color: #00695c ;
+  /*color: #00695c ;*/
+  color: #A9A9A9;
   font-family: 'Roboto', sans-serif;
   /*font-family: 'Oswald', sans-serif;*/
 }
@@ -165,8 +166,8 @@ header,
   text-align: center;
   /*color: #8B4513;*/
   color: #4e342e ;
-  font-family: 'Oswald', sans-serif;
-  /*font-family: Nevice;*/
+  /*font-family: 'Oswald', sans-serif;*/
+  font-family: Nevice;
 }
 
 .well {
