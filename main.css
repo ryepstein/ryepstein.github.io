@@ -16,3 +16,10 @@ span.tab {
 	padding: 0 20px;
 }
 
+/* ========== Header ========== */
+header {
+	height: 250px;
+	background: #ef5350;
+	position: relative;
+}
+
