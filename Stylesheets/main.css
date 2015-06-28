@@ -24,6 +24,21 @@ body {
   src: url(../Fonts/gabo.otf);
 }
 
+@font-face {
+  font-family: gabo1;
+  src: url(../Fonts/gabo1.otf);
+}
+
+@font-face {
+  font-family: OldSansBlack;
+  src: url(../Fonts/OldSansBlack.ttf);
+}
+
+@font-face {
+  font-family: coolvetica;
+  src: url(../Fonts/coolvetica rg.ttf);
+}
+
 span.tab {
     padding: 0 20px; 
 }
@@ -69,10 +84,12 @@ header {
 
 .overlay2 h1 {
   font-family: Nevice;
+  text-transform: uppercase;
 }
 
 .overlay2 h4 {
   font-family: Nevice;
+  text-transform: uppercase;
 }
 
 
