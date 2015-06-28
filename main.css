@@ -1,3 +1,4 @@
+/* ========== Body ==========*/
 * {
 	box-sizing: border-box;
 }
@@ -19,7 +20,7 @@ span.tab {
 /* ========== Header ========== */
 header {
 	height: 250px;
-	background: #ef5350;
+	background: #ff1744;
 	position: relative;
 }
 
@@ -41,11 +42,15 @@ header {
 }
 
 #hdr-layer2 h1 {
-	font-family: nevice;
+	font-family: Droid+Sans;
+	font-weight: bold;
+	font-size: 40px;
 	text-transform: uppercase;
 }
 
 #hdr-layer2 h4 {
-	font-family: nevice;
-	text-transform: uppercase;
+	font-family: Vollkorn;
+	font-size: 25px;
 }
+
+/* ========== Navbar ========== */
