@@ -191,3 +191,28 @@ video {
 }
 
 /* ========== News ========== */
+.news {
+	width: 100%;
+	padding-top: 50px;
+}
+
+#row5 {
+	width: 100%;
+}
+
+.news h3 {
+	font-family: gabo;
+	color: #585858;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 15px;
+}
+
+.news p {
+	font-family: Vollkorn;
+	font-size: 17px;
+	color: #585858;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
