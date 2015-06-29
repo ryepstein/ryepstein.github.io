@@ -91,3 +91,8 @@
 	color: #585858;
 	text-align: justify;
 }
+
+.intro .col-md-12 {
+	padding-left: 80px;
+	padding-right: 80px;
+}
