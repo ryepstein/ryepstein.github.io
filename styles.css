@@ -61,8 +61,33 @@
 }
 
 .intro {
-	border: 1px solid black;
 	background: #eeeeee;
 	overflow: auto;
 	margin-top: 80px;
+	padding-top: 20px;
+}
+
+#cal {
+	height: 410px;
+}
+
+.well {
+	color: #585858;
+	background: #fff;
+	font-family: gabo;
+	font-size: 20px;
+	text-align: center;
+}
+
+.intro h3 {
+	font-family: gabo;
+	text-align: center;
+	color: #585858;
+}
+
+.intro p {
+	font-family: Vollkorn;
+	font-size: 18px;
+	color: #585858;
+	text-align: justify;
 }
