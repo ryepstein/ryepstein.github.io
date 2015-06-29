@@ -170,7 +170,6 @@ header,
 	position: relative;
 	padding-top: 0;
 	width: 100%;
-	overflow: auto;
 	background: #fff;
 	height: 2000px;
 }
