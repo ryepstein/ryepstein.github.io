@@ -23,4 +23,16 @@
 	font-family: Vollkorn;
 	font-weight: bold;
 	font-size: 17px;
+	padding-bottom: 40px;
+}
+
+#row1 {
+	width: 100%;
+	padding-left: 30px;
+}
+
+.r1 {
+	height: 400px;
+	border-radius: 3px;
+	background: #ef5350;
 }
