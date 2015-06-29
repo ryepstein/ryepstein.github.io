@@ -96,3 +96,30 @@
 	padding-left: 80px;
 	padding-right: 80px;
 }
+
+#row2, #row3, #row4 {
+	width: 100%;
+	padding-left: 30px;
+}
+
+#layouts h3 {
+	font-family: gabo;
+	color: #585858;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 60px;
+}
+
+#layouts p {
+	font-family: Vollkorn;
+	font-size: 17px;
+	color: #585858;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+#layouts .col-md-4, #layouts .col-md-8 {
+	border: 1px solid black;
+	height: 400px;
+}
