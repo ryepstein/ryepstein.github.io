@@ -97,24 +97,26 @@ nav ul li a:hover {
 	padding-right: 50px;
 }
 
-#navbar-btn {
-	display: none;
-}
-
 .navbar-brand {
 	color: black;
 	margin-top: -5px;
 	padding-left: 50px;
 }
 
+#navbar-btn {
+	display: none;
+	margin-top: -5px;
+	padding-right: 50px;
+}
+
+#hidden-menu {
+	font-size: 30px;
+}
+
 @media only screen and (max-width: 850px) {
 	#navbar-btn {
 		display: inline-block;
 		float: right;
-		padding: 10px;
-		padding-right: 50px;
-		margin-top: -5px;
-		font-size: 30px;
 	}
 	#navbar-btn:hover {
 		color: #ff1744;
