@@ -54,3 +54,67 @@ header {
 }
 
 /* ========== Navbar ========== */
+.main-nav {
+	background: #fff;
+	height: 80px;
+	width: 100%;
+	padding-top: 20px;
+	box-shadow: 0 2px 20px rgba(0,0,0,.2);
+	text-transform: uppercase;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 10px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #424242;
+	font-family: Droid+Sans;
+	font-weight: bold;
+}
+
+#navbar-left {
+	float: left;
+}
+
+#navbar-right {
+	float: right;
+}
+
+#last-item {
+	padding-right: 50px;
+}
+
+#navbar-btn {
+	display: none;
+}
+
+.navbar-brand {
+	color: black;
+	margin-top: -5px;
+	padding-left: 50px;
+}
+
+@media only screen and (max-width: 850px) {
+	#navbar-btn {
+		display: block;
+	}
+	.showNav {
+		display: block;
+	}
+	.hideNav {
+		display: none;
+	}
+	nav ul {
+		display: none;
+	}
+	nav ul li {
+		display: block;
+	}
+	nav ul li a {
+		float: none;
+		margin: 0 0 5px 0;
+	}
+}
