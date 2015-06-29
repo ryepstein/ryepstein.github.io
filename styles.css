@@ -39,7 +39,7 @@
 }
 
 .r1:hover {
-	background: #ff1744;
+	background: #ef5350;
 }
 
 #btn1 {
@@ -56,6 +56,13 @@
 
 #btn1:hover {
 	color: #fff;
-	background: #ff1744;
-	border-color: #ff1744;
+	background: #ef5350;
+	border-color: #ef5350;
+}
+
+.intro {
+	border: 1px solid black;
+	background: #eeeeee;
+	overflow: auto;
+	margin-top: 80px;
 }
