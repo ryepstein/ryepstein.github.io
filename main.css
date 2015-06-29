@@ -47,14 +47,14 @@ header {
 }
 
 #hdr-layer2 h1 {
-	font-family: Droid+Sans;
-	font-weight: bold;
-	font-size: 40px;
+	font-family: gabo;
+	font-size: 50px;
 	text-transform: uppercase;
 }
 
 #hdr-layer2 h4 {
 	font-family: Vollkorn;
+	font-weight: bolder;
 	font-size: 25px;
 }
 
