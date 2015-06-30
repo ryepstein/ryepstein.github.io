@@ -69,11 +69,14 @@
 	border-color: #ef5350;
 }
 
+
+/* ========== Intro ========== */
 .intro {
 	background: #eeeeee;
 	overflow: auto;
 	margin-top: 80px;
-	padding-top: 20px;
+	padding-top: 70px;
+	padding-bottom: 50px;
 }
 
 #cal {
