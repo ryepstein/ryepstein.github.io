@@ -10,7 +10,7 @@
     z-index: 100;
     width: 100vw;
     height: 100vh;
-    background-image: url("http://sierrafire.cr.usgs.gov/images/loading.gif");
+    background-image: url("Images/flag.GIF");
     background-repeat: no-repeat;
     background-position: center;
 }
