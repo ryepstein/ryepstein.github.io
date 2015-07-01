@@ -10,7 +10,7 @@
     z-index: 100;
     width: 100vw;
     height: 100vh;
-    background-image: url("Images/flag.GIF");
+    background-image: url("../../Images/flag.GIF");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -71,7 +71,7 @@ header {
 }
 
 #hdr-layer2 h4 {
-	font-family: Vollkorn;
+	font-family: Raleway;
 	font-weight: bolder;
 	font-size: 25px;
 }
@@ -96,6 +96,7 @@ nav ul li a {
 	text-decoration: none;
 	color: #585858;
 	font-family: Roboto;
+	font-weight: bold;
 	font-size: 14px;
 }
 
