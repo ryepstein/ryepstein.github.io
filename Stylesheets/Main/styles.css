@@ -1,11 +1,11 @@
 @font-face {
 	font-family: nevice;
-	src: url(Fonts/nevis.ttf);
+	src: url(../Fonts/nevis.ttf);
 }
 
 @font-face {
   font-family: gabo;
-  src: url(Fonts/gabo.otf);
+  src: url(../../Fonts/gabo.otf);
 }
 
 
