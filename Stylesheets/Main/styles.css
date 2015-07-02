@@ -56,10 +56,35 @@
 	width: 100%;
 	height: 100%;
 	z-index: 70;
-	background: #ef5350;
 	opacity: .3;
 	position: absolute;
 }
+
+#top1 {
+	background: #1b5e20;
+}
+
+#top2 {
+	background: #ffea00;
+}
+
+#top3 {
+	background: #e64a19;
+}
+
+#top1 h4 {
+	color: #fff;
+	margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
 
 #btn1 {
 	border: 3px solid #585858;
