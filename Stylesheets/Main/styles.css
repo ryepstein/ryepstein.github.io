@@ -62,7 +62,7 @@
 }
 
 #top1 {
-	background: #1b5e20;
+	background: #2e7d32;
 	
 }
 
@@ -78,6 +78,23 @@
 	margin-top: 170px;
 	font-size: 30px;
 }
+
+#link1, #link2, #link3 {
+	border: 2px solid #fff;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#top1:hover, #top2:hover, #top3:hover {
+	opacity: 1;
+	background: #e64a19;
+}
+
 
 
 
