@@ -235,5 +235,18 @@
 		<script type="text/javascript" src="../Stylesheets/Main/main.js"></script>
 		<script type="text/javascript" src="../Stylesheets/Main/loading.js"></script>
 		<script type="text/javascript" src="../Stylesheets/Main/smoothscroll.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$.srSmoothscroll({
+					// defaults
+					step: 65,
+					speed: 600,
+					ease: 'swing',
+					target: $('body'),
+					container: $(window)
+				})
+			})
+		</script>
 	</body>
 </html>
