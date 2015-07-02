@@ -58,10 +58,12 @@
 	z-index: 70;
 	opacity: .3;
 	position: absolute;
+	color: #fff;
 }
 
 #top1 {
 	background: #1b5e20;
+	
 }
 
 #top2 {
@@ -72,9 +74,9 @@
 	background: #e64a19;
 }
 
-#top1 h4 {
-	color: #fff;
-	margin-top: 40px;
+#top1 h4, #top2 h4, #top3 h4 {
+	margin-top: 170px;
+	font-size: 30px;
 }
 
 
