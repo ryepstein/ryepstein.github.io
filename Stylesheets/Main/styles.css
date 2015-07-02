@@ -62,12 +62,12 @@
 }
 
 #top1 {
-	background: #2e7d32;
+	background: #00796b;
 	
 }
 
 #top2 {
-	background: #ffea00;
+	background: #ffff8d;
 }
 
 #top3 {
@@ -90,9 +90,14 @@
 	padding-bottom: 5px;
 }
 
+#link1:hover, #link2:hover, #link3:hover {
+	background: #fff;
+	color: black;
+}
+
 #top1:hover, #top2:hover, #top3:hover {
 	opacity: 1;
-	background: #e64a19;
+	/*background: #e64a19;*/
 }
 
 
