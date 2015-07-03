@@ -5,8 +5,9 @@ echo ".main-nav {
 	width: 100%;
 	padding-top: 20px;
 	box-shadow: 0 2px 20px rgba(0,0,0,.2);
-	/*text-transform: uppercase;*/
+	text-transform: uppercase;
 	z-index: 150;
+	position: fixed;
 }
 
 nav ul li {
@@ -17,7 +18,6 @@ nav ul li {
 nav ul li a {
 	text-decoration: none;
 	color: #585858;
-	/*color: black;*/
 	font-family: Roboto;
 	font-weight: bold;
 	font-size: 16px;
