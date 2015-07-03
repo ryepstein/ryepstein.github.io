@@ -39,5 +39,19 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<!-- Custom js -->
 		<script type="text/javascript" src="../Stylesheets/Main/main.js"></script>
+
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$.srSmoothscroll({
+					// defaults
+					step: 75,
+					speed: 400,
+					ease: 'linear',
+					target: $('body'),
+					container: $(window)
+				})
+			})
+		</script>
 	</body>
 </html>
