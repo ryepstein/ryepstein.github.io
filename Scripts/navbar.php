@@ -1,5 +1,5 @@
 <?php
-echo 	"<nav class="main-nav">
+echo "<nav class="main-nav">
 			<div class="navbar-hdr">
 				<ul id="navbar-btn">
 					<li class="dropdown">
@@ -43,4 +43,4 @@ echo 	"<nav class="main-nav">
 				</ul>
 			</div>
 		</nav>";
-?>
+		?>
