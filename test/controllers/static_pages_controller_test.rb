@@ -21,8 +21,8 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get youth-section" do
-    get :youth-section
+  test "should get youth" do
+    get :youth
     assert_response :success
   end
 
