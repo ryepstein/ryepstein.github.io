@@ -14,6 +14,14 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
+    
+    <!-- Google web fonts -->
+    <%= google_webfonts_init({
+      google: ['Roboto Slab', 'Roboto', 'Merriweather', 'Merriweather Sans']
+    }) %>
+    <%= google_webfonts_init({
+      monotype: ['Helvetica', 'Raleway']
+    }) %>
   </head>
   <body>
     <%= render 'layouts/header' %>
