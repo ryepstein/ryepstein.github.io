@@ -10,6 +10,7 @@
 	bottom: 0;
     position: relative;
     overflow: hidden;
+    background: #858483;
 }
 
 .full-video #myvideo {
@@ -67,4 +68,10 @@
     z-index: 2;
     position: absolute;
     color: #fff;
+}
+
+@media only screen and (max-width: 350px) {
+    #myvideo {
+        display: none;
+    }
 }
