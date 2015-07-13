@@ -57,12 +57,16 @@ button:hover {
     pointer-events: none;
 }
 
+.navbar .nav > li > a {
+    color: #ABA8A7;
+}
+
 .navbar ul li:hover {
     color: #BAB9B8;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    color: #BAB9B8;
+    color: #ef5350;
 }
 
 @media only screen and (max-width: 850px) {
