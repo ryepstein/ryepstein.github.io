@@ -116,3 +116,61 @@
     padding-right: 40px;
     font-size: 15px;
 }
+
+
+/* Introduction section styling */
+
+.introduction {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.introduction h2 {
+    font-family: Helvetica;
+    color: #535454;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 70%;
+}
+
+.introduction h3 {
+    font-family: Helvetica;
+    color: #606161;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 70%;
+    font-weight: bold;
+}
+
+.introduction .row {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introduction .row .col-md-6 .well {
+    text-align: center;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border: 0px solid black;
+    background:black;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.introduction .row .col-md-6 .img1 {
+    background-image:url('http://www.knotofstone.com/wp-content/uploads/2012/01/St-George-Church-Lalibela.jpg');
+    padding-top: 50px;
+}
+
+.introduction .row .col-md-6 .img2 {
+    background-image:url('http://imblacknitravel.com/wp-content/uploads/2014/02/Lalibela-rock-church-2-1024x700.jpg');
+    padding-top: 50px;
+}
+
+.introduction .row .col-md-6 .well .btn {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
