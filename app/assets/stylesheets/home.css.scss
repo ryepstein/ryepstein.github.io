@@ -127,10 +127,10 @@
 
 .introduction h2 {
     font-family: Helvetica;
-    color: #535454;
     font-weight: bold;
     font-size: 30px;
     line-height: 70%;
+    color: #535454;
 }
 
 .introduction h3 {
@@ -296,4 +296,70 @@ div #slider #figure {
     padding-top: 120px;
     padding-left: 80px;
     padding-right: 40px;
+}
+
+
+/* Information Hub section styling */
+
+.info-hub {
+    width: 100%;
+    overflow: auto;
+    padding-top: 70px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.info-hub h2 {
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 70%;
+    color: #535454;
+}
+
+.info-hub h3 {
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 70%;
+    color: #535454;
+}
+
+.wrapper {
+    display: block;
+    font-family: Helvetica;
+}
+
+.info-hub .row {
+    margin-top: 40px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.copt-news {
+    overflow: hidden;
+    padding: 0;
+    background: #fff;
+}
+
+#contentplum_widget_91925814842 {
+    height: 500px;
+    display: block;
+    overflow: auto;
+}
+
+.cnn-news {
+    overflow: auto;
+    height: 500px;
+    padding: 0;
+    background: #fff;
+}
+
+.twitter-timeline {
+    height: 500px;
 }
