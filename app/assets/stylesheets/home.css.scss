@@ -363,3 +363,55 @@ div #slider #figure {
 .twitter-timeline {
     height: 500px;
 }
+
+
+/* members section styling */
+
+.our-mems {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 70px;
+}
+
+.our-mems .row {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-mems .row .col-md-3 .well {
+    text-align: center;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border: 0px solid black;
+    background:black;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    color: white;
+    height: 400px;
+}
+
+.our-mems .row .col-md-3 .img3 {
+    background-image:url('http://www.knotofstone.com/wp-content/uploads/2012/01/St-George-Church-Lalibela.jpg');
+    padding-top: 310px;
+    overflow: hidden;
+}
+
+.our-mems .row .col-md-3 .img4 {
+    background-image:url('http://www.knotofstone.com/wp-content/uploads/2012/01/St-George-Church-Lalibela.jpg');
+    padding-top: 310px;
+    overflow: hidden;
+}
+
+.our-mems .row .col-md-3 .img5 {
+    background-image:url('http://www.knotofstone.com/wp-content/uploads/2012/01/St-George-Church-Lalibela.jpg');
+    padding-top: 310px;
+    overflow: hidden;
+}
+
+.our-mems .row .col-md-3 .img6 {
+    background-image:url('http://www.knotofstone.com/wp-content/uploads/2012/01/St-George-Church-Lalibela.jpg');
+    padding-top: 310px;
+    overflow: hidden;
+}
