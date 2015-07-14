@@ -304,7 +304,6 @@ div #slider #figure {
 .info-hub {
     width: 100%;
     overflow: auto;
-    padding-top: 70px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
@@ -329,7 +328,10 @@ div #slider #figure {
 
 .wrapper {
     display: block;
+    padding-top: 70px;
+    padding-bottom: 70px;
     font-family: Helvetica;
+    background: #e0e0e0;
 }
 
 .info-hub .row {

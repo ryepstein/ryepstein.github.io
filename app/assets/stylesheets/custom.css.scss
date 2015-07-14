@@ -89,3 +89,38 @@ button:hover {
 
 /* footer */
 
+.bottom {
+	background: #2B2B2B;
+	color: #fff;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 0;
+	bottom: 0;
+	overflow: auto;
+}
+
+.links {
+	font-size: 20px;
+	color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.my-btn {
+	border: 1px solid #505050;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-left: 15px;
+	border-radius: 50px;
+	padding-top: 10px;
+}
+
+.cont {
+	width: 60%;
+	margin-right: 20%;
+	margin-left: 20%;
+	border-bottom: 1px solid #505050;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
