@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'eotc'        =>  'helper_pages#eotc'
+  get 'pillars'     =>  'helper_pages#pillars'
+
   root                  'static_pages#home'
   get 'about'       =>  'static_pages#about'
   get 'teachings'   =>  'static_pages#teachings'
