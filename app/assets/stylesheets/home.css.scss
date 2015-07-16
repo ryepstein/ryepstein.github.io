@@ -117,6 +117,37 @@
     font-size: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+    .full-video {
+        height: 300px;
+    }
+    .overlay {
+        height: 300px;
+    }
+    .overlay-text {
+        height: 300px;
+        padding-top: 60px;
+    }
+    .overlay-text h1 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .full-video {
+        height: 300px;
+    }
+    .overlay {
+        height: 300px;
+    }
+    .overlay-text {
+        height: 300px;
+        padding-top: 60px;
+    }
+    .overlay-text h1 {
+        font-size: 35px;
+    }
+}
 
 /* Introduction section styling */
 
@@ -129,50 +160,90 @@
     font-family: Helvetica;
     font-weight: bold;
     font-size: 30px;
-    line-height: 70%;
     color: #535454;
 }
 
 .introduction h3 {
     font-family: Helvetica;
     color: #606161;
-    margin-bottom: 50px;
     font-size: 16px;
-    line-height: 70%;
-    font-weight: bold;
+    margin-top: -1px;
+    margin-bottom: 50px;
 }
 
 .introduction .row {
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.introduction .row .col-md-6 .well {
+@media only screen and (max-width: 900px) {
+    .introduction .row {
+        width: 100%;
+    }
+}
+
+.introduction .row .col-md-4 .well {
     text-align: center;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-    border: 0px solid black;
+    border: 0px solid #F0F4F5;
     background:black;
-    background-size: 200%;
+    background-size: 300%;
     background-repeat: no-repeat;
     color: white;
 }
 
-.introduction .row .col-md-6 .img1 {
-    background-image:url('http://www.knotofstone.com/wp-content/uploads/2012/01/St-George-Church-Lalibela.jpg');
-    padding-top: 50px;
+.introduction .row .col-md-4 .img1 {
+    background-image:url('http://hdwallpaperexpert.com/wp-content/uploads/2015/03/Wallpaper-Stone-Corner-Landscape.jpg');
+    padding-top: 130px;
+    height: 350px;
 }
 
-.introduction .row .col-md-6 .img2 {
-    background-image:url('http://imblacknitravel.com/wp-content/uploads/2014/02/Lalibela-rock-church-2-1024x700.jpg');
-    padding-top: 50px;
+.introduction .row .col-md-4 .img2 {
+    background-image:url('http://wallfoy.com/wp-content/uploads/2014/08/oTkBBqzTq.jpg');
+    padding-top: 130px;
+    height: 350px;
 }
 
-.introduction .row .col-md-6 .well .btn {
-    margin-top: 50px;
-    margin-bottom: 20px;
+.introduction .row .col-md-4 .img3 {
+    background-image:url('http://wallpics4k.com/wp-content/uploads/2014/08/458791.jpg');
+    padding-top: 130px;
+    height: 350px;
+}
+
+.introduction .below-text {
+    margin-top: 40px;
+    font-family: Helvetica;
+    color: #606161;
+    font-size: 16px;
+}
+
+.introduction p {
+    font-family: Helvetica;
+    color: #606161;
+    font-size: 16px;
+}
+
+.lmaoc {
+    color: #5E5E5E;
+    border-radius: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.introduction .below-text p {
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .introduction .below-text p {
+        width: 80%;
+    }
 }
 
 
