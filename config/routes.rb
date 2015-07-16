@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  root                  'static_pages#home'
+  get 'about'       =>  'static_pages#about'
+  get 'teachings'   =>  'static_pages#teachings'
+  get 'media'       =>  'static_pages#media'
+  get 'contact'     =>  'static_pages#contact'
+  get 'youth'       =>  'static_pages#youth'
+  
+  get 'bible'       =>  'teaching_pages#bible'
+  get 'history'     =>  'teaching_pages#history'
+  get 'religion'    =>  'teaching_pages#religion'
+  get 'kids'        =>  'teaching_pages#kids'
+
   get 'sebket'      =>  'media_pages#sebket'
   get 'mezmur'      =>  'media_pages#mezmur'
   get 'photos'      =>  'media_pages#photos'
@@ -8,13 +20,6 @@ Rails.application.routes.draw do
 
   get 'eotc'        =>  'helper_pages#eotc'
   get 'pillars'     =>  'helper_pages#pillars'
-
-  root                  'static_pages#home'
-  get 'about'       =>  'static_pages#about'
-  get 'teachings'   =>  'static_pages#teachings'
-  get 'media'       =>  'static_pages#media'
-  get 'contact'     =>  'static_pages#contact'
-  get 'youth'       =>  'static_pages#youth'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
