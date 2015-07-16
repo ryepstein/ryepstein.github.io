@@ -364,35 +364,34 @@ div #slider #figure {
 
 .info-hub {
     width: 100%;
-    overflow: auto;
+    overflow: hidden;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
 .info-hub h2 {
-    text-align: center;
     font-family: Helvetica;
     font-weight: bold;
     font-size: 30px;
-    line-height: 70%;
     color: #535454;
+    text-align: center;
 }
 
 .info-hub h3 {
     text-align: center;
     font-family: Helvetica;
-    font-weight: bold;
     font-size: 16px;
-    line-height: 70%;
-    color: #535454;
+    color: #606161;
+    margin-top: -1px;
+    margin-bottom: 65px;
 }
 
 .wrapper {
     display: block;
     padding-top: 70px;
-    padding-bottom: 70px;
     font-family: Helvetica;
-    background: #e0e0e0;
+    background: #F0F4F5;
+    text-align: center;
 }
 
 .info-hub .row {
@@ -408,23 +407,31 @@ div #slider #figure {
     overflow: hidden;
     padding: 0;
     background: #fff;
+    height: 350px;
 }
 
 #contentplum_widget_91925814842 {
     height: 500px;
-    display: block;
-    overflow: auto;
+    /*display: block;*/
+    overflow: hidden;
+    height: 350px;
 }
 
 .cnn-news {
-    overflow: auto;
+    overflow: hidden;
     height: 500px;
     padding: 0;
     background: #fff;
+    height: 350px;
+}
+
+.mtimeline {
+    height: 350px;
+    padding: 0;
 }
 
 .twitter-timeline {
-    height: 500px;
+    height: 350px;
 }
 
 
@@ -433,16 +440,16 @@ div #slider #figure {
 .our-mems {
     width: 100%;
     overflow: hidden;
-    padding-top: 70px;
 }
 
 .our-mems .row {
-    width: 98%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.our-mems .row .col-md-3 .well {
+.our-mems .row .col-md-4 .well, 
+.our-mems .row .col-md-8 .well {
     text-align: center;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -452,29 +459,53 @@ div #slider #figure {
     background-size: 200%;
     background-repeat: no-repeat;
     color: white;
-    height: 400px;
+    height: 350px;
 }
 
-.our-mems .row .col-md-3 .img3 {
-    background-image:url('http://www.knotofstone.com/wp-content/uploads/2012/01/St-George-Church-Lalibela.jpg');
-    padding-top: 310px;
+.our-mems .row .col-md-4 .img4 {
+    background-image:url('http://4k-wallpaper.net/images/mountain-landscape-clouds_358.jpeg');
+    padding-top: 120px;
     overflow: hidden;
 }
 
-.our-mems .row .col-md-3 .img4 {
-    background-image:url('http://www.knotofstone.com/wp-content/uploads/2012/01/St-George-Church-Lalibela.jpg');
-    padding-top: 310px;
+.our-mems .row .col-md-8 .img5 {
+    background-image:url('http://wallfoy.com/wp-content/uploads/2014/08/Manarola+by+late+evening+sun_Ultra+HD.jpg');
+    padding-top: 120px;
     overflow: hidden;
 }
 
-.our-mems .row .col-md-3 .img5 {
-    background-image:url('http://www.knotofstone.com/wp-content/uploads/2012/01/St-George-Church-Lalibela.jpg');
-    padding-top: 310px;
+.our-mems .row .col-md-4 .img6 {
+    background-image:url('http://i6.download.fd.pchome.net/g1/M00/0A/09/ooYBAFPZ-DqIMuWaAEWHacX0u1sAABzPACpJvQARYeB063.jpg');
+    padding-top: 120px;
     overflow: hidden;
 }
 
-.our-mems .row .col-md-3 .img6 {
-    background-image:url('http://www.knotofstone.com/wp-content/uploads/2012/01/St-George-Church-Lalibela.jpg');
-    padding-top: 310px;
+.our-mems .row .col-md-4 .img7 {
+    background-image:url('http://i.ytimg.com/vi/TEZRk8-wNto/maxresdefault.jpg');
+    padding-top: 120px;
     overflow: hidden;
+}
+
+.our-mems .row .col-md-4 .img8 {
+    background-image:url('http://wallfoy.com/wp-content/uploads/2014/08/oTkBBqzTq.jpg');
+    padding-top: 120px;
+    overflow: hidden;
+}
+
+.our-mems .row .col-md-8 .img9 {
+    background-image:url('https://4.bp.blogspot.com/-k8IX2Mkf0Jo/U4ze2gNn7CI/AAAAAAAA7xg/iKxa6bYITDs/s0/HOT+Balloon+Trip_Ultra+HD.jpg');
+    padding-top: 120px;
+    overflow: hidden;
+}
+
+.our-mems .row .col-md-4 .img10 {
+    background-image:url('https://4.bp.blogspot.com/-VHa0I6AOURI/VDPnrnbPCXI/AAAAAAABQWg/C8BfKEET1Bw/s0/Last%2BDays%2Bof%2BSummer_Ultra%2BHD.jpg');
+    padding-top: 120px;
+    overflow: hidden;
+}
+
+.our-mems .row {
+    padding-bottom: 0px;
+    margin-bottom: 7px;
+    margin-top: 0px;
 }
