@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'sebket'      =>  'media_pages#sebket'
+  get 'mezmur'      =>  'media_pages#mezmur'
+  get 'photos'      =>  'media_pages#photos'
+  get 'zema'        =>  'media_pages#zema'
+  get 'videos'      =>  'media_pages#videos'
+  get 'audio'       =>  'media_pages#audio'
+
   get 'eotc'        =>  'helper_pages#eotc'
   get 'pillars'     =>  'helper_pages#pillars'
 

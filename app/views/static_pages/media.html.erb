@@ -1,4 +1,28 @@
 <% provide(:title, "Media") %>
-<p>
-  Body for Media page of site goes here.
-</p>
+
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    Menu
+                </a>
+            </li>
+            <li><%= link_to "Mezmur (Holy Hymns)",             mezmur_path %></li>
+            <li><%= link_to "Sebket (Teachings)",             sebket_path %></li>
+            <li><%= link_to "zema (Tewahedo Melodies)",             zema_path %></li>
+            <li><%= link_to "Videos",             videos_path %></li>
+            <li><%= link_to "Audio",             audio_path %></li>
+            <li><%= link_to "Photos",             photos_path %></li>
+        </ul>
+    </div><!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <%= yield %>
+            <h1>Media</h1>
+            <p>Welcome to the media section of Hamerenoah Kidanemihret Church. Here you can find lots of media content relevant to the church. Go through the sidebar for various topics.</p>
+        </div>
+    </div><!-- /#page-content-wrapper -->
+</div><!-- /#wrapper -->
