@@ -13,9 +13,9 @@
                     Menu
                 </a>
             </li>
-            <li><%= link_to "Mezmur (Holy Hymns)",             mezmur_path %></li>
-            <li><%= link_to "Sebket (Teachings)",             sebket_path %></li>
-            <li><%= link_to "zema (Tewahedo Melodies)",             zema_path %></li>
+            <li><%= link_to "Mezmur",             mezmur_path %></li>
+            <li><%= link_to "Sebket",             sebket_path %></li>
+            <li><%= link_to "zema",             zema_path %></li>
             <li><%= link_to "Videos",             videos_path %></li>
             <li><%= link_to "Audio",             audio_path %></li>
             <li><%= link_to "Photos",             photos_path %></li>
@@ -32,6 +32,77 @@
                                 <h1>History of the Ethiopian Orthodox Tewahedo Church</h1>
                                 <p>"The Ethiopian Orthodox Tewahedo Church is an ancient church which upholds the Apostolic Teachings"</p>
                                 
+                                <div class="video-wrapper">
+                                    <!-- THE YOUTUBE PLAYER -->
+                                    <div class="vid-container">
+                                        <iframe 
+                                            id="vid_frame" 
+                                            src="http://www.youtube.com/embed/eg6kNoJmzkY?rel=0&showinfo=0&autohide=1" 
+                                            frameborder="0" width="560" height="315">
+                                        </iframe>
+                                    </div>
+                                    
+                                    <!-- THE PLAYLIST -->
+                                    <div class="vid-list-container">
+                                        <div class="vid-list">
+                                            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/_Tz7KROhuAw?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                                              <div class="thumb">
+                                                <img src="http://img.youtube.com/vi/eg6kNoJmzkY/0.jpg">
+                                              </div>
+                                              <div class="desc">
+                                                Jessica Hernandez & the Deltas - Dead Brains
+                                              </div>
+                                            </div>
+                                            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/_Tz7KROhuAw?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                                              <div class="thumb">
+                                                <img src="http://img.youtube.com/vi/eg6kNoJmzkY/0.jpg">
+                                              </div>
+                                              <div class="desc">
+                                                Jessica Hernandez & the Deltas - Dead Brains
+                                              </div>
+                                            </div>
+                                            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/_Tz7KROhuAw?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                                              <div class="thumb">
+                                                <img src="http://img.youtube.com/vi/eg6kNoJmzkY/0.jpg">
+                                              </div>
+                                              <div class="desc">
+                                                Jessica Hernandez & the Deltas - Dead Brains
+                                              </div>
+                                            </div>
+                                            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/_Tz7KROhuAw?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                                              <div class="thumb">
+                                                <img src="http://img.youtube.com/vi/eg6kNoJmzkY/0.jpg">
+                                              </div>
+                                              <div class="desc">
+                                                Jessica Hernandez & the Deltas - Dead Brains
+                                              </div>
+                                            </div>
+                                            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/_Tz7KROhuAw?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                                              <div class="thumb">
+                                                <img src="http://img.youtube.com/vi/eg6kNoJmzkY/0.jpg">
+                                              </div>
+                                              <div class="desc">
+                                                Jessica Hernandez & the Deltas - Dead Brains
+                                              </div>
+                                            </div>
+                                            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/_Tz7KROhuAw?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                                              <div class="thumb">
+                                                <img src="http://img.youtube.com/vi/eg6kNoJmzkY/0.jpg">
+                                              </div>
+                                              <div class="desc">
+                                                Jessica Hernandez & the Deltas - Dead Brains
+                                              </div>
+                                            </div>
+                                        </div><!-- end of vid-list -->
+                                    </div><!-- end of vid-list-container -->
+                                    
+                                    <!-- LEFT AND RIGHT ARROWS -->
+                                    <div class="arrows">
+                                        <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                                        <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                                    </div>
+                                    
+                                </div><!-- end of video wrapper -->
                             </div>
                         </div>
                     </div>
@@ -40,3 +111,20 @@
         </div>
     </div><!-- /#page-content-wrapper -->
 </div><!-- /#wrapper -->
+
+<script>
+    $(document).ready(function () {
+        $(".arrow-right").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "+=336"
+            }, 750);
+        });
+        $(".arrow-left").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "-=336"
+            }, 750);
+        });
+    });
+</script>
