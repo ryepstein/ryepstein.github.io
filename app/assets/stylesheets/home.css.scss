@@ -316,7 +316,15 @@ div #slider #figure {
 
 .calendar {
     width: 100%;
-    background: #595757;
+    /*background: #595757;*/
+    background: #2E2E2E;
+    text-align: justify;
+}
+
+.warn-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .calendar .row {
@@ -360,16 +368,16 @@ div #slider #figure {
 }
 
 
-/* Information Hub section styling */
+/* members section styling */
 
-.info-hub {
+.our-mems {
     width: 100%;
     overflow: hidden;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
-.info-hub h2 {
+.our-mems h2 {
     font-family: Helvetica;
     font-weight: bold;
     font-size: 30px;
@@ -377,7 +385,7 @@ div #slider #figure {
     text-align: center;
 }
 
-.info-hub h3 {
+.our-mems h3 {
     text-align: center;
     font-family: Helvetica;
     font-size: 16px;
@@ -386,69 +394,25 @@ div #slider #figure {
     margin-bottom: 65px;
 }
 
-.wrapper {
-    display: block;
-    padding-top: 70px;
-    font-family: Helvetica;
-    background: #F0F4F5;
-    text-align: center;
-}
-
-.info-hub .row {
-    margin-top: 40px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    overflow: hidden;
-}
-
-.copt-news {
-    overflow: hidden;
-    padding: 0;
-    background: #fff;
-    height: 350px;
-}
-
-#contentplum_widget_91925814842 {
-    height: 500px;
-    /*display: block;*/
-    overflow: hidden;
-    height: 350px;
-}
-
-.cnn-news {
-    overflow: hidden;
-    height: 500px;
-    padding: 0;
-    background: #fff;
-    height: 350px;
-}
-
-.mtimeline {
-    height: 350px;
-    padding: 0;
-}
-
-.twitter-timeline {
-    height: 350px;
-}
-
-
-/* members section styling */
-
-.our-mems {
-    width: 100%;
-    overflow: hidden;
-}
-
 .our-mems .row {
-    width: 80%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.our-mems .row .col-md-4 .well, 
+.our-mems .row .col-md-4 .well {
+    text-align: center;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border: 0px solid black;
+    background:black;
+    background-size: 180%;
+    background-repeat: no-repeat;
+    color: white;
+    height: 350px;
+}
+
 .our-mems .row .col-md-8 .well {
     text-align: center;
     -webkit-border-radius: 0px;
@@ -456,7 +420,7 @@ div #slider #figure {
     border-radius: 0px;
     border: 0px solid black;
     background:black;
-    background-size: 200%;
+    background-size: 150%;
     background-repeat: no-repeat;
     color: white;
     height: 350px;
@@ -508,4 +472,18 @@ div #slider #figure {
     padding-bottom: 0px;
     margin-bottom: 7px;
     margin-top: 0px;
+}
+
+/* tint feed styling */
+
+.tint-feed {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #fff;
+    text-align: center;
+}
+
+.tintup {
+    margin-left: auto;
+    margin-right: auto;
 }
