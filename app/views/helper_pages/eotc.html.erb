@@ -19,13 +19,16 @@
     </div><!-- /#sidebar-wrapper -->
     <!-- Page Content -->
     <div id="page-content-wrapper">
-        <div class="container-fluid">
-            <div id="page-content-wrapper">
-                <div class="container-fluid">
-                    <div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h1>History of the Ethiopian Orthodox Tewahedo Church</h1>
+        <div class="container-fluid" id="cont-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="menu-sub">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+                            <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="content-sub">
+                        <h1>History of the Ethiopian Orthodox Tewahedo Church</h1>
                                 <p>"The Ethiopian Orthodox Tewahedo Church is an ancient church which upholds the Apostolic Teachings"</p>
                                 
                                 <h2>Definition of Terms</h2>
@@ -118,12 +121,17 @@ The Ethiopian Orthodox Tewahido Church got opportunities and faced challenges af
                                 <p>On top of this, a very sad phenomenon emerged: atheism was decreed by the ‘Derg’. The patriarch of the church, Abune Tewoflos was murdered. All the properties of the church which itused for social development and fulfill its apostolic mission were taken by the government. Monasteries became helpless as their land was confiscated. The main gates of some churches were closed, and the priests and the faithful were forced to use small backside outlets. In general, this was the time when the church was attacked morally as well as psychologically.</p>
                                 <p>After the fall of the Derg in 1983 E.C., there were both positive and negative conditions which the church has passed thorough. The return of the freedom of faith, the partial return of the confiscated properties of the church, the permission to publish spiritual materials, establishment and strengthening of Sunday schools in parish churches, the construction of new buildings for development purposes in the compounds of some churches, the involvement of the educated section of the society in the activities of the church and the restart of spiritual services are among the positive aspects of this times after change of the ‘Dergs’ government.</p>
                                 <p>Despite these achievements, there have been a number of problems that the church has faced in the aftermath of the fall of the Derg regime. The execution of the apostolic services has not been systematic and coordinated; the apostolic missions conducted have been incomparable to the huge demand and the magnitude of the problem that exists; the church has been held responsible for the several problems that occurred in the past as if the church itself had not faced any of the problems; there has been ethnocentricism both inside and outside church; the activities of fundamental Islamists created a very huge problem on the faithful of the church; and there are also some administration problems within the church. </p>
-                                
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div><!-- /#page-content-wrapper -->
+            </div>
         </div>
-    </div><!-- /#page-content-wrapper -->
+    </div>
 </div><!-- /#wrapper -->
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>

@@ -23,108 +23,29 @@
     </div><!-- /#sidebar-wrapper -->
     <!-- Page Content -->
     <div id="page-content-wrapper">
-        <div class="container-fluid">
-            <div id="page-content-wrapper">
-                <div class="container-fluid">
-                    <div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h1>History of the Ethiopian Orthodox Tewahedo Church</h1>
-                                <p>"The Ethiopian Orthodox Tewahedo Church is an ancient church which upholds the Apostolic Teachings"</p>
-                                
-                                <div class="video-wrapper">
-                                    <!-- THE YOUTUBE PLAYER -->
-                                    <div class="vid-container">
-                                        <iframe 
-                                            id="vid_frame" 
-                                            src="http://www.youtube.com/embed/eg6kNoJmzkY?rel=0&showinfo=0&autohide=1" 
-                                            frameborder="0" width="560" height="315">
-                                        </iframe>
-                                    </div>
-                                    
-                                    <!-- THE PLAYLIST -->
-                                    <div class="vid-list-container">
-                                        <div class="vid-list">
-                                            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/_Tz7KROhuAw?autoplay=1&rel=0&showinfo=0&autohide=1'">
-                                              <div class="thumb">
-                                                <img src="http://img.youtube.com/vi/eg6kNoJmzkY/0.jpg">
-                                              </div>
-                                              <div class="desc">
-                                                Jessica Hernandez & the Deltas - Dead Brains
-                                              </div>
-                                            </div>
-                                            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/_Tz7KROhuAw?autoplay=1&rel=0&showinfo=0&autohide=1'">
-                                              <div class="thumb">
-                                                <img src="http://img.youtube.com/vi/eg6kNoJmzkY/0.jpg">
-                                              </div>
-                                              <div class="desc">
-                                                Jessica Hernandez & the Deltas - Dead Brains
-                                              </div>
-                                            </div>
-                                            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/_Tz7KROhuAw?autoplay=1&rel=0&showinfo=0&autohide=1'">
-                                              <div class="thumb">
-                                                <img src="http://img.youtube.com/vi/eg6kNoJmzkY/0.jpg">
-                                              </div>
-                                              <div class="desc">
-                                                Jessica Hernandez & the Deltas - Dead Brains
-                                              </div>
-                                            </div>
-                                            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/_Tz7KROhuAw?autoplay=1&rel=0&showinfo=0&autohide=1'">
-                                              <div class="thumb">
-                                                <img src="http://img.youtube.com/vi/eg6kNoJmzkY/0.jpg">
-                                              </div>
-                                              <div class="desc">
-                                                Jessica Hernandez & the Deltas - Dead Brains
-                                              </div>
-                                            </div>
-                                            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/_Tz7KROhuAw?autoplay=1&rel=0&showinfo=0&autohide=1'">
-                                              <div class="thumb">
-                                                <img src="http://img.youtube.com/vi/eg6kNoJmzkY/0.jpg">
-                                              </div>
-                                              <div class="desc">
-                                                Jessica Hernandez & the Deltas - Dead Brains
-                                              </div>
-                                            </div>
-                                            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/_Tz7KROhuAw?autoplay=1&rel=0&showinfo=0&autohide=1'">
-                                              <div class="thumb">
-                                                <img src="http://img.youtube.com/vi/eg6kNoJmzkY/0.jpg">
-                                              </div>
-                                              <div class="desc">
-                                                Jessica Hernandez & the Deltas - Dead Brains
-                                              </div>
-                                            </div>
-                                        </div><!-- end of vid-list -->
-                                    </div><!-- end of vid-list-container -->
-                                    
-                                    <!-- LEFT AND RIGHT ARROWS -->
-                                    <div class="arrows">
-                                        <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
-                                        <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
-                                    </div>
-                                    
-                                </div><!-- end of video wrapper -->
-                            </div>
-                        </div>
+        <div class="container-fluid" id="cont-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="menu-sub">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+                            <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="content-sub">
+                        <h1>Mezmur</h1>
+                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
                     </div>
                 </div>
-            </div><!-- /#page-content-wrapper -->
+            </div>
         </div>
-    </div><!-- /#page-content-wrapper -->
+    </div>
 </div><!-- /#wrapper -->
 
-<script>
-    $(document).ready(function () {
-        $(".arrow-right").bind("click", function (event) {
-            event.preventDefault();
-            $(".vid-list-container").stop().animate({
-                scrollLeft: "+=336"
-            }, 750);
-        });
-        $(".arrow-left").bind("click", function (event) {
-            event.preventDefault();
-            $(".vid-list-container").stop().animate({
-                scrollLeft: "-=336"
-            }, 750);
-        });
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
     });
-</script>
+    </script>
