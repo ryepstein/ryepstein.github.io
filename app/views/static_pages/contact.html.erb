@@ -1,25 +1,32 @@
 <% provide(:title, "Contact") %>
 
- <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
       function initialize() {
         var mapCanvas = document.getElementById('map-canvas');
         var mapOptions = {
-          center: new google.maps.LatLng(44.5403, -78.5463),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
+          center: new google.maps.LatLng(43.448106, -80.489013),
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.HYBRID
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(43.448106,-80.489013),
+          map: map,
+          title: 'Hamere Noah Kidanemihret E.O.T. Church'
+        });
       }
       google.maps.event.addDomListener(window, 'load', initialize);
+      google.maps.event.addDomListener(window, 'page:load', initialize);
     </script>
-    
-<div id="map-canvas"></div>
+
+<div class="map-container">
+  <div id="map-canvas"></div>
+</div>
 <div class="contact-info">
-    <code>
-        <h2>Hamere Noah Kidanemihret</h2>
-        <h3>Ethiopian Orthodox Tewahedo Church</h3>
-        <h3>54 Benton Street, Kitchener, ON</h3>
-        <h3>Email: example@churchwebsite.com</h3>
-    </code>
+  <h2>Hamere Noah Kidanemihret</h2>
+  <h3>Ethiopian Orthodox Tewahedo Church</h3>
+  <h3>54 Benton Street, Kitchener, ON</h3>
+  <h3>Email: example@churchwebsite.com</h3>
+  <button type="button" class="btn btn-danger">Get In Touch</button>
 </div>
