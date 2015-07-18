@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
-  force_ssl
+  #    Uncomment the command below to enable ssl encryption after acquiring certificate
+  # force_ssl
   
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
