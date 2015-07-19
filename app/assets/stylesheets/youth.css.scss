@@ -1,3 +1,5 @@
+@import url("//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400");
+
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -134,7 +136,7 @@
     height: 65px;
     border-bottom: 1px solid #DEDEDE;
     padding-left: 20px;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .content-sub {
@@ -145,13 +147,18 @@
 }
 
 #menu-toggle {
-    border: 0px;
-    border-radius: 0px;
+    border: 1px solid #AAAAAA;
+    border-radius: 3px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 20px;
     padding-left: 20px;
     background: #C0C0C0;
+    
+    font:20px/17px "Yanone Kaffeesatz", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight:300;
+    -webkit-font-smoothing:antialiased;
+    color:#747474;
 }
 
 #menu-toggle:hover {
