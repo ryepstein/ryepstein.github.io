@@ -132,8 +132,20 @@ button:hover {
     border-radius: 0px;
 }
 
+#menu1 li a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font: "Yanone Kaffeesatz", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 #menu1 li a:hover {
-    background: #808080;
+    color: #fff;
+    background: #d84315;
+}
+
+#eng-id {
+    color: #fff;
+    background: #d84315;
 }
 
 .navbar-header .navbar-toggle {
