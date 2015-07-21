@@ -4,12 +4,11 @@
 /* universal */
 
 body {
-    /*background: #F0F4F5;*/
-    background: #fff;
+    background: #FAFAFA;
 }
 
 .yield-body {
-    padding-top: 50px;
+    padding-top: 65px;
 }
 
 span.tab {
@@ -20,24 +19,55 @@ span.tab {
 
 
 
-/* header */
+/* header **********************************************/
+
 .navbar {
     border-radius: 0px;
-    background: #292B28;
-    border: 0px solid #292B28;
     margin-bottom: 0;
+    height: 65px;
+}
+
+.navbar-brand {
+    height: 65px;
+    padding: 5px 20px 5px 30px;
+    margin: 0;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+}
+
+/* search bar */
+
+#search-list {
+    height: 65px;
+    padding-right: 20px;
 }
 
 .navbar-search {
-    margin-top: 14px;
+    height: 39px;
+    border: 1px solid #C2C2C2;
+    background: #FEFEFE;
+    margin-top: 13px;
+    padding: 0;
+}
+
+#search-btn {
+    border-radius: 0px;
+    margin: -1px -1px 0px 0px;
+    height: 38px;
 }
 
 .search-query {
-    border-radius: 30px 30px 30px 30px;
-    border: 0px solid #292B28;
-    background: #4D4948;
-    padding-left: 5px;
-    box-shadow: none!important;
+    height: 35px;
+    border: 0px solid #EAEAEA;
+    background: #FEFEFE;
+    padding-left: 3px;
+    margin: 0;
+    width: 300px;
+    color: #848484;
+    font-weight: bold;
 }
 
 textarea:hover, 
@@ -51,6 +81,7 @@ button:active,
 button:hover {
     outline:0px !important;
     -webkit-appearance:none;
+    color: #5D5D5D;
 }
 
 .left-inner-addon {
@@ -65,30 +96,64 @@ button:hover {
     pointer-events: none;
 }
 
-.navbar .nav > li > a {
-    color: #ABA8A7;
-}
 
-.navbar ul li:hover {
-    color: #BAB9B8;
+/* nav list style */
+
+.navbar .nav > li > a {
+    color: #A4A4A4;
+    height: 65px;
+    font: "Yanone Kaffeesatz", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 22px;
+    border-left: 1px solid #E4E4E4;
+    background: #EFEFEF;
+    font-size: 12px;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    color: #ef5350;
+    color: #fff;
+    background: #d84315;
 }
 
-@media only screen and (max-width: 850px) {
+.dropdown .btn-danger {
+    border-radius: 0px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    background: #CC2900;
+    font: "Yanone Kaffeesatz", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+
+#menu1 {
+    border-radius: 0px;
+}
+
+#menu1 li a:hover {
+    background: #808080;
+}
+
+.navbar-header .navbar-toggle {
+    border-radius: 0px;
+    margin-top: 14px;
+}
+
+.icon-bar {
+    color: #030303;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1135px) {
     .navbar-search {
         display: none;
     }
 }
 
-#drop-login:focus {
-    background: #292B28;
-}
 
-
-/* footer */
+/* footer *************************************************************/
 
 .bottom {
 	background: #2B2B2B;
