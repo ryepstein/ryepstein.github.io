@@ -164,6 +164,33 @@ button:hover {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .navbar-search {
+        display: block;
+        margin-left: 10%;
+    }
+    .search-query {
+        width: 150px;
+    }
+    #navbar {
+        overflow: auto;
+        background: #fff;
+    }
+    #dp-list {
+        background: #fff;
+    }
+    #dp-list .dropdown {
+        margin-bottom: 15px;
+    }
+    #navbar ul li a {
+        padding-top: 10px;
+        border-bottom: 1px solid #E4E4E4;
+        padding-left: 25px;
+        padding-bottom: 0;
+        height: 40px;
+    }
+}
+
 
 /* footer *************************************************************/
 
