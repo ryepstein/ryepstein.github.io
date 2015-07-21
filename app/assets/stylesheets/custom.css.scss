@@ -197,61 +197,110 @@ button:hover {
 .bottom {
 	background: #2B2B2B;
 	color: #808080;
-	text-align: center;
-	padding-top: 70px;
-	padding-bottom: 0;
+	padding-top: 50px;
 	bottom: 0;
-	overflow: auto;
+	margin-bottom: 0;
+    overflow: hidden;
 }
 
-.bottom .row {
-    width: 80%;
-    margin-bottom: 40px;
+/* list of links */
+
+.list-of-links {
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
+    overflow: hidden;
 }
 
-.links {
-	font-size: 20px;
-	color: #fff;
-	padding-left: 10px;
-	padding-right: 10px;
+.list-of-links ul li {
+    display: inline-block;
+    text-transform: none;
+    text-decoration: none;
+    margin: 0;
 }
 
-.my-btn {
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-	margin-left: 15px;
-	border-radius: 50px;
-	padding-top: 10px;
-	background: #5C5C5C;
+.list-one {
+    vertical-align: top;
 }
 
-.my-btn:hover {
-    background: #535353;
+.list-one ul li {
+    display: block;
 }
 
-.myfa {
-    color: #2B2B2B;
+.head-of-lists {
+    color: #fff;
+    padding-bottom: 5px;
 }
 
-.myfa:hover {
+.list-of-lists {
+    color: #bdbdbd;
+    font-size: 12px;
+}
+
+.list-of-lists:hover {
+    text-decoration: none;
+    color: #CACACA;
+}
+
+/* list of social media */
+
+.social-glyphs {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #757575;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.social-glyphs ul {
+    padding: 0;
+    margin: 0;
+}
+
+.social-glyphs ul li {
+    display: inline-block;
+}
+
+#pull-left-list {
+    left: 0;
+}
+
+#pull-left-list ul li a {
+    text-decoration: none;
+    color: #757575;
+    padding: 10px 50px 10px 0px;
+}
+
+.social-glyphs ul li a:hover {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+#pull-right-list {
+    float: right;
+}
+
+#right-head {
+    font-family: Helvetica;
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+#pull-right-list ul li a .fa {
+    color: #bdbdbd;
+    font-size: 22px;
+    padding-right: 10px;
+}
+
+#pull-right-list ul li a .fa:hover {
     color: #fff;
 }
 
-.cont {
-	width: 80%;
-	margin-top: 30px;
-	margin-right: auto;
-	margin-left: auto;
-	border-top: 1px solid #505050;
-	border-bottom: 1px solid #505050;
-	padding-bottom: 70px;
-	padding-top: 70px;
-	margin-bottom: 50px;
-}
-
 .copyright-section {
-    color: #808080;
+    color: #757575;
+    text-align: center;
 }
