@@ -2,7 +2,7 @@
 
 .full-video {
     width: 100%;
-    height: 500px;
+    height: 535px;
     padding: 0;
     margin: 0;
     z-index: 0;
@@ -48,9 +48,12 @@
 
 .overlay {
     width: 100%;
-    height: 500px;
-    background: #fff;
-    opacity: 0;
+    /*height: 150px;
+    margin-top: 350px;*/
+    height: 535px;
+    
+    /*background: #424242;
+    opacity: .4;*/
     padding: 0;
     margin: 0;
     top: 0;
@@ -62,7 +65,7 @@
 
 .overlay-text {
     width: 100%;
-    height: 500px;
+    height: 535px;
     padding: 0;
     margin: 0;
     top: 0;
@@ -81,13 +84,24 @@
 
 /* overlay */
 
-.overlay {
-    background: #363534;
-    opacity: .4;
+.top-text {
+    height: 350px;
+    padding-top: 200px;
 }
 
-.overlay-text {
-    padding-top: 130px;
+.bottom-text {
+    height: 150px;
+    padding-left: 0;
+    padding-top: 20px;
+}
+
+.bottom-text h3, .bottom-text button {
+    display: inline-block;
+}
+
+#btbg {
+    background: #000000;
+    opacity: .75;
 }
 
 .overlay-text h1 {
@@ -99,23 +113,46 @@
     font-weight: bold;
 }
 
+.overlay-text h2 {
+    text-transform: uppercase;
+    
+    text-align: center;
+    margin-top: -5px;
+    font: "Yanone Kaffeesatz", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .overlay-text h4 {
     text-align: center;
-    font-family: 'Helvetica';
+    font: "Yanone Kaffeesatz", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-bottom: 23px;
-    font-size: 17px;
-}
-
-.overlay-text .btn-centered {
-    text-align: center;
-}
-
-.btn {
+    font-size: 23px;
     font-weight: bold;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 15px;
 }
+
+.bottom-text ul {
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-text ul li {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: none;
+}
+
+#left-algn {
+    float: left;
+}
+
+#right-algn {
+    float: right;
+}
+
+
+
+
+
+
 
 @media only screen and (max-width: 600px) {
     .full-video {

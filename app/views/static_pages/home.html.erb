@@ -1,14 +1,31 @@
 <div class="full-video">
-  <%= video_tag "wereb.mp4", :autoplay => "true", :loop => "true", :id =>"myvideo" %>
-  <div class="overlay"></div>
+  <%= video_tag "machupichu.mp4", :autoplay => "true", :loop => "true", :id =>"myvideo" %>
+  <div class="overlay">
+    <div class="top-text"></div>
+    <div class="bottom-text" id="btbg"></div>
+  </div>
   <div class="overlay-text">
-    <h1>Welcome To</h1>
-    <h4>Hamere Noah <span style="color:#d32f2f, font-weight:bold">Kidanemihret</span> Ethiopian Orthodox Tewahedo Church</h4>
-    <div class="btn-centered">
-      <button type="button" class="btn btn-danger">Sign Up</button>
+    <div class="top-text">
+      <h1>Welcome</h1>
     </div>
+    
+    <div class="bottom-text">
+      <ul>
+        <li id="left-algn"><h3>Hamere Noah Kidanemihret <br> Ethiopian Orthodox Tewahedo Church</h3></li>
+        <li id="right-algn">
+          <form class="navbar-search pull-left left-inner-addon">
+            <input type="text" class="search-query" placeholder="Username">
+            <input type="text" class="search-query" placeholder="Password">
+            <button class="btn btn-danger" type="submit">Sign in <i class="glyphicon glyphicon-user"></i></button>
+          </form>
+        </li>
+      </ul>
+    </div>
+    
   </div>
 </div>
+
+
 <div class="introduction">
   <h2>Brief words of Introduction</h2>
   <h3>In the name of the Father, the Son, and the Holy Spirit, One God Amen.</h3>
