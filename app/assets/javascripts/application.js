@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
+//= require flipclock.min
 //= require_tree .
 
 $(document).ready(function(){

@@ -290,7 +290,7 @@
     border-radius: 0px;
     border: 0px solid #F0F4F5;
     background:black;
-    background-size: 300%;
+    background-size: 230%;
     background-repeat: no-repeat;
     color: white;
 }
@@ -427,8 +427,8 @@ div #slider #figure {
 
 .calendar {
     width: 100%;
-    /*background: #595757;*/
     background: #2E2E2E;
+    /*background: #ECECEC;*/
     text-align: justify;
 }
 
@@ -462,14 +462,24 @@ div #slider #figure {
 }
 
 .mtext h2 {
-    color: #B5B1B1;
+    color: #F4F4F4;
     text-align: center;
     font-weight: bold;
 }
 
 .mtext p {
-    color: #B5B1B1;
+    color: #DCDCDC;
     font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font: 20px/24px "Yanone Kaffeesatz", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+#ctn-reading {
+    border-radius: 1px;
+    padding: 5px 20px 5px 20px;
+    font-weight: bold;
 }
 
 .calendar .row .col-md-8 {
@@ -479,8 +489,59 @@ div #slider #figure {
 }
 
 
-/* placeholder div */
-.placeholder-div {
+/* news feed */
+
+.news-feed {
     width: 100%;
-    height: 600px;
+    margin: 0px 0px 50px 0px;
+    padding: 0;
+    text-align: center;
+}
+
+.news-feed h2 {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 30px;
+    color: #535454;
+    margin-top: 50px;
+}
+
+.wiki-inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.news-feed .col-md-8 .btn-warning {
+    margin-top: 200px;
+}
+
+.news-feed .col-md-4 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.news-feed .row {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* clock */
+.clock-wrapper {
+    padding-top: 50px;
+    background: #D2D2D2;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 20%;
+    overflow: hidden;
+}
+
+.clock-wrapper h2 {
+    width: 100%;
+    padding-left: 10%;
+    margin-bottom: 30px;
+    font-weight: bold;
 }

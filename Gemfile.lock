@@ -75,6 +75,8 @@ GEM
     ffi (1.9.10)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
+    flipclockjs-rails (0.5.5.1)
+      jquery-rails (>= 1.0.17)
     fog (1.32.0)
       fog-atmos
       fog-aws (>= 0.6.0)
@@ -323,6 +325,7 @@ DEPENDENCIES
   carrierwave (= 0.10.0)
   coffee-rails (= 4.1.0)
   faker (= 1.4.2)
+  flipclockjs-rails (~> 0.5.5.1)
   fog (= 1.32.0)
   google-webfonts-rails
   guard-minitest (= 2.3.1)

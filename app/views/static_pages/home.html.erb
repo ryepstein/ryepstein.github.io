@@ -102,7 +102,7 @@
           The current year according to the Ethiopian calendar is 2007, which began on September 11 AD 2014 of the Gregorian calendar.
         </p>
         <div class="warn-btn">
-          <button type="button" class="btn btn-warning">Continue Reading</button>
+          <button type="button" class="btn btn-danger" id="ctn-reading">Continue Reading</button>
         </div>
       </div>
     </div>
@@ -113,6 +113,35 @@
     </div>
   </div>
 </div>
-<div class="placeholder-div">
-  
+<div class="news-feed">
+  <h2>News Feed</h2>
+  <div class="row">
+    <div class="col-md-8">
+      <button class="btn btn-warning wiki-inline"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+      <div class="wiki-wrapper wiki-inline">
+        <a class="embedly-card" href="https://www.wikiwand.com/en/Ethiopian_Orthodox_Tewahedo_Church">Ethiopian Orthodox Tewahedo Church | Wikiwand</a>
+      <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+      </div>
+      <button class="btn btn-warning wiki-inline"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+    </div>
+    <div class="col-md-4">
+      <a class="twitter-timeline" href="https://twitter.com/hashtag/ethiopianorthodox" data-widget-id="623885572701069313">#ethiopianorthodox Tweets</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
 </div>
+<div class="clock-wrapper">
+  <h2>Countdown to Next Fasting Season</h2>
+  <div class="clock"></div>
+</div>
+
+
+<script type="text/javascript">
+	var clock = $('.clock').FlipClock(7200 * 24 * 3, {
+		clockFace: 'DailyCounter',
+		countdown: true
+	});
+</script>
+
+<link rel="stylesheet" href="https://cdn.theericmiller.com/flipclock.css">
+<script type="text/javascript" src="https://cdn.theericmiller.com/flipclock.min.js"></script>
