@@ -1,27 +1,33 @@
 <div class="full-video">
-  <%= video_tag "machupichu.mp4", :autoplay => "true", :loop => "true", :id =>"myvideo" %>
+  <%= video_tag "wereb.mp4", :autoplay => "true", :loop => "true", :id =>"myvideo" %>
   <div class="overlay">
     <div class="top-text"></div>
     <div class="bottom-text" id="btbg"></div>
   </div>
   <div class="overlay-text">
     <div class="top-text">
-      <h1>Welcome</h1>
+      <div class="button-wrap">
+        <button class="btn btn-success" id="sign-up-btn">Sign up/Log in <span class="glyphicon glyphicon-user" aria-hidden="true"></span></button>
+      </div>
+      <h1>Welcome To</h1>
+      <p>Hamere Noah Kidanemihret Ethiopian Orthodox Tewahedo Church</p>
     </div>
-    
     <div class="bottom-text">
-      <ul>
-        <li id="left-algn"><h3>Hamere Noah Kidanemihret <br> Ethiopian Orthodox Tewahedo Church</h3></li>
-        <li id="right-algn">
-          <form class="navbar-search pull-left left-inner-addon">
-            <input type="text" class="search-query" placeholder="Username">
-            <input type="text" class="search-query" placeholder="Password">
-            <button class="btn btn-danger" type="submit">Sign in <i class="glyphicon glyphicon-user"></i></button>
+      <small id="newsletter-p">Newsletter?</small>
+      <div class="subscribe-form pager">
+        <div class="sub-wrapper">
+          <form class="form-inline" id="sub-form">
+            <input type="text" class="form-control bdr-ctrl" id="input1" placeholder="First Name">
+            <input type="text" class="form-control bdr-ctrl" id="input2" placeholder="Last Name">
+            <input type="text" class="form-control bdr-ctrl" id="input3" placeholder="Email">
+            <button class="btn btn-danger bdr-ctrl" id="sub-btn" type="submit">Subscribe</button>
           </form>
-        </li>
-      </ul>
+        </div>
+      </div>
+      <div class="sub-btn-section">
+        <button class="btn btn-danger" id="sub-btn2">Subscribe to our Newsletters</button>
+      </div>
     </div>
-    
   </div>
 </div>
 
