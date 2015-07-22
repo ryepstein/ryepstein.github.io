@@ -248,7 +248,8 @@
     }
 }
 
-/* Introduction section styling */
+
+/* Introduction section styling **************************************/
 
 .introduction {
     padding-top: 30px;
@@ -295,21 +296,31 @@
 }
 
 .introduction .row .col-md-4 .img1 {
-    background-image:url('http://hdwallpaperexpert.com/wp-content/uploads/2015/03/Wallpaper-Stone-Corner-Landscape.jpg');
+    background-image: image-url("clergy-together.jpg");
     padding-top: 130px;
     height: 350px;
 }
 
 .introduction .row .col-md-4 .img2 {
-    background-image:url('http://wallfoy.com/wp-content/uploads/2014/08/oTkBBqzTq.jpg');
+    background-image: image-url("children.jpg");
     padding-top: 130px;
     height: 350px;
 }
 
 .introduction .row .col-md-4 .img3 {
-    background-image:url('http://wallpics4k.com/wp-content/uploads/2014/08/458791.jpg');
+    background-image: image-url("celebration1.jpg");
     padding-top: 130px;
     height: 350px;
+}
+
+.members-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.members-link:hover {
+    color: #d32f2f;
+    text-decoration: none;
 }
 
 .introduction .below-text {
@@ -330,6 +341,7 @@
     border-radius: 0px;
     margin-top: 40px;
     margin-bottom: 40px;
+    padding: 5px 30px 5px 30px;
 }
 
 .introduction .below-text p {
@@ -467,108 +479,8 @@ div #slider #figure {
 }
 
 
-/* members section styling */
-
-.our-mems {
+/* placeholder div */
+.placeholder-div {
     width: 100%;
-    overflow: hidden;
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-.our-mems h2 {
-    font-family: Helvetica;
-    font-weight: bold;
-    font-size: 30px;
-    color: #535454;
-    text-align: center;
-}
-
-.our-mems h3 {
-    text-align: center;
-    font-family: Helvetica;
-    font-size: 16px;
-    color: #606161;
-    margin-top: -1px;
-    margin-bottom: 65px;
-}
-
-.our-mems .row {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.our-mems .row .col-md-4 .well {
-    text-align: center;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    border: 0px solid black;
-    background:black;
-    background-size: 180%;
-    background-repeat: no-repeat;
-    color: white;
-    height: 350px;
-}
-
-.our-mems .row .col-md-8 .well {
-    text-align: center;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    border: 0px solid black;
-    background:black;
-    background-size: 150%;
-    background-repeat: no-repeat;
-    color: white;
-    height: 350px;
-}
-
-.our-mems .row .col-md-4 .img4 {
-    background-image:url('http://4k-wallpaper.net/images/mountain-landscape-clouds_358.jpeg');
-    padding-top: 120px;
-    overflow: hidden;
-}
-
-.our-mems .row .col-md-8 .img5 {
-    background-image:url('http://wallfoy.com/wp-content/uploads/2014/08/Manarola+by+late+evening+sun_Ultra+HD.jpg');
-    padding-top: 120px;
-    overflow: hidden;
-}
-
-.our-mems .row .col-md-4 .img6 {
-    background-image:url('http://i6.download.fd.pchome.net/g1/M00/0A/09/ooYBAFPZ-DqIMuWaAEWHacX0u1sAABzPACpJvQARYeB063.jpg');
-    padding-top: 120px;
-    overflow: hidden;
-}
-
-.our-mems .row .col-md-4 .img7 {
-    background-image:url('http://i.ytimg.com/vi/TEZRk8-wNto/maxresdefault.jpg');
-    padding-top: 120px;
-    overflow: hidden;
-}
-
-.our-mems .row .col-md-4 .img8 {
-    background-image:url('http://wallfoy.com/wp-content/uploads/2014/08/oTkBBqzTq.jpg');
-    padding-top: 120px;
-    overflow: hidden;
-}
-
-.our-mems .row .col-md-8 .img9 {
-    background-image:url('https://4.bp.blogspot.com/-k8IX2Mkf0Jo/U4ze2gNn7CI/AAAAAAAA7xg/iKxa6bYITDs/s0/HOT+Balloon+Trip_Ultra+HD.jpg');
-    padding-top: 120px;
-    overflow: hidden;
-}
-
-.our-mems .row .col-md-4 .img10 {
-    background-image:url('https://4.bp.blogspot.com/-VHa0I6AOURI/VDPnrnbPCXI/AAAAAAABQWg/C8BfKEET1Bw/s0/Last%2BDays%2Bof%2BSummer_Ultra%2BHD.jpg');
-    padding-top: 120px;
-    overflow: hidden;
-}
-
-.our-mems .row {
-    padding-bottom: 0px;
-    margin-bottom: 7px;
-    margin-top: 0px;
+    height: 600px;
 }
