@@ -210,6 +210,7 @@
     display: none;
     height: 45px;
     border-radius: 0px;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 800px) {
@@ -250,7 +251,7 @@
 /* Introduction section styling */
 
 .introduction {
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -264,7 +265,7 @@
 .introduction h3 {
     font-family: Helvetica;
     color: #606161;
-    font-size: 16px;
+    font-size: 15px;
     margin-top: -1px;
     margin-bottom: 65px;
 }
