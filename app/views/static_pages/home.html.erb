@@ -63,9 +63,9 @@
     <p><span class="tab"></span>
       We call upon everyone to join us as we worship and glorify God according to the faith, order, and tradition of the Ethiopian Orthodox Church. This website provides information about the essential services the church provides to the community. It also contains great resources about our faith and Ethiopian tradition.
     </p>
-    <button type="button" class="btn btn-default lmaoc">Learn more about our Church</button>
+    <button type="button" class="btn btn-default lmaoc"><%= link_to "Learn more about our Church",  about_path, :id => "lmaocl" %></button>
   </div>
-  <p id="myp">If you want to learn more about the history of the Ethiopian Orthodox Tewahedo Church <a href="#"><code>click here</code></a>.</p>
+  <p id="myp">If you want to learn more about the history of the Ethiopian Orthodox Tewahedo Church <a href="#"><code><%= link_to "click here",  eotc_path, :id => "lmaocl" %></code></a>.</p>
 </div>
 <div class="mquote">
   <i class="fa fa-quote-left"></i>
@@ -102,7 +102,7 @@
           The current year according to the Ethiopian calendar is 2007, which began on September 11 AD 2014 of the Gregorian calendar.
         </p>
         <div class="warn-btn">
-          <button type="button" class="btn btn-danger" id="ctn-reading">Continue Reading</button>
+          <button type="button" class="btn btn-danger" id="ctn-reading"><a href="https://www.wikiwand.com/en/Ethiopian_calendar" target="_blank">Continue Reading</a></button>
         </div>
       </div>
     </div>
@@ -114,7 +114,6 @@
   </div>
 </div>
 <div class="news-feed">
-  <h2>News Feed</h2>
   <div class="row">
     <div class="col-md-8">
       <button class="btn btn-warning wiki-inline"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
@@ -131,7 +130,7 @@
   </div>
 </div>
 <div class="clock-wrapper">
-  <h2>Countdown to Next Fasting Season</h2>
+  <h2>Countdown</h2>
   <div class="clock"></div>
 </div>
 
@@ -142,6 +141,3 @@
 		countdown: true
 	});
 </script>
-
-<link rel="stylesheet" href="https://cdn.theericmiller.com/flipclock.css">
-<script type="text/javascript" src="https://cdn.theericmiller.com/flipclock.min.js"></script>
