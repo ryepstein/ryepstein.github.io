@@ -18,6 +18,7 @@ gem 'jbuilder',                '2.2.3'
 gem 'sdoc',                    '0.4.0', group: :doc
 gem 'flipclockjs-rails',       '~> 0.5.5.1'
 gem 'google-webfonts-rails'
+gem 'jquery-turbolinks'
 
 
 group :development, :test do
