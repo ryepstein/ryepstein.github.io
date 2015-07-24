@@ -68,8 +68,8 @@
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #E9E9E9;
-    background: #747474;
+    color: #fff;
+    background: #d84315;
 }
 
 .sidebar-nav li a:active,
@@ -125,16 +125,18 @@
     text-transform: uppercase;
 }
 
+#page-content-wrapper {
+    background: #fff;
+}
+
 #cont-fluid, #page-content-wrapper {
     padding: 0;
     overflow: hidden;
 }
 
 .menu-sub {
-    background: #F6F6F6;
     width: 100%;
     height: 65px;
-    border-bottom: 1px solid #DEDEDE;
     padding-left: 20px;
     padding-top: 15px;
 }
@@ -153,7 +155,7 @@
     padding-bottom: 10px;
     padding-right: 20px;
     padding-left: 20px;
-    background: #C0C0C0;
+    background: #FAFAFA;
     
     font:20px/17px "Yanone Kaffeesatz", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight:300;
@@ -163,11 +165,16 @@
 
 #menu-toggle:hover {
     background: #9A9A9A;
+    color: #fff;
 }
 
 .glyphicon-align-justify {
     font-size: 20px;
     color: #747474;
+}
+
+.sidebar-nav li .fa {
+    border: 1px solid green;
 }
 
 
@@ -192,4 +199,9 @@
 
 .content-sub p {
     font-size: 17px;
+}
+
+#my-highlight {
+    background: #d84315;
+    color: #fff;
 }
