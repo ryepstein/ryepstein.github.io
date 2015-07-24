@@ -151,3 +151,230 @@
 
 /*****************************************************************/
 
+/* audio player css */
+
+/*
+Skeleton v1.2
+Copyright: Dave Gamache
+www.getskeleton.com
+Free to use under the MIT license.
+http://www.opensource.org/licenses/mit-license.php
+Modifications by Mark Hillard
+*/
+
+
+/* Font Family */
+@import url("http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400");
+
+
+/* Base 960 Grid
+================================================== */
+
+.container { position:relative; width:960px; margin:0 auto; padding:0; }
+.container .columns { float:left; display:inline; margin-left:10px; margin-right:10px; }
+.container .twelve.columns { width:700px; }
+.container .offset-by-two { padding-left:120px; }
+
+
+/* Tablet (Portrait)
+================================================== */
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.container { width:768px; }
+.container .columns { margin-left:10px; margin-right:10px; }
+.container .twelve.columns { width:556px; }
+.container .offset-by-two { padding-left:96px; }
+}
+
+
+/* Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+.container { width:300px; }
+.container .columns { margin:0; }
+.container .twelve.columns { width:300px; }
+.container .offset-by-two { padding-left:0; }
+}
+
+
+/* Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container { width:420px; }
+.container .columns { margin:0; }
+.container .twelve.columns { width:420px; }
+}
+
+
+/* Clearing
+================================================== */
+
+/* Self Clearing Goodness */
+.container:after {
+clear:both;
+content:"\0020";
+display:block;
+height:0;
+visibility:hidden;
+}
+
+/* CSS Reset
+================================================== */
+div,span,h1,h6,p,a,ul,li,audio {
+border:0;
+font:inherit;
+font-size:100%;
+margin:0;
+padding:0;
+vertical-align:baseline;
+}
+
+
+ul { list-style:none; }
+
+
+/* Basic Styles
+================================================== */
+/*
+html,body {
+-webkit-font-smoothing:antialiased;
+-webkit-text-size-adjust:100%;
+background-color:#111;
+color:#C8C7C8;
+font:18px/20px "Yanone Kaffeesatz", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight:300;
+}
+
+*/
+/* Typography
+================================================== *//*
+h1,h6 { color:#808080; font-weight:300; }
+h1{ font-size:42px; line-height:44px; margin:20px 0 0;}
+h6{ font-size:18px; line-height:20px; margin:0 0 20px;}
+p { margin:0 0 20px; }
+
+*/
+/* Links
+================================================== *//*
+a,a:visited { color:#ddd; outline:0; text-decoration:underline; }
+a:hover,a:focus { color:#bbb; }
+p a,p a:visited { line-height:inherit; }
+*/
+
+/* Misc.
+================================================== */
+.add-bottom { margin-bottom:20px !important; }
+.left { float:left; }
+.right { float:right; }
+.center { text-align:center; }
+
+/* Custom Styles
+================================================== */
+/*
+html,body {
+-webkit-font-smoothing:antialiased;
+-webkit-text-size-adjust:100%;
+background-color:#111;
+color:#C8C7C8;
+font:18px/20px "Yanone Kaffeesatz", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight:300;
+}
+*/
+/* CSS Transitions */
+* {
+-moz-transition:all 100ms ease;
+-o-transition:all 100ms ease;
+-webkit-transition:all 100ms ease;
+transition:all 100ms ease;
+}
+
+/* Highlight Styles */
+::selection { background-color:#262223; color:#444; }
+::-moz-selection { background-color:#262223; color:#444; }
+
+/* Music Player (Default - Firefox) */
+audio { margin:0 14px; width:672px; }
+#audiowrap { background-color:#231F20; margin:0 auto; }
+#plwrap { margin:0 auto; }
+#tracks { min-height:66px; position:relative; text-align:center; text-decoration:none; top:16px; }
+#nowPlay { display:inline; }
+#npTitle { margin:0; padding:21px; text-align:right; }
+#npAction { padding:21px; }
+#plList { margin:0; }
+#plList li { background-color:#231F20; cursor:pointer; margin:0; padding:21px 0; }
+#plList li:hover { background-color:#262223; }
+.plItem { position:relative; }
+.plTitle { left:40px; overflow:hidden; position:absolute; right:65px; text-overflow:ellipsis; top:0; white-space:nowrap; }
+.plNum { padding-left:21px; width:25px; }
+.plLength { padding-left:21px; position:absolute; right:21px; top:0; }
+.plSel,.plSel:hover { background-color:#262223!important; cursor:default!important; }
+a[id^="btn"] { background-color:#231F20; color:#C8C7C8; cursor:pointer; font-size:50px; margin:0; padding:0 27px 11px; text-decoration:none; }
+a[id^="btn"]:last-child { margin-left:-3px; }
+a[id^="btn"]:hover,a[id^=btn]:active { background-color:#262223; }
+a[id^="btn"]::-moz-focus-inner { border:0; padding:0; }
+
+/* Music Player (Chrome) */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+audio { margin:0; width:100%!important; }
+#audiowrap { background-color:#131313; }
+a[id^="btn"] { background-color:#131313; }
+a[id^="btn"]:hover { background-color:#161616; }
+#plList li { background-color:#131313; }
+#plList li:hover { background-color:#161616; }
+.plSel,.plSel:hover { background-color:#161616!important; }
+}
+
+/* Music Player (IE 10) */
+html[data-useragent*="MSIE 10.0"] audio { margin:0; width:100%; }
+html[data-useragent*="MSIE 10.0"] #audiowrap { background-color:#000; }
+html[data-useragent*="MSIE 10.0"] #tracks { min-height:62px; top:11px;}
+html[data-useragent*="MSIE 10.0"] a[id^="btn"] { background-color:#000; }
+html[data-useragent*="MSIE 10.0"] a[id^="btn"]:hover { background-color:#080808; }
+html[data-useragent*="MSIE 10.0"] #plList li { background-color:#000; }
+html[data-useragent*="MSIE 10.0"] #plList li:hover { background-color:#080808; }
+html[data-useragent*="MSIE 10.0"] .plSel { background-color:#080808!important; }
+html[data-useragent*="MSIE 10.0"] .plSel:hover { background-color:#080808!important; }
+
+/* Music Player (IE 11) */
+html[data-useragent*="rv:11.0"] audio { margin:0; width:100%; }
+html[data-useragent*="rv:11.0"] #audiowrap { background-color:#000; }
+html[data-useragent*="rv:11.0"] #tracks { min-height:62px; top:11px;}
+html[data-useragent*="rv:11.0"] a[id^="btn"] { background-color:#000; }
+html[data-useragent*="rv:11.0"] a[id^="btn"]:hover { background-color:#080808; }
+html[data-useragent*="rv:11.0"] #plList li { background-color:#000; }
+html[data-useragent*="rv:11.0"] #plList li:hover { background-color:#080808; }
+html[data-useragent*="rv:11.0"] .plSel { background-color:#080808!important; }
+html[data-useragent*="rv:11.0"] .plSel:hover { background-color:#080808!important; }
+
+
+/* Media Queries (Devices & Browsers)
+================================================== */
+
+/* Tablet Portrait Size to Standard 960 */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+audio { width:528px; }
+}
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+audio { width:391px; }
+#npAction { position:absolute; }
+#npTitle { width:261px; }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {
+audio { width:271px; }
+#npAction { position:absolute; }
+#npTitle { width:156px; }
+}
+
+/* Chrome Hacks */
+@media only screen and (max-width: 959px) and (min-width: 768px) and (-webkit-min-device-pixel-ratio:0), only screen and (max-width: 767px) and (min-width: 480px) and (-webkit-min-device-pixel-ratio:0), only screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio:0) {
+audio { width: 100%; }
+}
