@@ -224,8 +224,18 @@ visibility:hidden;
 }
 
 /* CSS Reset
-================================================== */
-div,span,h1,h6,p,a,ul,li,audio {
+================================================== *//*
+div,span,h1,h6,p,a,ul,li,*/
+
+.my-playlist-one div, 
+.my-playlist-one span, 
+.my-playlist-one h1,
+.my-playlist-one h6,
+.my-playlist-one p,
+.my-playlist-one a,
+.my-playlist-one ul,
+.my-playlist-one li,
+audio {
 border:0;
 font:inherit;
 font-size:100%;
@@ -234,9 +244,11 @@ padding:0;
 vertical-align:baseline;
 }
 
+.my-playlist-one ul { list-style:none; }
 
-ul { list-style:none; }
-
+.my-playlist-one {
+	color: #C2C2C2;
+}
 
 /* Basic Styles
 ================================================== */
