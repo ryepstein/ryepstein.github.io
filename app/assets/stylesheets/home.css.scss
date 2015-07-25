@@ -461,6 +461,14 @@ div #slider #figure {
     width: 100%;
 }
 
+@media only screen and (min-width: 1200px) {
+    .calendar .row {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 #mcal {
     height: 340px;
 }
@@ -556,6 +564,14 @@ div #slider #figure {
     padding: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .news-feed .row {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media only screen and (max-width: 1150px) {
