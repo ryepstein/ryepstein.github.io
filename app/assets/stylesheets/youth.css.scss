@@ -129,6 +129,10 @@
     background: #fff;
 }
 
+.main-wrapper {
+    height: 90vh;
+}
+
 #cont-fluid, #page-content-wrapper {
     padding: 0;
     overflow: hidden;
@@ -146,6 +150,11 @@
     padding-left: 50px;
     padding-bottom: 50px;
     padding-top: 0px;
+    text-align: center;
+}
+
+.main-topic {
+    padding-top: 190px;
 }
 
 #menu-toggle {
@@ -199,9 +208,28 @@
 
 .content-sub p {
     font-size: 17px;
+    text-align: left;
+    font-family: sans;
 }
 
 #my-highlight {
     background: #d84315;
     color: #fff;
+}
+
+
+/**********************************************/
+
+.body-content-sub {
+    h2, h3, h4, h5, h6 {
+        text-align: left;
+        color: #000000;
+        font-family: serif;
+    }
+    p {
+        text-align: left;
+    }
+    h1 {
+        color: #000000;
+    }
 }
