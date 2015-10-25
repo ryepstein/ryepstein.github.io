@@ -1,5 +1,7 @@
 body {
 	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
 .gen-link {
@@ -282,11 +284,20 @@ body {
 	z-index: 0;
 	width: 100%;
 	position: absolute;
-	padding-left: 70px;
+}
+
+.sidebar-underlay {
+	position: relative;
+	width: 70px;
+	height: 100%;
+	float: left;
 }
 
 #foo-main-page {
 	position: relative;
+	height: 100%;
+	margin-left: 70px;
+	overflow: auto;
 }
 
 #nav-bar {
@@ -309,8 +320,8 @@ body {
 
 #nav-bar ul {
 	text-align: right;
-	margin-right: 100px;
 	float: right;
+	margin-right: 100px;
 }
 
 #nav-bar ul li {
@@ -353,35 +364,35 @@ body {
     height: 100vh;
     padding: 0;
     margin: 0;
-    z-index: 40;
+    z-index: 50;
     left: 0;
     top: 0;
 	right: 0;
 	bottom: 0;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
 }
 
 .full-video #myvideo {
     padding: 0;
-	position: fixed;
+	/*position: fixed;*/
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 0;
+	z-index: 50;
 }
 
 .full-video #myvideo {
     height: 300%;
 	top: -100%;
-	z-index: 0;
+	z-index: 50;
 }
 
 .full-video #myvideo {
     width: 300%;
 	left: -100%;
-	z-index: 0;
+	z-index: 50;
 }
 
 .full-video #myvideo {
@@ -390,31 +401,42 @@ body {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	z-index: 0;
+	z-index: 50;
+}
+
+#main-content {
+	width: 100%;
+	position: relative;
+	z-index: 60;
+}
+
+.greetings {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	z-index: 70;
 }
 
 .overlay {
-    width: 100%;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    top: 0;
+	width: 100%;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	top: 0;
 	left: 0;
-    z-index: 50;
-    position: absolute;
-    color: #fff;
-    background-color: #1E1E1E;
+	z-index: 80;
+	position: absolute;
+	background-color: #1E1E1E;
     opacity: .95;
 }
 
 .overlay-text {
     width: 100%;
-    /*height: 100vh;*/
     padding: 0;
     margin: 0;
     top: 0;
 	left: 0;
-    z-index: 60;
+    z-index: 80;
     position: absolute;
     color: #fff;
     text-align: center;
@@ -447,9 +469,22 @@ body {
 	}
 }
 
+.arrow-wrapper {
+	position: absolute;
+	z-index: 90;
+	width: 100%;
+	height: 100vh;
+}
+
+.arrow-wrapper-immediate {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
 .arrow {
-  position: fixed;
-  bottom: 30px;
+  position: absolute;
+  bottom: 40px;
   left: 50%;
   margin-left:-20px;
   width: 40px;
@@ -498,4 +533,10 @@ body {
     -ms-transform: translateY(-15px);
     -o-transform: translateY(-15px);
     transform: translateY(-15px); } 
+}
+
+#about-me {
+	width: 100%;
+	height: 1500px;
+	background-color: #ffffff;
 }
