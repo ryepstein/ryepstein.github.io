@@ -36,17 +36,6 @@
 	<link rel="stylesheet" type="text/css" href="css/nanoscroller.css">
 </head>
 <body>
-	<div id="fb-root"></div>
-	<script>
-		(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
-
 	<div id="main-page">
 		<div class="sidebar-underlay"></div>
 		<div id="foo-main-page">
@@ -69,7 +58,7 @@
 					<div class="overlay"></div>
 					<div class="overlay-text">
 						<h1>Alexander <span class="name-color">Maru</span></h1>
-						<h2>Mathematician. Hacker. <span id="switch">Seeker of Knowledge.</span></h2>
+						<h2>Mathematician. Hacker. <span id="switch">Explorer.</span></h2>
 					</div>
 					<div class="arrow-wrapper">
 						<div class="arrow-wrapper-immediate">
@@ -82,67 +71,24 @@
 					<h2 class="content-title">About Me</h2>
 					<p class="content-text">Hi, I'm Alex. I'm a second year computer science student at University of Waterloo. I am interested in a wide range of areas including pure mathematics, robotics, network security and theoretical computer science. In my spare time, I also do web development for both front and back-end. Check out my experiences and projects below, and feel free to reach out by email or social media.</p>
 				</div><!-- about-me -->
-<!--
-				<div class="experiences projects">
-					<h2 class="content-title">Experiences</h2>
+
+				<div class="container experience">
+					<h2 class="content-title">Experiences | Projects</h2>
 					<div class="row">
-						<div class="col-md-3">
-							<div class="col-md-12 logo-outline">
-								<img id="outline-logo1" src="images/ignition.png">
-							</div>
+						<div class="col-md-4">
+							<div class="col-md-12"></div>
 						</div>
-						<div class="col-md-9">
-							<div class="col-md-12 text-outline">
-								<p>Hi, I'm Alex. I'm a second year computer science student at University of Waterloo. I am interested in a wide range of areas including pure mathematics, robotics, network security and theoretical computer science. In my spare time, I also do web development for both front and back-end. Check out my experiences and projects below, and feel free to reach out by email or social media.</p>
-							</div>
+
+						<div class="col-md-4">
+							<div class="col-md-12"></div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="col-md-12"></div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-3">
-							<div class="col-md-12 logo-outline">
-								<img id="outline-logo2" src="images/uwlogo2.gif">
-							</div>
-						</div>
-						<div class="col-md-9">
-							<div class="col-md-12 text-outline">
-								<p>Hi, I'm Alex. I'm a second year computer science student at University of Waterloo. I am interested in a wide range of areas including pure mathematics, robotics, network security and theoretical computer science. In my spare time, I also do web development for both front and back-end. Check out my experiences and projects below, and feel free to reach out by email or social media.</p>
-							</div>
-						</div>
-					</div>--><!-- experiences -->
-<!--
-					<h2 class="content-title">Projects</h2>
-					<div class="row">
-						<div class="col-md-3">
-							<div class="col-md-12 logo-outline">
-								<img id="outline-img3" src="images/alexandermaru.png">
-							</div>
-						</div>
-						<div class="col-md-9">
-							<div class="col-md-12 text-outline">
-								<p>Hi, I'm Alex. I'm a second year computer science student at University of Waterloo. I am interested in a wide range of areas including pure mathematics, robotics, network security and theoretical computer science. In my spare time, I also do web development for both front and back-end. Check out my experiences and projects below, and feel free to reach out by email or social media.</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-3">
-							<div class="col-md-12 logo-outline">
-								<img id="outline-logo2" src="images/uwlogo2.gif">
-							</div>
-						</div>
-						<div class="col-md-9">
-							<div class="col-md-12 text-outline">
-								<p>Hi, I'm Alex. I'm a second year computer science student at University of Waterloo. I am interested in a wide range of areas including pure mathematics, robotics, network security and theoretical computer science. In my spare time, I also do web development for both front and back-end. Check out my experiences and projects below, and feel free to reach out by email or social media.</p>
-							</div>
-						</div>
-					</div>--><!-- projects -->
-				<!--</div>--><!-- experiences & projects -->
-<!--
-				<div class="contact-me" id="contact-me">
-					
-				</div>--><!-- contact-me -->
-<!--
-				<div id="expro-placeholder"></div>
--->
+				</div>
+
 				<div class="contact-me" id="contact-me">
 					<div class="contact-overlay"></div>
 					<div class="contact-overlay-form">
@@ -155,8 +101,10 @@
 					</div>
 				</div>
 
+				
+
 				<div class="footer">
-					
+					<p>&copy; 2015 Alexander Maru</p>
 				</div>
 			</div><!-- main-content -->
 		</div><!-- foo-main-page -->
@@ -187,7 +135,6 @@
 						<p class="answers"><span class="qa-col">A: </span><a id="pi-song" href="https://www.youtube.com/watch?v=WFYpCWAvZiY" target="_blank">Click this and find out!</a></p>
 					</div>
 					<a href="pages/sitemap.xml" id="sitemap" target="_blank">Sitemap</a>
-					<div class="fb-follow" data-href="https://www.facebook.com/marua7665" data-layout="standard" data-show-faces="true"></div>
 					<div class="twitter-wrapper">
 						<a href="https://twitter.com/assefamaru" class="twitter-follow-button" data-show-count="false">Follow</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -208,7 +155,7 @@
 						</a>
 					</div>
 					<div class="glyph-container">
-						<a class="glyph-item" href="https://github.com/alexandermaru" target="_blank">
+						<a class="glyph-item" href="https://github.com/assefamaru" target="_blank">
 							<i class="icon-circlegithub"></i>
 						</a>
 					</div>
@@ -233,13 +180,13 @@
 						</a>
 					</div>
 					<div class="glyph-container">
-						<a class="glyph-item" href="https://plus.google.com/u/0/+AlexanderMaru/posts" target="_blank">
-							<i class="icon-circlegoogleplus"></i>
+						<a class="glyph-item" href="https://www.quora.com/profile/Alexander-Maru" target="_blank">
+							<i class="icon-quora"></i>
 						</a>
 					</div>
 					<div class="glyph-container">
-						<a class="glyph-item" href="https://www.quora.com/profile/Alexander-Maru" target="_blank">
-							<i class="icon-quora"></i>
+						<a class="glyph-item" href="https://plus.google.com/u/0/+AlexanderMaru/posts" target="_blank">
+							<i class="icon-circlegoogleplus"></i>
 						</a>
 					</div>
 				</div><!-- sidebar-right -->
@@ -266,23 +213,20 @@
 	</script>
 	<script type="text/javascript">
 		(function(){
-
 		    // List your words here:
 		    var words = [
-		        'Explorer.',
 		        'Empiricist.',
-		        'Food lover.',
+		        'Cuber.',
 		        'Adventurer.',
+		        'Lisper.',
 		        'Creative.'
 		        ], i = 0;
-
 		    setInterval(function(){
 		        $('#switch').fadeOut(function(){
 		            $(this).html(words[i=(i+1)%words.length]).fadeIn();
 		        });
 		       // 2 seconds
 		    }, 2000);
-
 		})();
 	</script>
 	<script type="text/javascript">
@@ -317,10 +261,6 @@
 		ga('create', 'UA-69201269-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-
-
-
-
 	<script language="JavaScript">
 	var frmvalidator  = new Validator("contactform");
 	frmvalidator.addValidation("name","req","Please provide your name");
