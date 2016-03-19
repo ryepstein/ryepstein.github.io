@@ -1,28 +1,33 @@
-== README
+## Synopsis
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
 
-Things you may want to cover:
+## Site Tree Map
 
-* Ruby version
+Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
 
-* System dependencies
+## Motivation
 
-* Configuration
+A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
 
-* Database creation
+## Built With
 
-* Database initialization
+* somethingsomething
+* somethingsomethingelse
+* somethingsomethingesomethingelse
 
-* How to run the test suite
+## Deployment
 
-* Services (job queues, cache servers, search engines, etc.)
+Add additional notes about how to deploy this on a live system
 
-* Deployment instructions
+## Contributing
 
-* ...
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
+## Author
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* **Alexander Maru** - [assefamaru](https://github.com/assefamaru)
+
+## License
+
+A short snippet describing the license (MIT, Apache, etc.)
