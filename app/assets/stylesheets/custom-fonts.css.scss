@@ -1,9 +1,17 @@
 @font-face {
-    font-family: 'antipasto';
-    src: font-url('antipasto.otf');
+font-family: 'antipasto';
+src: url(font-path('antipasto.otf'));
+src: url(font-path('antipasto.otf?#iefix')),
+       url(font-path('antipasto.woff')) format('woff'),
+       url(font-path('antipasto.ttf')) format('truetype'),
+       url(font-path('antipasto.svg#antipasto')) format('svg');
 }
 
 @font-face {
-    font-family: 'adequate';
-    src: font-url('adequate.ttf');
+font-family: 'adequate';
+src: url(font-path('adequate.ttf'));
+src: url(font-path('adequate.eot?#iefix')) format('embedded-opentype'),
+       url(font-path('adequate.woff')) format('woff'),
+       url(font-path('adequate.ttf')) format('truetype'),
+       url(font-path('adequate.svg#adequate')) format('svg');
 }
