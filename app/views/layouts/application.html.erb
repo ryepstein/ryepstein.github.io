@@ -47,14 +47,15 @@
 <!-- STYLESHEETS
 ============================================ -->
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <!-- JAVASCRIPT
 ============================================ -->
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <%= csrf_meta_tags %>
 <!-- FONTS
 ============================================ -->
-
+<%= google_webfonts_init({
+		google: ['Raleway', 'Rubik', 'PT Sans', 'Roboto Slab', 'Sofia Pro', 'Cabin', 'Coda', 'Caviar Dreams']
+	}) %>
 <!-- GOOGLE ANALYTICS
 ============================================ -->
 

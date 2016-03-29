@@ -1,0 +1,34 @@
+@font-face {
+    font-family: geomanist;
+    src: url('/assets/fonts/geomanist.otf');
+}
+
+@font-face {
+    font-family: adequate;
+    src: url('/assets/fonts/adequate.ttf');
+}
+
+@font-face {
+    font-family: antipasto;
+    src: url('/assets/fonts/antipasto.otf');
+}
+
+@font-face {
+    font-family: alegraya;
+    src: url('/assets/fonts/alegraya.ttf');
+}
+
+@font-face {
+    font-family: adam;
+    src: url('/assets/fonts/adam.otf');
+}
+
+@font-face {
+    font-family: ac-one;
+    src: url('/assets/fonts/ac-one.otf');
+}
+
+@font-face {
+    font-family: ac-two;
+    src: url('/assets/fonts/ac-two.otf');
+}

@@ -1,2 +1,142 @@
-<h1>RootPages#home</h1>
-<p>Find me in app/views/root_pages/home.html.erb</p>
+<div id="home">
+  <div id="main-page">
+    <div id="main-page-top">
+      <div class="full-video">
+        <video muted autoplay loop id="myvideo" alt="background video">
+          <source src="assets/mars.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="top-overlay"></div>
+      <div class="overlay-text">
+        <div class="ot-navbar" id="ot-navbar"></div>
+        <h1>Alexander <span class="last-name">Maru</span></h1>
+        <h2>Mathematician. Hacker. <span id="switch">Explorer.</span></h2>
+        <div class="arrow-wrapper">
+          <div class="arrow-wrapper-immediate">
+            <a href="#"><div class="arrow bounce"></div></a>
+          </div>
+        </div>
+        <div class="horiz-navbar" id="horiz-navbar">
+          <div id="left-wrapper">
+            <div class="progress">
+              <div class="progress-green"></div>
+              <div class="progress-yellow"></div>
+              <div class="progress-red"></div>
+              <div class="progress-navy"></div>
+            </div>
+            <div class="tab-wrapper">
+              <div class="tab"></div>
+            </div>
+          </div>
+          <ul>
+            <li><a href="/" class="scroll-to-form">Top</a></li>
+            <li><a href="#" class="scroll-to-form"><i class="fa fa-user fa-fw"></i>&nbsp; About</a></li>
+            <li><a href="#" class="scroll-to-form"><i class="fa fa-briefcase fa-fw"></i>&nbsp; Projects</a></li>
+            <li><a href="#" class="scroll-to-form"><i class="fa fa-location-arrow fa-fw"></i>&nbsp; Contact</a></li>
+            <li><a href="#" class="scroll-to-form"><i class="fa fa-link fa-fw"></i>&nbsp; Links</a></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+
+  <!-- sidebar -->
+  <div id="sidebar">
+    <div id="sidebar-wrapper">
+      <div id="about" class="nano">
+            
+        <!-- sidebar main content -->
+        <div id="sidebar-main" class="nano-content">
+              
+        </div>
+            
+        <!-- sidebar right side options/links -->
+        <div id="sidebar-right">
+          <div id="menu-toggle">
+            <a>
+              <span class="icon-bar" id="first-icon-bar"></span>
+              <span class="icon-bar" id="second-icon-bar"></span>
+              <span class="icon-bar" id="third-icon-bar"></span>
+            </a>
+          </div>
+          <a href="/" class="glyph-container-one" title="Home" id="home-icon">
+            <i class="icon-homealt"></i>
+          </a>
+          <a href="/" class="glyph-container-one" title="Resume" id="resume">
+            <i class="fa fa-file-text-o"></i>
+          </a>
+          <a href="/" class="glyph-container-one" title="Blog" id="blog">
+            <i class="icon-blogger-blog"></i>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- make navbar fixed after scroll -->
+<script type="text/javascript">
+  num = $('.horiz-navbar').offset().top;
+  $(window).bind('scroll', function() {
+    if ($(window).scrollTop() > num) {
+      $('.horiz-navbar').addClass('horiz-navbar-fixed');
+    } else {
+      num = $('.horiz-navbar').offset().top;
+      $('.horiz-navbar').removeClass('horiz-navbar-fixed');
+    }
+  });
+</script>
+
+<!-- smooth scrolling within page -->
+<script type="text/javascript">
+  (function() {
+    $(function() {
+      return $('.scroll-to-form').click("on", function(e) {
+        return $(this).smoothScroll({
+          speed: 2000
+        });
+      });
+    });
+
+  }).call(this);
+</script>
+
+<!-- script for sliding sidebar left and right -->
+<script type="text/javascript">
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar").toggleClass("toggled");
+    $("#first-icon-bar").toggleClass("toggled");
+    $("#second-icon-bar").toggleClass("toggled");
+    $("#third-icon-bar").toggleClass("toggled");
+  });
+
+  // In addition,
+  // set 'home' as the active icon on this page
+  $("#home-icon").toggleClass("active");
+</script>
+
+<!-- change text on welcome screen every 2 seconds -->
+<script type="text/javascript">
+  (function(){
+    // List of words:
+    var words = [
+      'Cuber.',
+      'Adventurer.',
+      'Lisper.',
+      'Creative.',
+      'Explorer.'
+    ], i = 0;
+    setInterval(function(){
+      $('#switch').fadeOut(function(){
+        $(this).html(words[i=(i+1)%words.length]).fadeIn();
+      });
+      // 2 seconds
+    }, 2000);
+  })();
+</script>
+
+<!-- enable nano scroller in sidebar -->
+<script type="text/javascript">
+  $(".nano").nanoScroller();
+</script>
