@@ -38,7 +38,7 @@ gem "font-awesome-rails"
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
-  # gem 'sqlite3'
+  gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug', platform: [:ruby_20]
   # Access an IRB console on exception pages or by using <%= console %> in views
@@ -54,13 +54,6 @@ group :test do
 end
 
 group :production do
-  gem 'rails_12factor', '0.0.2'
-end
-
-group :test, :production do
   gem 'pg',             '0.17.1'
-end
-
-group :development do
-  gem 'sqlite3'
+  gem 'rails_12factor', '0.0.2'
 end
