@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'antipasto';
+  src: font-url("/assets/antipasto.eot");
+  src: font-url("/assets/antipasto.eot?#iefix") format("embedded-opentype"), 
+  		font-url("/assets/antipasto.svg#antipasto") format("svg"), 
+  		font-url("/assets/antipasto.woff") format("woff"), 
+  		font-url("/assets/antipasto.ttf") format("truetype"),
+  		font-url("/assets/antipasto.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'adequate';
+  src: font-url("/assets/adequate.eot");
+  src: font-url("/assets/adequate.eot?#iefix") format("embedded-opentype"), 
+  		font-url("/assets/adequate.svg#adequate") format("svg"), 
+  		font-url("/assets/adequate.woff") format("woff"), 
+  		font-url("/assets/adequate.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ORIGINAL FORM OF WHHG CONFIGURATION FOR FONT FAMILY
+@font-face {
+    font-family: 'WebHostingHub-Glyphs';
+    src: url('/assets/webhostinghub-glyphs.eot');
+    src: url('/assets/webhostinghub-glyphs.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webhostinghub-glyphs.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    -moz-font-feature-settings: "calt=0,liga=0";
+}
+*/
+
+@font-face {
+    font-family: 'WebHostingHub-Glyphs';
+    src: font-url('/assets/webhostinghub-glyphs.eot');
+    src: font-url('/assets/webhostinghub-glyphs.eot?#iefix') format('embedded-opentype'),
+         font-url('/assets/webhostinghub-glyphs.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    -moz-font-feature-settings: "calt=0,liga=0";
+}
