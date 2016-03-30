@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "antipasto";
+  src: url(/assets/antipasto.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "adequate";
+  src: url(/assets/adequate.ttf) format("truetype");
+}
