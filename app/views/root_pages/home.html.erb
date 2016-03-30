@@ -56,15 +56,15 @@
               <span class="icon-bar" id="third-icon-bar"></span>
             </a>
           </div>
-          <a href="/" class="glyph-container-one" title="Home" id="home-icon">
+          <%= link_to root_path, class: "glyph-container-one", title: "Home", id: "home-icon" do %>
             <i class="icon-homealt"></i>
-          </a>
-          <a href="/" class="glyph-container-one" title="Resume" id="resume">
+          <% end %>
+          <%= link_to resume_path, class: "glyph-container-one", 'data-no-turbolink' => true, title: "Resume", id: "resume" do %>
             <i class="fa fa-file-text-o"></i>
-          </a>
-          <a href="/" class="glyph-container-one" title="Blog" id="blog">
+          <% end %>
+          <%= link_to blog_path, class: "glyph-container-one", title: "Blog", id: "blog" do %>
             <i class="icon-blogger-blog"></i>
-          </a>
+          <% end %>
         </div>
         
       </div>

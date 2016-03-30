@@ -1,11 +1,12 @@
-<% provide(:title, "Blog") %>
+<% provide(:title, "Resume") %>
 
 <div id="home">
   <div id="main-page">
-  <!-- have page html here -->
-
-
-
+  <!-- custom in page resume viewer -->
+  <div id="resume-view">
+  	
+  </div>
+  <%= pdfjs_viewer pdf_url: "/assets/resume.pdf", style: :full %>
   <!-- sidebar -->
   <div id="sidebar">
     <div id="sidebar-wrapper">
@@ -66,7 +67,7 @@
 
   // In addition,
   // set 'home' as the active icon on this page
-  $("#blog").toggleClass("active");
+  $("#resume").toggleClass("active");
 </script>
 
 <!-- enable nano scroller in sidebar -->

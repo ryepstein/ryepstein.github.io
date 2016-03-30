@@ -201,7 +201,7 @@ body {
 		width: 410px;
 		height: 100%;
 		position: fixed;
-		z-index: 1000;
+		z-index: 10000;
 		left: 0;
 		top: 0;
 		/*border: 2px solid blue;*/
@@ -269,12 +269,7 @@ body {
 				.glyph-container-one:hover {
 					text-decoration: none;
 				}
-				#home-icon {
-					line-height: 80px;
-					font-size: 20px;
-					color: #FF4136;
-				}
-				#home-icon.active {
+				#home-icon.active, #resume.active, #blog.active {
 					line-height: 80px;
 					font-size: 20px;
 					color: #FF4136;
@@ -284,7 +279,7 @@ body {
 						color: #ff0000;
 					}
 				}
-				#resume, #blog {
+				#resume, #blog, #home-icon {
 					font-size: 20px;
 					line-height: 80px;
 					color: #EFEFEF;

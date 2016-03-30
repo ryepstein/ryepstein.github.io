@@ -4,4 +4,7 @@ class RootPagesController < ApplicationController
 
   def blog
   end
+
+  def resume
+  end
 end
