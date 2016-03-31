@@ -42,3 +42,15 @@
     font-style: normal;
     -moz-font-feature-settings: "calt=0,liga=0";
 }
+
+@font-face {
+  font-family: 'bebasnue-bold';
+  src: font-url("BebasNeue-Bold.eot");
+  src: font-url("BebasNeue-Bold.eot?#iefix") format("embedded-opentype"), 
+      font-url("BebasNeue-Bold.svg#BebasNeue-Bold") format("svg"), 
+      font-url("BebasNeue-Bold.woff") format("woff"), 
+      font-url("BebasNeue-Bold.ttf") format("truetype"),
+      font-url("BebasNeue-Bold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
