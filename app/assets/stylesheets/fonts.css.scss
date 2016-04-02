@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'antipasto';
+  src: font-url("antipasto.eot");
+  src: font-url("antipasto.eot?#iefix") format("embedded-opentype"), 
+  		font-url("antipasto.svg#antipasto") format("svg"), 
+  		font-url("antipasto.woff") format("woff"), 
+  		font-url("antipasto.ttf") format("truetype"),
+  		font-url("antipasto.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'adequate';
+  src: font-url("adequate.eot");
+  src: font-url("adequate.eot?#iefix") format("embedded-opentype"), 
+  		font-url("adequate.svg#adequate") format("svg"), 
+  		font-url("adequate.woff") format("woff"), 
+  		font-url("adequate.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'building';
+  src: font-url("building.eot");
+  src: font-url("building.eot?#iefix") format("embedded-opentype"), 
+      font-url("building.svg#building") format("svg"), 
+      font-url("building.woff") format("woff"), 
+      font-url("building.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'tipographica';
+  src: font-url("TypoGraphica.eot");
+  src: font-url("TypoGraphica.eot?#iefix") format("embedded-opentype"), 
+      font-url("TypoGraphica.svg#TypoGraphica") format("svg"), 
+      font-url("TypoGraphica.woff") format("woff"), 
+      font-url("TypoGraphica.otf") format("truetype"),
+      font-url("TypoGraphica.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ORIGINAL FORM OF WHHG CONFIGURATION FOR FONT FAMILY
+@font-face {
+    font-family: 'WebHostingHub-Glyphs';
+    src: url('/assets/webhostinghub-glyphs.eot');
+    src: url('/assets/webhostinghub-glyphs.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webhostinghub-glyphs.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    -moz-font-feature-settings: "calt=0,liga=0";
+}
+*/
+
+@font-face {
+    font-family: 'WebHostingHub-Glyphs';
+    src: font-url('webhostinghub-glyphs.eot');
+    src: font-url('webhostinghub-glyphs.eot?#iefix') format('embedded-opentype'),
+         font-url('webhostinghub-glyphs.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    -moz-font-feature-settings: "calt=0,liga=0";
+}
+
+@font-face {
+  font-family: 'bebasnue-bold';
+  src: font-url("BebasNeue-Bold.eot");
+  src: font-url("BebasNeue-Bold.eot?#iefix") format("embedded-opentype"), 
+      font-url("BebasNeue-Bold.svg#BebasNeue-Bold") format("svg"), 
+      font-url("BebasNeue-Bold.woff") format("woff"), 
+      font-url("BebasNeue-Bold.ttf") format("truetype"),
+      font-url("BebasNeue-Bold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

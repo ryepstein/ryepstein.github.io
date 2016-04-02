@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- META
+============================================ -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><%= full_title(yield(:title)) %></title>
+<meta name="author" content="Alexander Maru">
+<meta name="description" content="UWaterloo - Pure Mathematics | Computer Science. Front/Back-End Web Developer.">
+<!-- FAVICON
+============================================ -->
+<%= favicon_link_tag 'favicons/apple-icon-57x57.png', rel: 'apple-touch-icon' %>
+<%= favicon_link_tag 'favicons/apple-icon-60x60.png', rel: 'apple-touch-icon' %>
+<%= favicon_link_tag 'favicons/apple-icon-72x72.png', rel: 'apple-touch-icon' %>
+<%= favicon_link_tag 'favicons/apple-icon-76x76.png', rel: 'apple-touch-icon' %>
+<%= favicon_link_tag 'favicons/apple-icon-114x114.png', rel: 'apple-touch-icon' %>
+<%= favicon_link_tag 'favicons/apple-icon-120x120.png', rel: 'apple-touch-icon' %>
+<%= favicon_link_tag 'favicons/apple-icon-144x144.png', rel: 'apple-touch-icon' %>
+<%= favicon_link_tag 'favicons/apple-icon-152x152.png', rel: 'apple-touch-icon' %>
+<%= favicon_link_tag 'favicons/apple-icon-180x180.png', rel: 'apple-touch-icon' %>
+<%= favicon_link_tag 'favicons/android-icon-192x192.png', rel: 'icon', type: 'image/png' %>
+<%= favicon_link_tag 'favicons/favicon-32x32.png', rel: 'icon', type: 'image/png' %>
+<%= favicon_link_tag 'favicons/favicon-96x96.png', rel: 'icon', type: 'image/png' %>
+<%= favicon_link_tag 'favicons/favicon-16x16.png', rel: 'icon', type: 'image/png' %>
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!-- SOCIAL DATA
+============================================ -->
+<meta property="og:title" content="Alexander Maru">
+<meta property="og:url" content="http://alexandermaru.com">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Alexander Maru">
+<meta property="og:description" content="UWaterloo - Pure Mathematics | Computer Science. Front/Back-End Web Developer.">
+<meta property="og:image" content="/assets/profile-pic.jpg">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Alexander Maru">
+<meta name="twitter:description" content="UWaterloo - Pure Mathematics | Computer Science. Front/Back-End Web Developer.">
+<meta name="twitter:creator" content="@assefamaru">
+<meta name="twitter:domain" content="http://alexandermaru.com">
+<meta name="twitter:site" content="@assefamaru">
+<meta name="twitter:image" content="/assets/profile-pic.jpg">
+<!-- STYLESHEETS
+============================================ -->
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- JAVASCRIPT
+============================================ -->
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
+<!-- FONTS
+============================================ -->
+<%= google_webfonts_init({
+		google: ['Lora', 'Raleway', 'Roboto Slab']
+	}) %>
+<!-- GOOGLE ANALYTICS
+============================================ -->
+
+<%= render 'layouts/shim' %>
+</head>
+
+<body>
+<%= yield %>
+</body>
+</html>

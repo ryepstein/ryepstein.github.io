@@ -1,0 +1,75 @@
+<% provide(:title, "Blog") %>
+
+<div id="home">
+  <div id="main-page">
+  <!-- have page html here -->
+
+
+
+  <!-- sidebar -->
+  <div id="sidebar">
+    <div id="sidebar-wrapper">
+      <div id="about" class="nano">
+            
+        <!-- sidebar main content -->
+        <div id="sidebar-main" class="nano-content">
+              
+        </div>
+            
+        <!-- sidebar right side options/links -->
+        <div id="sidebar-right">
+          <div id="menu-toggle">
+            <a>
+              <span class="icon-bar" id="first-icon-bar"></span>
+              <span class="icon-bar" id="second-icon-bar"></span>
+              <span class="icon-bar" id="third-icon-bar"></span>
+            </a>
+          </div>
+          <%= link_to root_path, class: "glyph-container-one", title: "Home", id: "home-icon" do %>
+            <i class="icon-homealt"></i>
+          <% end %>
+          <%= link_to resume_path, class: "glyph-container-one", 'data-no-turbolink' => true, title: "Resume", id: "resume" do %>
+            <i class="fa fa-file-text-o"></i>
+          <% end %>
+          <%= link_to blog_path, class: "glyph-container-one", title: "Blog", id: "blog" do %>
+            <i class="icon-blogger-blog"></i>
+          <% end %>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- make navbar fixed after scroll -->
+<script type="text/javascript">
+  num = $('.horiz-navbar').offset().top;
+  $(window).bind('scroll', function() {
+    if ($(window).scrollTop() > num) {
+      $('.horiz-navbar').addClass('horiz-navbar-fixed');
+    } else {
+      num = $('.horiz-navbar').offset().top;
+      $('.horiz-navbar').removeClass('horiz-navbar-fixed');
+    }
+  });
+</script>
+
+<!-- script for sliding sidebar left and right -->
+<script type="text/javascript">
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar").toggleClass("toggled");
+    $("#first-icon-bar").toggleClass("toggled");
+    $("#second-icon-bar").toggleClass("toggled");
+    $("#third-icon-bar").toggleClass("toggled");
+  });
+
+  // In addition,
+  // set 'home' as the active icon on this page
+  $("#blog").toggleClass("active");
+</script>
+
+<!-- enable nano scroller in sidebar -->
+<script type="text/javascript">
+  $(".nano").nanoScroller();
+</script>
