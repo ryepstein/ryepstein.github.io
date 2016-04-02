@@ -30,7 +30,11 @@
           </div>
           <ul>
             <li><a href="/" class="scroll-to-form">Top</a></li>
-            <li><a href="" class="scroll-to-form"><i class="fa fa-user fa-fw"></i>&nbsp; About</a></li>
+            <li>
+              <%= link_to(:anchor => "main-page-about") do %>
+                <i class="fa fa-user fa-fw"></i>&nbsp; About
+              <% end %>
+            </li>
             <li><a href="" class="scroll-to-form"><i class="fa fa-briefcase fa-fw"></i>&nbsp; Projects</a></li>
             <li><a href="" class="scroll-to-form"><i class="fa fa-location-arrow fa-fw"></i>&nbsp; Contact</a></li>
             <li><a href="" class="scroll-to-form"><i class="fa fa-link fa-fw"></i>&nbsp; Links</a></li>
@@ -42,12 +46,13 @@
   <!-- About section -->
   <div id="main-page-about">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4" id="about-image">
         <%= image_tag("profile-pic.jpg", alt: "Profile Picture", id: "profile-pic") %>
       </div>
-      <div class="col-md-8">
-        <h2>A Little Bit About Me</h2>
-        <p>I was born and raised in Ethiopia, have lived in Kenya for a few years, and am currently located in Waterloo, Canada. I attend University of Waterloo, studying Mathematics and Computer Science. I am interested in doing research, as well as working on projects, involving areas such as AI, ML</p>
+      <div class="col-md-8" id="about-text">
+        <h2>About Me</h2>
+        <p>I am an Ethiopian by birth, and have lived in Kenya for five years before relocating to Canada. I am currently situated in Waterloo, Ontario, studying Mathematics and Computer Science at the University of Waterloo. I am interested in doing research and working on projects involving AI, robotics, ML/Data-Mining, and a host of other fields. I do web-development for both front/back-ends on the side.</p>
+        <p>My hobbies include, but not limited to, chess, Rubik's cubes, pi, drawing, football (AKA soccer), martial-arts, cross-country running, and strolling in warm sunny days.</p>
       </div>
     </div>
   </div>

@@ -21,6 +21,29 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'building';
+  src: font-url("building.eot");
+  src: font-url("building.eot?#iefix") format("embedded-opentype"), 
+      font-url("building.svg#building") format("svg"), 
+      font-url("building.woff") format("woff"), 
+      font-url("building.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'tipographica';
+  src: font-url("TypoGraphica.eot");
+  src: font-url("TypoGraphica.eot?#iefix") format("embedded-opentype"), 
+      font-url("TypoGraphica.svg#TypoGraphica") format("svg"), 
+      font-url("TypoGraphica.woff") format("woff"), 
+      font-url("TypoGraphica.otf") format("truetype"),
+      font-url("TypoGraphica.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* ORIGINAL FORM OF WHHG CONFIGURATION FOR FONT FAMILY
 @font-face {
     font-family: 'WebHostingHub-Glyphs';

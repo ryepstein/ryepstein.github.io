@@ -198,47 +198,47 @@ body {
 		}
 		#main-page-about {
 			width: 100%;
-			/*background-color: #fafbfc;*/
-			/*background-color: #ffffff;*/
 			background-color: #FDFDFD;
+			margin: 0;
+			padding: 0;
 			.row {
 				width: 100%;
-				padding: 180px 10px 180px 10px;
-				.col-md-4 {
+				padding: 110px 0 110px 0;
+				margin: 0;
+				#about-image {
 					text-align: center;
-					padding-top: 10px;
+					padding: 0;
 					margin: 0;
+					padding-top: 45px;
 					#profile-pic {
-						border-radius: 150px;
-						width: 250px;
+						border-radius: 120px;
+						width: 100%;
+						max-width: 250px;
 						height: auto;
-						border: 10px solid #50667f;
-						opacity: .5;
-						&:hover {
-							opacity: 1;
-							-webkit-transition: all 0.5s ease;
-						    -moz-transition: all 0.5s ease;
-						    -o-transition: all 0.5s ease;
-						    transition: all 0.5s ease;
-						}
+						border: 10px solid #6a737b;
+
+						-webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+					    filter: url(#drop-shadow);
+					    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+					    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 					}
 				}
-				.col-md-8 {
-					text-align: left;
-					padding: 0px 10px 0 50px;
+				#about-text {
+					text-align: justify;
 					margin: 0;
+					max-width: 700px;
+					padding-top: 30px;
 					h2 {
-						font-family: bebasnue-bold;
-						font-weight: bold;
+						font-family: tipographica;
 						text-transform: uppercase;
-						font-size: 30px;
+						font-size: 33px;
 						font-weight: bold;
 						color: #6a737b;
 					}
 					p {
-						font-family: antipasto;
-						font-size: 20px;
-
+						font-family: "Lora";
+						font-size: 18px;
+						color: #6a737b;
 					}
 				}
 			}
@@ -247,7 +247,7 @@ body {
 			width: 100%;
 			height: 600px;
 			background-color: #ffffff;
-			border-top: 2px solid #333d47;
+			background-color: #50667f;
 		}
 	}
 
