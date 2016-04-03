@@ -6,8 +6,6 @@ Rails.application.routes.draw do
 
   get 'resume'   => 'root_pages#resume'
 
-  mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
