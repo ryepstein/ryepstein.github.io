@@ -35,7 +35,6 @@ gem 'google-webfonts-rails',   '~> 0.0.4'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'font-awesome-rails'
-gem 'pdfjs_viewer-rails'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
