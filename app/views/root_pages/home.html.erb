@@ -1,4 +1,11 @@
 <div id="home">
+  <div id="left-col-column">
+    <div class="first-color colors"></div>
+    <div class="second-color colors"></div>
+    <div class="third-color colors"></div>
+    <div class="fourth-color colors"></div>
+    <div class="fifth-color colors"></div>
+  </div>
   <div id="main-page">
     
     <!-- Top section -->
@@ -8,12 +15,14 @@
       </div>
       <div class="top-overlay"></div>
       <div class="overlay-text">
-        <div class="ot-navbar" id="ot-navbar"></div>
+        <div class="ot-navbar" id="ot-navbar">
+          <a href="" title="Don't even think about it, unless you're as courageous as">Do Not Click Here</a>
+        </div>
         <h1>Alexander <span class="last-name">Maru</span></h1>
-        <h2>Mathematician. Hacker. <span id="switch">Explorer.</span></h2>
+        <h2> Three. Point. One. Four. [ <span id="switch">One</span> ]</h2>
         <div class="arrow-wrapper">
           <div class="arrow-wrapper-immediate">
-            <a href="#"><div class="arrow bounce"></div></a>
+            <a href="#about-me"><div class="arrow bounce"></div></a>
           </div>
         </div>
         <div class="horiz-navbar" id="horiz-navbar">
@@ -29,13 +38,17 @@
             </div>
           </div>
           <ul>
-            <li><a href="/" class="scroll-to-form">Top</a></li>
+            <li><a href="/" class="scroll-to-form">Home</a></li>
             <li>
-              <%= link_to(:anchor => "main-page-about") do %>
+              <%= link_to(:anchor => "about-me") do %>
                 <i class="fa fa-user fa-fw"></i>&nbsp; About
               <% end %>
             </li>
-            <li><a href="" class="scroll-to-form"><i class="fa fa-briefcase fa-fw"></i>&nbsp; Projects</a></li>
+            <li>
+              <%= link_to(:anchor => "projects") do %>
+                <i class="fa fa-briefcase fa-fw"></i>&nbsp; Projects
+              <% end %>
+            </li>
             <li><a href="" class="scroll-to-form"><i class="fa fa-location-arrow fa-fw"></i>&nbsp; Contact</a></li>
             <li><a href="" class="scroll-to-form"><i class="fa fa-link fa-fw"></i>&nbsp; Links</a></li>
           </ul>
@@ -44,21 +57,23 @@
     </div>
 
     <!-- About section -->
-    <div id="main-page-about">
+    <div id="about-me">
       <div class="row">
+      <!--
         <div class="col-md-4" id="about-image">
           <%= image_tag("profile-pic.jpg", alt: "Profile Picture", id: "profile-pic") %>
-        </div>
+        </div>-->
         <div class="col-md-8" id="about-text">
           <h2>About Me</h2>
           <p>I am an Ethiopian by birth, and have lived in Kenya for five years before relocating to Canada. I am currently situated in Waterloo, Ontario, studying Mathematics and Computer Science at the University of Waterloo. I am interested in doing research and working on projects involving AI, robotics, ML/Data-Mining, and a host of other fields. I do web-development for both front/back-ends on the side.</p>
-          <p>My hobbies include, but not limited to, chess, Rubik's cubes, pi, drawing, football (AKA soccer), martial-arts, cross-country running, and strolling in warm sunny days.</p>
+          <p>My hobbies include chess, Rubik's cubes, pi, drawing, football (AKA soccer), martial-arts, cross-country running, and strolling in warm sunny days.</p>
         </div>
+
       </div>
     </div>
 
     <!-- Projects section -->
-    <div id="main-page-projects">
+    <div id="projects">
       
     </div>
 
@@ -88,7 +103,7 @@
               <i class="fa fa-file-text-o"></i>
             <% end %>
             <%= link_to blog_path, class: "glyph-container-one", title: "Blog", id: "blog" do %>
-              <i class="icon-blogger-blog"></i>
+              <i class="fa fa-rss"></i>
             <% end %>
           </div>
           
@@ -145,11 +160,28 @@
   (function(){
     // List of words:
     var words = [
-      'Cuber.',
-      'Adventurer.',
-      'Lisper.',
-      'Creative.',
-      'Explorer.'
+      'One',
+      'Five',
+      'Nine',
+      'Two',
+      'Six',
+      'Five',
+      'Three',
+      'Five',
+      'Eight',
+      'Nine',
+      'Seven',
+      'Nine',
+      'Three',
+      'Two',
+      'Three',
+      'Eight',
+      'Four',
+      'Six',
+      'Two',
+      'Six',
+      'Four',
+      'Repeating'
     ], i = 0;
     setInterval(function(){
       $('#switch').fadeOut(function(){
