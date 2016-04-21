@@ -44,6 +44,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ethon';
+  src: font-url("EthRomainEthon.eot");
+  src: font-url("EthRomainEthon.eot?#iefix") format("embedded-opentype"), 
+      font-url("EthRomainEthon.svg#EthRomainEthon") format("svg"), 
+      font-url("EthRomainEthon.woff") format("woff"), 
+      font-url("EthRomainEthon.otf") format("truetype"),
+      font-url("EthRomainEthon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* ORIGINAL FORM OF WHHG CONFIGURATION FOR FONT FAMILY
 @font-face {
     font-family: 'WebHostingHub-Glyphs';
