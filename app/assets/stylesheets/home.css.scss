@@ -332,9 +332,11 @@ body {
 			width: 100%;
 			padding: 20px;
 			padding-bottom: 100px;
-			background-image: url('poly1.png');
-			/*background-image: url('poly2.jpg');*/
-			/*background-color: #333333;*/
+			/*background-image: url('poly1.png');*/
+			background-image: url('poly2.jpg');
+			/*background-image: url('abstract.jpg');*/
+			/*background-color: #ff5454;*/
+			background-size: cover;
 			.section-title {
 				padding-top: 100px;
 				padding-bottom: 50px;
@@ -371,6 +373,17 @@ body {
 					width: 100%;
 					height: 250px;
 				}
+				.pimg-overlay {
+					position: absolute;
+					z-index: 500;
+					width: 300px;
+					height: 250px;
+					background-color: #001E22;
+					margin-top: -250px;
+					opacity: .7;
+					border-top-left-radius: 10px;
+					border-top-right-radius: 10px;
+				}
 			}
 			.project-caption {
 				text-decoration: none;
@@ -385,7 +398,7 @@ body {
 			}
 			a:hover {
 				text-decoration: none;
-				opacity: .8;
+				opacity: .7;
 				-webkit-transition: all 0.5s ease;
 			    -moz-transition: all 0.5s ease;
 			    -o-transition: all 0.5s ease;
@@ -397,6 +410,14 @@ body {
 			height: 500px;
 			margin: 0;
 			padding: 0;
+			background-color: #ffffff;
+		}
+		#links {
+			width: 100%;
+			height: 500px;
+			margin: 0;
+			padding: 0;
+			background-color: #3b5a6f;
 		}
 	}
 

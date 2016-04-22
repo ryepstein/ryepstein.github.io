@@ -54,7 +54,11 @@
                 <i class="fa fa-location-arrow fa-fw"></i>&nbsp; Contact
               <% end %>
             </li>
-            <li><a href="" class="scroll-to-form"><i class="fa fa-link fa-fw"></i>&nbsp; Links</a></li>
+            <li>
+              <%= link_to(:anchor => "links") do %>
+                <i class="fa fa-link fa-fw"></i>&nbsp; Links
+              <% end %>
+            </li>
           </ul>
         </div>
       </div>
@@ -80,6 +84,7 @@
         <a href="http://alexandermaru.com/" title=""><li class="project-item">
           <div class="project-image">
             <%= image_tag("site-version-2.png") %>
+            <div class="pimg-overlay"></div>
           </div>
           <div class="project-caption">
             <p>Personal Site 2.0</p>
@@ -88,6 +93,7 @@
         <a target="_blank" href="http://kidanemihret.org/" title=""><li class="project-item">
           <div class="project-image">
             <%= image_tag("kidane.png") %>
+            <div class="pimg-overlay"></div>
           </div>
           <div class="project-caption">
             Kidane Mihret Web Application (EOTC)
@@ -96,6 +102,7 @@
         <a target="_blank" href="https://github.com/assefamaru/assefamaru.github.io" title=""><li class="project-item">
           <div class="project-image">
             <%= image_tag("site-version-1.png") %>
+            <div class="pimg-overlay"></div>
           </div>
           <div class="project-caption">
             <p>Personal Site 1.0</p>
@@ -104,25 +111,28 @@
         <a target="_blank" href="http://sparkboulder.com/classes/" title=""><li class="project-item">
           <div class="project-image">
             <%= image_tag("ignition.png") %>
+            <div class="pimg-overlay"></div>
           </div>
           <div class="project-caption">
             <p>Ignition Coding Camp</p>
           </div>
         </li></a>
-        <a href="" title=""><li class="project-item">
+        <a target="_blank" href="https://github.com/bhklab/PharmacoGx" title=""><li class="project-item">
           <div class="project-image">
-            
+            <%= image_tag("rshiny.png") %>
+            <div class="pimg-overlay"></div>
           </div>
           <div class="project-caption">
-            
+            <p>PharmacoGx Web Interface</p>
           </div>
         </li></a>
         <a href="" title=""><li class="project-item">
           <div class="project-image">
-            
+            <%= image_tag("eye.jpg") %>
+            <div class="pimg-overlay"></div>
           </div>
           <div class="project-caption">
-            
+            <p>See More</p>
           </div>
         </li></a>
       </ul>
@@ -130,6 +140,11 @@
 
     <!-- contact section -->
     <div id="contact">
+      
+    </div>
+
+    <!-- links section -->
+    <div id="links">
       
     </div>
 
