@@ -286,7 +286,6 @@ body {
 		#about-me {
 			width: 100%;
 			background-color: #FFFFFE;
-			/*background-image: url('subtlepatterns/symphony.png');*/
 			margin: 0;
 			padding: 100px 0 100px 0;
 			#about-me-container {
@@ -331,8 +330,9 @@ body {
 		}
 		#projects {
 			width: 100%;
-			border-top: 3px solid black;
 			padding: 20px;
+			padding-bottom: 100px;
+			background-image: url('symphony.png');
 			.section-title {
 				padding-top: 50px;
 				padding-bottom: 50px;
@@ -348,12 +348,16 @@ body {
 			  display: flex;
 			  -webkit-flex-flow: row wrap;
 			  justify-content: space-around;
+			  max-width: 1000px;
+			  margin: auto;
 			}
 			.flex-item {
 				width: 300px;
-				height: 400px;
-				margin-top: 10px;
-				background-color: tomato;
+				height: 300px;
+				margin-top: 30px;
+				background-color: #ffffff;
+				border: 3px solid #6a737b;
+				border-radius: 10px;
 			}
 		}
 	}
