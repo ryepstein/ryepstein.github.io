@@ -280,7 +280,6 @@ body {
 			font-family: "ethon";
 			font-weight: bold;
 			text-transform: uppercase;
-			color: grey;
 			text-align: center;
 		}
 		#about-me {
@@ -307,6 +306,7 @@ body {
 					/*line-height: 150px;*/
 					padding-top: 30px;
 					padding-bottom: 20px;
+					color: #777777;
 				}
 				#about-me-text {
 					text-align: left;
@@ -332,33 +332,71 @@ body {
 			width: 100%;
 			padding: 20px;
 			padding-bottom: 100px;
-			background-image: url('symphony.png');
+			background-image: url('poly1.png');
+			/*background-image: url('poly2.jpg');*/
+			/*background-color: #333333;*/
 			.section-title {
-				padding-top: 50px;
+				padding-top: 100px;
 				padding-bottom: 50px;
+				color: #ffffff;
+				font-weight: bold;
 			}
-			.flex-container {
-			  padding: 0;
-			  margin: 0;
-			  list-style: none;
-			  display: -webkit-box;
-			  display: -moz-box;
-			  display: -ms-flexbox;
-			  display: -webkit-flex;
-			  display: flex;
-			  -webkit-flex-flow: row wrap;
-			  justify-content: space-around;
-			  max-width: 1000px;
-			  margin: auto;
+			.projects-container {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -moz-box;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-flow: row wrap;
+				justify-content: space-around;
+				max-width: 1000px;
+				margin: auto;
 			}
-			.flex-item {
+			.project-item {
 				width: 300px;
 				height: 300px;
 				margin-top: 30px;
 				background-color: #ffffff;
-				border: 3px solid #6a737b;
+				/*border: 3px solid #6a737b;*/
 				border-radius: 10px;
+				overflow: hidden;
 			}
+			.project-image {
+				width: 100%;
+				overflow: hidden;
+				img {
+					width: 100%;
+					height: 250px;
+				}
+			}
+			.project-caption {
+				text-decoration: none;
+				text-align: center;
+				color: #777777;
+				padding-top: 10px;
+				font-family: "Alegreya Sans";
+				font-weight: bold;
+				p:hover {
+					text-decoration: none;
+				}
+			}
+			a:hover {
+				text-decoration: none;
+				opacity: .8;
+				-webkit-transition: all 0.5s ease;
+			    -moz-transition: all 0.5s ease;
+			    -o-transition: all 0.5s ease;
+			    transition: all 0.5s ease;
+			}
+		}
+		#contact {
+			width: 100%;
+			height: 500px;
+			margin: 0;
+			padding: 0;
 		}
 	}
 

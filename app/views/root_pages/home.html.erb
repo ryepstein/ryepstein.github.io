@@ -38,7 +38,7 @@
             </div>
           </div>
           <ul>
-            <li><a href="/" class="scroll-to-form">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li>
               <%= link_to(:anchor => "about-me") do %>
                 <i class="fa fa-user fa-fw"></i>&nbsp; About
@@ -49,7 +49,11 @@
                 <i class="fa fa-briefcase fa-fw"></i>&nbsp; Projects
               <% end %>
             </li>
-            <li><a href="" class="scroll-to-form"><i class="fa fa-location-arrow fa-fw"></i>&nbsp; Contact</a></li>
+            <li>
+              <%= link_to(:anchor => "contact") do %>
+                <i class="fa fa-location-arrow fa-fw"></i>&nbsp; Contact
+              <% end %>
+            </li>
             <li><a href="" class="scroll-to-form"><i class="fa fa-link fa-fw"></i>&nbsp; Links</a></li>
           </ul>
         </div>
@@ -72,14 +76,61 @@
     <!-- projects section -->
     <div id="projects">
       <div class="section-title">My Projects</div>
-      <ul class="flex-container">
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
+      <ul class="projects-container">
+        <a href="http://alexandermaru.com/" title=""><li class="project-item">
+          <div class="project-image">
+            <%= image_tag("site-version-2.png") %>
+          </div>
+          <div class="project-caption">
+            <p>Personal Site 2.0</p>
+          </div>
+        </li></a>
+        <a target="_blank" href="http://kidanemihret.org/" title=""><li class="project-item">
+          <div class="project-image">
+            <%= image_tag("kidane.png") %>
+          </div>
+          <div class="project-caption">
+            Kidane Mihret Web Application (EOTC)
+          </div>
+        </li></a>
+        <a target="_blank" href="https://github.com/assefamaru/assefamaru.github.io" title=""><li class="project-item">
+          <div class="project-image">
+            <%= image_tag("site-version-1.png") %>
+          </div>
+          <div class="project-caption">
+            <p>Personal Site 1.0</p>
+          </div>
+        </li></a>
+        <a target="_blank" href="http://sparkboulder.com/classes/" title=""><li class="project-item">
+          <div class="project-image">
+            <%= image_tag("ignition.png") %>
+          </div>
+          <div class="project-caption">
+            <p>Ignition Coding Camp</p>
+          </div>
+        </li></a>
+        <a href="" title=""><li class="project-item">
+          <div class="project-image">
+            
+          </div>
+          <div class="project-caption">
+            
+          </div>
+        </li></a>
+        <a href="" title=""><li class="project-item">
+          <div class="project-image">
+            
+          </div>
+          <div class="project-caption">
+            
+          </div>
+        </li></a>
       </ul>
+    </div>
+
+    <!-- contact section -->
+    <div id="contact">
+      
     </div>
 
     <!-- sidebar -->
