@@ -56,6 +56,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'alfaslab';
+  src: font-url("AlfaSlabOne-Regular.eot");
+  src: font-url("AlfaSlabOne-Regular.eot?#iefix") format("embedded-opentype"), 
+      font-url("AlfaSlabOne-Regular.svg#AlfaSlabOne-Regular") format("svg"), 
+      font-url("AlfaSlabOne-Regular.woff") format("woff"), 
+      font-url("AlfaSlabOne-Regular.otf") format("truetype"),
+      font-url("AlfaSlabOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* ORIGINAL FORM OF WHHG CONFIGURATION FOR FONT FAMILY
 @font-face {
     font-family: 'WebHostingHub-Glyphs';
