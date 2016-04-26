@@ -126,7 +126,7 @@
             <p>PharmacoGx Web Interface</p>
           </div>
         </li></a>
-        <a target="_blank" href="http://alexandermaru.herokuapp.com/all-projects/" title="Coming soon!"><li class="project-item">
+        <a target="_blank" href="http://alexandermaru.herokuapp.com/all-projects/" title=""><li class="project-item">
           <div id="see-more-box">
             <%= image_tag("app-imgs.jpg") %>
           </div>
@@ -139,7 +139,7 @@
 
     <!-- contact section -->
     <div id="contact">
-      <div class="section-title">Contact</div>
+      
     </div>
 
     <!-- links section -->
@@ -200,20 +200,6 @@
   });
 </script>
 
-<!-- smooth scrolling within page -->
-<script type="text/javascript">
-  (function() {
-    $(function() {
-      return $('.scroll-to-form').click("on", function(e) {
-        return $(this).smoothScroll({
-          speed: 2000
-        });
-      });
-    });
-
-  }).call(this);
-</script>
-
 <!-- script for sliding sidebar left and right -->
 <script type="text/javascript">
   $("#menu-toggle").click(function(e) {
@@ -234,28 +220,9 @@
   (function(){
     // List of words:
     var words = [
-      'One',
-      'Five',
-      'Nine',
-      'Two',
-      'Six',
-      'Five',
-      'Three',
-      'Five',
-      'Eight',
-      'Nine',
-      'Seven',
-      'Nine',
-      'Three',
-      'Two',
-      'Three',
-      'Eight',
-      'Four',
-      'Six',
-      'Two',
-      'Six',
-      'Four',
-      'Repeating'
+      'One', 'Five', 'Nine', 'Two', 'Six', 'Five', 'Three', 'Five', 'Eight',
+      'Nine', 'Seven', 'Nine', 'Three', 'Two', 'Three', 'Eight', 'Four',
+      'Six', 'Two', 'Six', 'Four', 'Repeating'
     ], i = 0;
     setInterval(function(){
       $('#switch').fadeOut(function(){
