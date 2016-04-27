@@ -280,6 +280,7 @@ body {
 			text-align: center;
 			/*font-family: alfaslab;*/
 			font-family: "Roboto Slab";
+			color: #858E98;
 		}
 		#about-me {
 			width: 100%;
@@ -339,8 +340,8 @@ body {
 			width: 100%;
 			padding: 20px;
 			padding-bottom: 100px;
-			background-color: #F5F6F6;
-			/*background-color: #FBFBFB;*/
+			/*background-color: #F5F6F6;*/
+			background-color: #E5E5E5;
 			/*background-color: #FCF9F4;*/
 
 			background-size: cover;
@@ -455,15 +456,88 @@ body {
 		}
 		#contact {
 			width: 100%;
-			height: 700px;
 			margin: 0;
-			padding: 0;
+			padding: 0 0 100px 0;
 			overflow: hidden;
 			.section-title {
-				padding-top: 50px;
+				padding-top: 100px;
 				padding-bottom: 50px;
-				color: #ffffff;
+				color: #858E98;
 				font-weight: bold;
+			}
+			label {
+				display: none;
+			}
+			#name-email-container {
+				width: 100%;
+				max-width: 1000px;
+				margin: 0 auto 0 auto;
+				padding: 0 !important;
+			}
+			::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+			    color:    #6B6B6B;
+			    font-weight: bold;
+			}
+			:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			   color:    #6B6B6B;
+			   opacity:  1;
+			   font-weight: bold;
+			}
+			::-moz-placeholder { /* Mozilla Firefox 19+ */
+			   color:    #6B6B6B;
+			   opacity:  1;
+			   font-weight: bold;
+			}
+			:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			   color:    #6B6B6B;
+			   font-weight: bold;
+			}
+			input:focus, textarea:focus {
+			    outline:none !important;
+			}
+			.contact_name input, .contact_email input {
+				width: 100%;
+				margin: 10px 0 0 0;
+				padding-left: 10px;
+				padding-right: 10px;
+				height: 50px;
+				line-height: 50px;
+				font-family: "Alegreya Sans";
+				background-color: #E5E5E5;
+				border: 0px;
+				color: #000000;
+			}
+			.contact_name {
+				input {
+					
+				}
+			}
+			.contact_email {
+				input {
+					
+				}
+			}
+			.message-container {
+				width: 100%;
+				margin: 0;
+				padding: 0 15px 0 15px;
+			}
+			.contact_message {
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				textarea {
+					width: 100%;
+					height: 150px;
+					max-width: 970px;
+					margin: 10px auto 10px auto;
+					padding: 10px;
+					font-family: "Alegreya Sans";
+					background-color: #E5E5E5;
+					border: 0px;
+					color: #000000;
+				}
+				
 			}
 		}
 		#links {
@@ -473,23 +547,24 @@ body {
 			margin: 0;
 			padding: 0;
 			position: relative;
-			background-color: #66787A;
+			background-color: #000000;
 			img {
-				width: 100%;
+				width: auto;
 				height: auto;
-				margin: 0;
+				min-width: 100%;
+				min-height: 100%;
 				position: absolute;
-				z-index: 100;
+				z-index: 130;
 			}
-			#links-overlay {
+			.links-overlay {
 				width: 100%;
 				height: 100%;
 				position: absolute;
 				z-index: 150;
 				background-color: #001E22;
-				opacity: .8;
+				opacity: .6;
 			}
-			#links-overlay-text {
+			.links-overlay-text {
 				width: 100%;
 				height: 100%;
 				position: absolute;

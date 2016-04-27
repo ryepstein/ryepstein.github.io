@@ -139,16 +139,38 @@
 
     <!-- contact section -->
     <div id="contact">
-      
+      <div class="section-title">Contact Me</div>
+      <div align="center">
+        <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+          <div id="name-email-container" class="row">
+            <div class="col-md-6">
+              <%= f.input :name, placeholder: 'Name', :required => true %>
+            </div>
+            <div class="col-md-6">
+              <%= f.input :email, placeholder: 'Email', :required => true %>
+            </div>
+          </div>
+          <div class="message-container">
+            <%= f.input :message, placeholder: 'Message', :as => :text, :required => true %>
+          </div>
+          <div class= "hidden">
+            <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+          </div>
+          <div>
+            </br>
+            <%= f.button :submit, 'Send message', :class=> "btn btn-danger" %>
+          </div>
+        <% end %>
+      </div>
     </div>
 
     <!-- links section -->
-    <div id="links"><!--
-      <%= image_tag("space.jpg") %>
-      <div id="links-overlay"></div>
-      <div id="links-overlay-text">
+    <div id="links">
+      <%= image_tag("geometry3.png") %>
+      <div class="links-overlay"></div>
+      <div class="links-overlay-text">
         
-      </div>-->
+      </div>
     </div>
 
     <!-- sidebar -->
