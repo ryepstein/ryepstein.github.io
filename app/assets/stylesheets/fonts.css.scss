@@ -68,6 +68,30 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'moonlight';
+  src: font-url("MoonLight.eot");
+  src: font-url("MoonLight.eot?#iefix") format("embedded-opentype"), 
+      font-url("MoonLight.svg#MoonLight") format("svg"), 
+      font-url("MoonLight.woff") format("woff"), 
+      font-url("MoonLight.otf") format("truetype"),
+      font-url("MoonLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'moonbold';
+  src: font-url("MoonBold.eot");
+  src: font-url("MoonBold.eot?#iefix") format("embedded-opentype"), 
+      font-url("MoonBold.svg#MoonBold") format("svg"), 
+      font-url("MoonBold.woff") format("woff"), 
+      font-url("MoonBold.otf") format("truetype"),
+      font-url("MoonBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* ORIGINAL FORM OF WHHG CONFIGURATION FOR FONT FAMILY
 @font-face {
     font-family: 'WebHostingHub-Glyphs';

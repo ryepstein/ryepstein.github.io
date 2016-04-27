@@ -338,120 +338,34 @@ body {
 		}
 		#projects {
 			width: 100%;
-			padding: 20px;
-			padding-bottom: 100px;
-			/*background-color: #F5F6F6;*/
-			background-color: #E5E5E5;
-			/*background-color: #FCF9F4;*/
-
+			padding: 0;
+			position: relative;
+			/*background-color: #FF655C;*/
+			/*background-color: #E5E5E5;*/
+			background-color: #FF746C;
 			background-size: cover;
-			.section-title {
-				padding-top: 100px;
-				padding-bottom: 50px;
-				/*color: #777777;*/
-				color: #858E98;
-				font-weight: bold;
+			overflow: hidden;
+			min-height: 800px;
+			img {
+				position: absolute;
+				z-index: 110;
+				width: auto;
+				height: auto;
+				min-width: 100%;
+				min-height: 100%;
 			}
-			.projects-container {
-				padding: 0;
-				margin: 0;
-				list-style: none;
-				display: -webkit-box;
-				display: -ms-flexbox;
-				display: -moz-box;
-				display: -webkit-flex;
-				display: flex;
-				-webkit-flex-flow: row wrap;
-				justify-content: space-around;
-				max-width: 1000px;
-				margin: auto;
-			}
-			.project-item {
-				width: 300px;
-				height: 300px;
-				margin-top: 30px;
-				background-color: #ffffff;
-				border-radius: 10px;
-				overflow: hidden;
-				/*-webkit-box-shadow: 2px 5px 58px -4px rgba(171,171,171,1);
-				-moz-box-shadow: 2px 5px 58px -4px rgba(171,171,171,1);
-				box-shadow: 2px 5px 58px -4px rgba(171,171,171,1);*/
-			}
-			.project-image {
-				width: 100%;
-				overflow: hidden;
-				img {
-					width: 100%;
-					height: 250px;
-				}
-				.pimg-overlay {
-					position: absolute;
-					z-index: 100;
-					width: 300px;
-					height: 250px;
-					background-color: #001E22;
-					margin-top: -250px;
-					opacity: .7;
-					border-top-left-radius: 10px;
-					border-top-right-radius: 10px;
-				}
-			}
-			.project-caption {
-				text-decoration: none;
-				text-align: center;
-				color: #777777;
-				padding-top: 10px;
-				font-family: "Alegreya Sans";
-				font-weight: bold;
-				p:hover {
-					text-decoration: none;
-				}
-			}
-			a:hover {
-				text-decoration: none;
-				opacity: .7;
-				-webkit-transition: all 0.5s ease;
-			    -moz-transition: all 0.5s ease;
-			    -o-transition: all 0.5s ease;
-			    transition: all 0.5s ease;
-			}
-			#see-more-box {
+			.projects-overlay {
+				position: absolute;
+				z-index: 120;
 				width: 100%;
 				height: 100%;
-				img {
-					width: auto;
-					height: 100%;
-				}
+				background-color: #000000;
+				opacity: .6;
 			}
-			#see-more-caption {
-				text-decoration: none;
+			.projects-overlay-text {
 				position: absolute;
-				z-index: 100;
-				width: 300px;
-				height: 300px;
-				background-color: #001E22;
-				margin-top: -300px;
-				border-radius: 10px;
-				opacity: .7;
-				text-align: center;
-				line-height: 300px;
-				font-weight: bold;
-				color: grey;
-				font-size: 25px;
-				font-family: antipasto;
-				-webkit-transition: all 0.5s ease;
-			    -moz-transition: all 0.5s ease;
-			    -o-transition: all 0.5s ease;
-			    transition: all 0.5s ease;
-				&:hover {
-					text-decoration: none;
-					color: #ffffff;
-					font-size: 30px;
-					-webkit-transition: all 0.5s ease;
-				    -moz-transition: all 0.5s ease;
-				    -o-transition: all 0.5s ease;
-				    transition: all 0.5s ease;
-				}
+				z-index: 130;
+				width: 100%;
 			}
 		}
 		#contact {
@@ -505,17 +419,7 @@ body {
 				font-family: "Alegreya Sans";
 				background-color: #E5E5E5;
 				border: 0px;
-				color: #000000;
-			}
-			.contact_name {
-				input {
-					
-				}
-			}
-			.contact_email {
-				input {
-					
-				}
+				color: #4A4A4A;
 			}
 			.message-container {
 				width: 100%;
@@ -542,12 +446,12 @@ body {
 		}
 		#links {
 			width: 100%;
-			height: 400px;
+			height: 100px;
 			overflow: hidden;
 			margin: 0;
 			padding: 0;
 			position: relative;
-			background-color: #000000;
+			background-color: #FF746C;
 			img {
 				width: auto;
 				height: auto;
