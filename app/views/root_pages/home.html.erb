@@ -11,6 +11,7 @@
     <!-- Top section -->
     <div id="main-page-top">
       <div class="full-video">
+        <%= video_tag "mars.m4v", :autoplay => true, :loop => true, :alt => "background video", :id => "myvideo" %>
         <%= video_tag "mars.mp4", :autoplay => true, :loop => true, :alt => "background video", :id => "myvideo" %>
       </div>
       <div class="top-overlay"></div>
@@ -79,12 +80,62 @@
 
     <!-- projects section -->
     <div id="projects">
-      <%= image_tag("bookshelf1.jpg") %>
-      <div class="projects-overlay"></div>
-      <div class="projects-overlay-text">
-
-      </div>
-      
+      <div class="section-title">My Projects</div>
+        <ul class="projects-container">
+          <a target="_blank" href="http://alexandermaru.com/" title=""><li class="project-item">
+            <div class="project-image">
+              <%= image_tag("site-version-2.png") %>
+              <div class="pimg-overlay"></div>
+            </div>
+            <div class="project-caption">
+              <p>Personal Site 2.0</p>
+            </div>
+          </li></a>
+          <a target="_blank" href="http://kidanemihret.org/" title=""><li class="project-item">
+            <div class="project-image">
+              <%= image_tag("kidane.png") %>
+              <div class="pimg-overlay"></div>
+            </div>
+            <div class="project-caption">
+              Kidane Mihret Web Application (EOTC)
+            </div>
+          </li></a>
+          <a target="_blank" href="https://github.com/assefamaru/assefamaru.github.io" title=""><li class="project-item">
+            <div class="project-image">
+              <%= image_tag("site-version-1.png") %>
+              <div class="pimg-overlay"></div>
+            </div>
+            <div class="project-caption">
+              <p>Personal Site 1.0</p>
+            </div>
+          </li></a>
+          <a target="_blank" href="http://sparkboulder.com/classes/" title=""><li class="project-item">
+            <div class="project-image">
+              <%= image_tag("ignition.png") %>
+              <div class="pimg-overlay"></div>
+            </div>
+            <div class="project-caption">
+              <p>Ignition Coding Camp</p>
+            </div>
+          </li></a>
+          <a target="_blank" href="https://github.com/bhklab/PharmacoGx" title=""><li class="project-item">
+            <div class="project-image">
+              <%= image_tag("rshiny.png") %>
+              <div class="pimg-overlay"></div>
+            </div>
+            <div class="project-caption">
+              <p>PharmacoGx Web Interface</p>
+            </div>
+          </li></a>
+          <a target="_blank" href="http://alexandermaru.herokuapp.com/all-projects/" title=""><li class="project-item">
+            <div id="see-more-box">
+              <%= image_tag("app-imgs.jpg") %>
+            </div>
+            <div id="see-more-caption">
+              <p>See More</p>
+            </div>
+          </li></a>
+        </ul>
     </div>
 
     <!-- contact section -->
