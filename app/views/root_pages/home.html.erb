@@ -73,13 +73,9 @@
           <p><span class="space-tab"></span>I was born and raised in <a target="_blank" href="https://www.wikiwand.com/en/Addis_Ababa" title="Addis Ababa, Ethiopia">Addis Ababa, Ethiopia</a>, in a town called <a target="_blank" href="https://www.wikiwand.com/en/Kolfe_Keranio" title="">Kolfe Keranio</a>. When I turned eleven, my family and I moved to <a target="_blank" href="https://www.wikiwand.com/en/Githurai" title="Githurai, Kenya">Githurai, Kenya</a> as refugees, and lived there for five years. We relocated to Canada in 2011, where I currently reside. I entered <a target="_blank" href="https://www.wikiwand.com/en/University_of_Waterloo" title="University of Waterloo">University of Waterloo</a> in 2014, studying Mathematics and Computer Science. I started learning to program when I started uni, and web-development in 2015. I am now a full-time student, and part-time web-developer, with a wide range of interests including doing research and working on projects involving AI, robotics, ML/Data-Mining, and a host of other fields.</p>
           <p><span class="space-tab"></span>Some of my hobbies include chess, Rubik's cubes, pi, drawing, football (AKA soccer), martial-arts, cross-country running, and taking strolls in warm sunny days. I am an <a target="_blank" href="https://www.wikiwand.com/en/Ethiopian_Orthodox_Tewahedo_Church" title="EOTC">Ethiopian Orthodox Tewahedo Christian</a>. My favourite food is <a target="_blank" href="https://www.wikiwand.com/en/Injera" title="Most delicious food in the world!">injera</a>, and my favourite song is <a target="_blank" href="https://www.youtube.com/watch?v=1UC6ZZGKR3c" title="I'm not going to rickroll you, trust me.">this</a>.</p>
           <p><span class="space-tab"></span>Fun fact: According to my country's <a target="_blank" href="https://www.wikiwand.com/en/Ethiopian_calendar" title="">Ethiopian Calendar</a>, I was born on July 19, 1987, and the current year is 2008. Using the popular <a target="_blank" href="https://www.wikiwand.com/en/Gregorian_calendar" title="">Gregorian Calendar</a>, however, July 26, 1995 is my birthday, and 2016 is the current year.</p>
-          <p><span class="space-tab"></span>The following map indicates all the places I haven't been to, but want to.</p>
         </div>
       </div>
     </div>
-    
-    <!-- Embedded map container -->
-    <div id="map"></div>
 
     <!-- projects section -->
     <div id="projects">
@@ -87,56 +83,56 @@
         <ul class="projects-container">
           <a target="_blank" href="http://alexandermaru.com/" title=""><li class="project-item">
             <div class="project-image">
-              <!--<%= image_tag("site-version-2.png") %>
-              <div class="pimg-overlay"></div>-->
+              <%= image_tag("site-version-2.png") %>
+              <div class="pimg-overlay"></div>
             </div>
             <div class="project-caption">
-              <!--<p>Personal Site 2.0</p>-->
+              <p>Personal Site 2.0</p>
             </div>
           </li></a>
           <a target="_blank" href="http://kidanemihret.org/" title=""><li class="project-item">
             <div class="project-image">
-              <!--<%= image_tag("kidane.png") %>
-              <div class="pimg-overlay"></div>-->
+              <%= image_tag("kidane.png") %>
+              <div class="pimg-overlay"></div>
             </div>
             <div class="project-caption">
-              <!--Kidane Mihret Web Application (EOTC)-->
+              Kidane Mihret Web Application (EOTC)
             </div>
           </li></a>
           <a target="_blank" href="https://github.com/assefamaru/assefamaru.github.io" title=""><li class="project-item">
             <div class="project-image">
-              <!--<%= image_tag("site-version-1.png") %>
-              <div class="pimg-overlay"></div>-->
+              <%= image_tag("site-version-1.png") %>
+              <div class="pimg-overlay"></div>
             </div>
             <div class="project-caption">
-              <!--<p>Personal Site 1.0</p>-->
+              <p>Personal Site 1.0</p>
             </div>
           </li></a>
           <a target="_blank" href="http://sparkboulder.com/classes/" title=""><li class="project-item">
             <div class="project-image">
-              <!--<%= image_tag("ignition.png") %>
-              <div class="pimg-overlay"></div>-->
+              <%= image_tag("ignition.png") %>
+              <div class="pimg-overlay"></div>
             </div>
             <div class="project-caption">
-              <!--<p>Ignition Coding Camp</p>-->
+              <p>Ignition Coding Camp</p>
             </div>
           </li></a>
           <a target="_blank" href="https://github.com/bhklab/PharmacoGx" title=""><li class="project-item">
             <div class="project-image">
-              <!--<%= image_tag("rshiny.png") %>
-              <div class="pimg-overlay"></div>-->
+              <%= image_tag("rshiny.png") %>
+              <div class="pimg-overlay"></div>
             </div>
             <div class="project-caption">
-             <!-- <p>PharmacoGx Web Interface</p>-->
+             <p>PharmacoGx Web Interface</p>
             </div>
           </li></a>
           <a target="_blank" href="http://alexandermaru.herokuapp.com/all-projects/" title=""><li class="project-item">
             <div id="see-more-box">
-              <!--<%= image_tag("app-imgs.jpg") %>-->
+              <%= image_tag("app-imgs.jpg") %>
             </div>
-            <!--<div id="see-more-caption">
+            <div id="see-more-caption">
               <p>See More</p>
-            </div>-->
+            </div>
           </li></a>
         </ul>
     </div>
@@ -162,7 +158,10 @@
           </div>
           <div>
             </br>
-            <%= f.button :submit, 'Shoot Message!', :class=> "btn btn-success" %>
+            <div class="custom-button-wrapper">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+              <%= f.button :submit, 'Shoot Message!', :class=> "btn" %>
+            </div>
           </div>
         <% end %>
       </div>
@@ -261,24 +260,4 @@
 <!-- enable nano scroller in sidebar -->
 <script type="text/javascript">
   $(".nano").nanoScroller();
-</script>
-
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script type="text/javascript">
-  google.maps.event.addDomListener(window, 'load', init);
-  function init() {
-    var mapOptions = {
-      scrollwheel: false,
-      zoom: 3,
-      center: new google.maps.LatLng(43.448106, -80.489013),
-      styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
-    }
-    var mapElement = document.getElementById('map');
-    var map = new google.maps.Map(mapElement, mapOptions);
-    var marker = new google.maps.Marker ({
-      position: new google.maps.LatLng(43.448106, -80.489013),
-      map: map,
-      title: 'Home!'
-    })
-  }
 </script>

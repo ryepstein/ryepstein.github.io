@@ -344,7 +344,8 @@ body {
 			padding: 0 0 100px 0;
 			position: relative;
 
-			background-color: #ff5950;
+			/*background-color: #ff5950;*/
+			background-color: #F8F8F8;
 
 			background-size: cover;
 			overflow: hidden;
@@ -356,7 +357,7 @@ body {
 		      .section-title {
 		        padding-top: 100px;
 		        padding-bottom: 50px;
-		        color: #ffffff;
+		        color: #ff5950;
 		        /*color: #858E98;*/
 		        font-weight: bold;
 		      }
@@ -381,7 +382,6 @@ body {
 		        background-color: #ffffff;
 		        border-radius: 10px;
 		        overflow: hidden;
-		        border: 7px solid #1E434F;
 		        /*-webkit-box-shadow: 2px 5px 58px -4px rgba(171,171,171,1);
 		        -moz-box-shadow: 2px 5px 58px -4px rgba(171,171,171,1);
 		        box-shadow: 2px 5px 58px -4px rgba(171,171,171,1);*/
@@ -466,12 +466,14 @@ body {
 		#contact {
 			width: 100%;
 			margin: 0;
-			padding: 0 0 100px 0;
+			padding: 100px 0 150px 0;
 			overflow: hidden;
+			background-color: #ff5950;
+			margin-bottom: 10px;
 			.section-title {
-				padding-top: 100px;
 				padding-bottom: 50px;
-				color: #ff5950;
+				/*color: #ff5950;*/
+				color: #ffffff;
 				font-weight: bold;
 			}
 			label {
@@ -536,7 +538,28 @@ body {
 					border: 0px;
 					color: #000000;
 				}
-				
+			}
+			.custom-button-wrapper {
+				background-color: #ffffff;
+				width: 220px;
+				overflow: hidden;
+				border-radius: 10px;
+				border: 3px solid #4A4A4A;
+			}
+			.button {
+				width: 130px;
+				height: 40px;
+				font-family: "Alegreya Sans";
+				color: #4A4A4A;
+				font-weight: bold;
+				background-color: #ffffff;
+				border-radius: 0px !important;
+				border-left: 3px solid #4A4A4A;
+			}
+			.fa-paper-plane {
+				font-size: 25px;
+				color: #4A4A4A;
+				padding-right: 17px;
 			}
 		}
 		#links {
@@ -547,7 +570,7 @@ body {
 			padding: 0;
 			position: relative;
 			/*background-color: #FF746C;*/
-			background-color: #000000;
+			background-color: #001E22;
 			img {
 				width: auto;
 				height: auto;
