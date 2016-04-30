@@ -38,26 +38,26 @@
             </div>
           </div>
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="#main-page-top">Home</a></li>
             <li>
-              <%= link_to(:anchor => "about-me") do %>
+              <a href="#about-me" title="">
                 <i class="fa fa-user fa-fw"></i>&nbsp; About
-              <% end %>
+              </a>
             </li>
             <li>
-              <%= link_to(:anchor => "projects") do %>
+              <a href="#projects" title="">
                 <i class="fa fa-briefcase fa-fw"></i>&nbsp; Projects
-              <% end %>
+              </a>
             </li>
             <li>
-              <%= link_to(:anchor => "contact") do %>
+              <a href="#contact" title="">
                 <i class="fa fa-location-arrow fa-fw"></i>&nbsp; Contact
-              <% end %>
+              </a>
             </li>
             <li>
-              <%= link_to(:anchor => "links") do %>
+              <a href="#links" title="">
                 <i class="fa fa-link fa-fw"></i>&nbsp; Links
-              <% end %>
+              </a>
             </li>
           </ul>
         </div>
@@ -289,4 +289,27 @@
 <!-- enable nano scroller in sidebar -->
 <script type="text/javascript">
   $(".nano").nanoScroller();
+</script>
+
+<script type="text/javascript">
+  // handle links with @href started with '#' only
+  $(document).on('click', 'a[href^="#"]', function(e) {
+      // target element id
+      var id = $(this).attr('href');
+
+      // target element
+      var $id = $(id);
+      if ($id.length === 0) {
+          return;
+      }
+
+      // prevent standard hash navigation (avoid blinking in IE)
+      e.preventDefault();
+
+      // top position relative to the document
+      var pos = $(id).offset().top;
+
+      // animated top scrolling
+      $('body, html').animate({scrollTop: pos});
+  });
 </script>

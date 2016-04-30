@@ -239,6 +239,7 @@ body {
 								font-size: 17px;
 								font-family: antipasto;
 								display: block;
+								text-decoration: none;
 							}
 							a:hover {
 								text-decoration: none;
@@ -415,6 +416,9 @@ body {
 		        p:hover {
 		          text-decoration: none;
 		        }
+		      }
+		      a {
+		      	text-decoration: none;
 		      }
 		      a:hover {
 		        text-decoration: none;
