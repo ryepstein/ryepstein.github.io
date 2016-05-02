@@ -558,12 +558,14 @@ body {
 				width: 170px;
 				height: 50px;
 				font-family: "Alegreya Sans";
-				/*color: #4A4A4A;*/
-				color: #808080;
+
+				color: #4A4A4A;
+				border: 3px solid #4A4A4A;
+
+				/*color: #808080;*/
+				/*border: 3px solid #808080;*/
 				font-weight: bold;
 				background-color: #ffffff;
-				/*border: 3px solid #4A4A4A;*/
-				border: 3px solid #808080;
 				font-size: 17px;
 				float: right;
 				-webkit-transition: all 0.5s ease;
@@ -571,10 +573,12 @@ body {
 				-o-transition: all 0.5s ease;
 				transition: all 0.5s ease;
 				&:hover {
-					/*color: #808080;*/
-					color: #4A4A4A;
-					/*border: 3px solid #808080;*/
-					border: 3px solid #4A4A4A;
+					color: #808080;
+					border: 3px solid #808080;
+
+
+					/*color: #4A4A4A;
+					border: 3px solid #4A4A4A;*/
 					-webkit-transition: all 0.5s ease;
 				    -moz-transition: all 0.5s ease;
 				    -o-transition: all 0.5s ease;
