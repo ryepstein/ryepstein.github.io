@@ -11,7 +11,7 @@ module ApplicationHelper
   end
 
   def og_image_path
-   image_url("me-pic.png") 
+   image_url("idea.jpg") 
   end 
 
 end
