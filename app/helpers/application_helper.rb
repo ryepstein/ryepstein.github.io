@@ -10,4 +10,8 @@ module ApplicationHelper
     end
   end
 
+  def og_image_path
+   image_url("profile-pic.jpg") 
+  end 
+
 end
