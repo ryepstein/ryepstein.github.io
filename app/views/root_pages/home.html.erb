@@ -1,3 +1,12 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div id="home">
   <div id="left-col-column">
     <div class="first-color colors"></div>
@@ -217,7 +226,7 @@
             </div>
             <div id="sidebar-img-caption">
               <h3>Alexander Maru</h3>
-              <p>አሌክሳንደር አሰፋ ማሩ</p>
+              <p>If you eliminate the impossible, whatever remains</p>
             </div>
             <a title="" id="sidebar-close-btn">
               <p><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp; Close</p>
@@ -255,6 +264,36 @@
                 <p class="read-more"><a href="#" class="button">Read More</a></p>
               </div>
             </div>
+
+            <div id="my-name">
+              <div id="my-name-title">
+                <p><a target="_blank" href="https://www.youtube.com/watch?v=oHg5SJYRHA0" title="Brace yourself - rickroll is coming">Fun Facts</a><span class="tldr-follow"> My Name</span></p>
+              </div>
+              <p><a target="_blank" href="https://www.urbandictionary.com/define.php?term=Alexander" class="my-name-name">Alexander </a>: means defender of men (Greek).</p>
+              <p><a target="_blank" href="https://www.wikiwand.com/en/Maru_(cat)" class="my-name-name">Maru </a>: means honey (Amharic).</p>
+              <p id="maru-cat-desc">The first search result when looking up Maru is a male Scottish Fold cat in Japan who has become popular on YouTube. As of January 2016, videos with Maru have been viewed over 300 million times.</p>
+              <div id="maru-cat-img">
+                <%= image_tag("maru.jpg") %>
+              </div>
+            </div>
+
+            <div id="sidebar-follow-me">
+              <div id="sidebar-follow-ttr">
+                <a href="https://twitter.com/assefamaru" class="twitter-follow-button" data-show-count="false">Follow @assefamaru</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+              </div>
+              <div id="sidebar-follow-maru-ttr">
+                <a href="https://twitter.com/Maru_0524" class="twitter-follow-button" data-show-count="false">Follow @Maru_0524</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+              </div>  
+              <div id="sidebar-follow-fb">
+                <div class="fb-follow" data-href="https://www.facebook.com/profile.php?id=100002986246900" data-layout="button" data-show-faces="true"></div>
+              </div>
+            </div>
+
+            <div id="sidebar-footer">
+              <p>&copy; 2016 Alexander Maru</p>
+            </div>
           </div>
               
           <!-- sidebar right side options/links -->
@@ -266,13 +305,13 @@
                 <span class="icon-bar" id="third-icon-bar"></span>
               </a>
             </div>
-            <%= link_to root_path, class: "glyph-container-one", title: "Home", id: "home-icon" do %>
+            <%= link_to root_path, class: "glyph-container-one", 'data-no-turbolink' => true, title: "Home", id: "home-icon" do %>
               <i class="icon-homealt"></i>
             <% end %>
             <%= link_to resume_path, class: "glyph-container-one", 'data-no-turbolink' => true, title: "Resume", id: "resume" do %>
               <i class="fa fa-file-text-o"></i>
             <% end %>
-            <%= link_to blog_path, class: "glyph-container-one", title: "Blog", id: "blog" do %>
+            <%= link_to blog_path, class: "glyph-container-one", 'data-no-turbolink' => true, title: "Blog", id: "blog" do %>
               <i class="fa fa-medium" aria-hidden="true"></i>
             <% end %>
           </div>

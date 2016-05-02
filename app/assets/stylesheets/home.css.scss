@@ -683,7 +683,7 @@ body {
 				#sidebar-img-container {
 					width: 100%;
 					margin: 0;
-					padding: 20px 0 20px 0;
+					padding: 40px 0 20px 0;
 					text-align: center;
 					display: block;
 					#sidebar-profpic {
@@ -699,7 +699,6 @@ body {
 						color: #F2F2F2;
 						font-family: antipasto;
 					}
-
 				}
 				#sidebar-close-btn {
 					width: 100%;
@@ -842,6 +841,70 @@ body {
 					  	}
 					  }
 					}
+				}
+				#my-name {
+					#my-name-title {
+						p {
+							font-family: antipasto;
+							font-size: 20px;
+							color: #f2f2f2;
+							text-transform: uppercase;
+							text-align: center;
+							a {
+								text-decoration: none;
+								color: #fe7a15;
+								word-spacing: 5px;
+								&:hover {
+									text-decoration: none;
+								}
+							}
+							.tldr-follow {
+								font-size: 15px;
+								font-weight: bold;
+								letter-spacing: 1px;
+							}
+						}
+					}
+					p {
+						font-family: antipasto;
+						color: #f2f2f2;
+						padding-left: 20px;
+						text-align: left;
+						margin: 0 !important;
+						a {
+							text-decoration: none;
+						}
+					}
+					.my-name-name {
+						color: #FF4136 !important;
+					}
+					#maru-cat-desc {
+						color: #B3B3B3;
+					}
+					#maru-cat-img {
+						padding: 20px 0 40px 20px;
+						img {
+							width: 100%;
+							height: auto;
+							border: 3px solid #193438;
+						}
+					}
+				}
+				#sidebar-follow-me {
+					padding: 40px 0 40px 20px;
+					background-color: #00181B;
+					border-top: 1px solid #193438;
+					border-bottom: 1px solid #193438;
+				}
+			}
+			#sidebar-footer {
+				padding-top: 300px;
+				p {
+					font-family: antipasto;
+					/*color: #B3B3B3;*/
+					color: #FF4136;
+					text-transform: uppercase;
+					font-size: 13px;
 				}
 			}
 			
