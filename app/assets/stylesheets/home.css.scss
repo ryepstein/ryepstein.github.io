@@ -676,8 +676,175 @@ body {
 				left: 0;
 				position: absolute;
 				z-index: 1100;
-			}
+				text-align: center;
+				/*padding: 0 10px 0 10px;*/
+				padding: 0;
+				
+				#sidebar-img-container {
+					width: 100%;
+					margin: 0;
+					padding: 20px 0 20px 0;
+					text-align: center;
+					display: block;
+					#sidebar-profpic {
+						width: 120px;
+						height: auto;
+						border-radius: 150px;
+						border: 5px solid #F2F2F2;
+					}
+				}
+				#sidebar-img-caption {
+					border-bottom: 1px solid #193438;
+					h3, p {
+						color: #F2F2F2;
+						font-family: antipasto;
+					}
 
+				}
+				#sidebar-close-btn {
+					width: 100%;
+					height: 70px;
+					padding: 0;
+					margin: 0;
+					display: block;
+					text-decoration: none;
+					background-color: #00181B;
+					border-bottom: 1px solid #193438;
+					&:hover{
+						text-decoration: none;
+					}
+					p {
+						width: 100%;
+						line-height: 70px;
+						color: #FF4136;
+						font-family: antipasto;
+						text-transform: uppercase;
+						letter-spacing: 10px;
+					}
+				}
+				#sidebar-social-links {
+					width: 100%;
+					padding: 40px 0 20px 0;
+					margin: 0;
+					text-align: center;
+					ul {
+						width: 100%;
+						/*margin: 0 0 10px 0;*/
+						padding: 0;
+						li {
+							display: inline-block;
+							margin-left: 15px;
+							a {
+								width: 40px;
+								text-align: center;
+								line-height: 40px;
+								display: block;
+								text-decoration: none;
+								color: #ffffff;
+								&:hover {
+									text-decoration: none;
+								}
+							}
+							#sd-github {
+								background-color: #333333;
+							}
+							#sd-linkedin {
+								background-color: #0077b5;
+							}
+							#sd-stackoverflow {
+								background-color: #fe7a15;
+							}
+							#sd-twitter {
+								background-color: #55acee;
+							}
+							#sd-facebook {
+								background-color: #3b5998;
+							}
+							#sd-youtube {
+								background-color: #cd201f;
+							}
+							#sd-gplus {
+								background-color: #dc4e41;
+							}
+							#sd-quora {
+								background-color: #a82400;
+							}
+						}
+					}
+					#second-ul {
+						margin-top: 20px;
+					}
+				}
+				#sidebar-lyrics {
+					padding-top: 20px;
+					padding-bottom: 40px;
+					#sidebar-lyrics-title {
+						/*text-align: left;*/
+						padding-left: 20px;
+						p {
+							font-family: antipasto;
+							font-size: 20px;
+							color: #f2f2f2;
+							text-transform: uppercase;
+							letter-spacing: 3px;
+							a {
+								text-decoration: none;
+								color: #fe7a15;
+								&:hover {
+									text-decoration: none;
+								}
+							}
+							.tldr-follow {
+								font-size: 15px;
+								font-weight: bold;
+								letter-spacing: 1px;
+							}
+						}
+					}
+					.sidebar-lorem {
+						color: #B3B3B3;
+						font-family: antipasto;
+						padding: 0 0 0 20px;
+						text-align: justify;
+						margin: 0 !important;
+					}
+					.sidebar-box {
+					  max-height: 200px;
+					  position: relative;
+					  overflow: hidden;
+					}
+					.sidebar-box .read-more { 
+					  position: absolute; 
+					  bottom: 0; 
+					  left: 0;
+					  width: 100%; 
+					  text-align: center; 
+					  margin: 0; 
+					  padding: 30px 0; 
+						
+					  /* "transparent" only works here because == rgba(0,0,0,0) */
+					  background-image: linear-gradient(to bottom, transparent, #001E22);
+					  a {
+					  	color: #ffffff;
+					  	font-family: antipasto;
+					  	text-transform: uppercase;
+					  	text-decoration: none;
+					  	background-color: #FF4136;
+					  	padding: 5px 20px;
+					  	border-radius: 5px;
+					  	&:hover {
+					  		text-decoration: none;
+					  		background-color: #cd201f;
+					  		-webkit-transition: all 0.3s ease;
+						    -moz-transition: all 0.3s ease;
+						    -o-transition: all 0.3s ease;
+						    transition: all 0.3s ease;
+					  	}
+					  }
+					}
+				}
+			}
+			
 			#sidebar-right {
 				width: 70px;
 				height: 100%;
@@ -742,19 +909,6 @@ body {
 					line-height: 70px;
 					color: #EFEFEF;
 				}
-				/*.text-glyph-container {
-					font-family: antipasto;
-					color: #EFEFEF;
-					p {
-						line-height: 10px;
-						margin: 10px 0 10px 0;
-					}
-					i {
-						margin: 0;
-						line-height: 40px;
-						font-size: 30px;
-					}
-				}*/
 				#resume:hover, #blog:hover, #home-icon:hover {
 					color: #FF4136;
 					background-color: #00181B;
@@ -779,7 +933,6 @@ body {
     top: 0;
 	right: 0;
 	bottom: 0;
-    /*position: fixed;*/
     overflow: hidden;
 }
 

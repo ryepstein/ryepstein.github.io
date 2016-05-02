@@ -71,7 +71,7 @@
         <div class="section-title">About Me</div>
         <div id="about-me-text">
           <p><span class="space-tab"></span>I was born and raised in <a target="_blank" href="https://www.wikiwand.com/en/Addis_Ababa" title="">Addis Ababa, Ethiopia</a>, in a town called <a target="_blank" href="https://www.wikiwand.com/en/Kolfe_Keranio" title="">Kolfe Keranio</a>. When I turned eleven, my family and I moved to <a target="_blank" href="https://www.wikiwand.com/en/Githurai" title="">Githurai, Kenya</a> as refugees, and lived there for five years. We relocated to Canada in 2011, where I currently reside. I entered <a target="_blank" href="https://www.wikiwand.com/en/University_of_Waterloo" title="">University of Waterloo</a> in 2014, studying Mathematics and Computer Science. I started learning to program when I started uni, and web-development in 2015. I am now a full-time student, and part-time web-developer, with a wide range of interests including doing research and working on projects involving AI, robotics, ML/Data-Mining, and a host of other fields.</p>
-          <p><span class="space-tab"></span>Some of my hobbies include chess, Rubik's cubes, pi, drawing, football (AKA soccer), martial-arts, cross-country running, and taking strolls in warm sunny days. I am an <a target="_blank" href="https://www.wikiwand.com/en/Ethiopian_Orthodox_Tewahedo_Church" title="">Ethiopian Orthodox Tewahedo Christian</a>. My favourite food is <a target="_blank" href="https://www.wikiwand.com/en/Injera" title="Most delicious food in the world!">injera</a>, and my favourite song is <a target="_blank" href="https://www.youtube.com/watch?v=1UC6ZZGKR3c" title="I'm not going to rickroll you, trust me.">this</a>.</p>
+          <p><span class="space-tab"></span>Some of my hobbies include chess, Rubik's cubes, pi, drawing, football (AKA soccer), martial-arts, cross-country running, and taking strolls in warm sunny days. I am an <a target="_blank" href="https://www.wikiwand.com/en/Ethiopian_Orthodox_Tewahedo_Church" title="">Ethiopian Orthodox Tewahedo Christian</a>. My favourite food is <a target="_blank" href="https://www.wikiwand.com/en/Injera" title="Most delicious food in the world.">injera</a>, and my favourite song is <a target="_blank" href="https://www.youtube.com/watch?v=1UC6ZZGKR3c" title="I'm not going to rickroll you, trust me.">this</a>.</p>
           <p><span class="space-tab"></span>Fun fact: According to my country's <a target="_blank" href="https://www.wikiwand.com/en/Ethiopian_calendar" title="">Ethiopian Calendar</a>, I was born on July 19, 1987, and the current year is 2008. Using the popular <a target="_blank" href="https://www.wikiwand.com/en/Gregorian_calendar" title="">Gregorian Calendar</a>, however, July 26, 1995 is my birthday, and 2016 is the current year.</p>
         </div>
       </div>
@@ -211,7 +211,50 @@
               
           <!-- sidebar main content -->
           <div id="sidebar-main" class="nano-content">
-                
+            
+            <div id="sidebar-img-container">
+              <%= image_tag("profile-pic.jpg", alt: "Profile Picture", id: "sidebar-profpic") %>
+            </div>
+            <div id="sidebar-img-caption">
+              <h3>Alexander Maru</h3>
+              <p>አሌክሳንደር አሰፋ ማሩ</p>
+            </div>
+            <a title="" id="sidebar-close-btn">
+              <p><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp; Close</p>
+            </a>
+            <div id="sidebar-social-links">
+              <ul>
+                <li><a target="_blank" id="sd-github" href="https://github.com/assefamaru" title=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" id="sd-linkedin" href="https://ca.linkedin.com/in/alexander-maru-01166480" title=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" id="sd-stackoverflow" href="https://stackoverflow.com/users/4739247/alexander-maru" title=""><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" id="sd-twitter" href="https://twitter.com/assefamaru" title=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              </ul>
+              <ul id="second-ul">
+                <li><a target="_blank" id="sd-facebook" href="https://www.facebook.com/profile.php?id=100002986246900" title=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" id="sd-youtube" href="https://www.youtube.com/channel/UC1OistarJyvoHtsj8f2OMdA" title=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" id="sd-gplus" href="https://plus.google.com/u/0/+AlexanderMaru/posts" title=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" id="sd-quora" href="https://www.quora.com/profile/Alexander-Maru" title=""><i class="icon-quora"></i></a></li>
+              </ul>
+            </div>
+
+            <div id="sidebar-lyrics">
+              <div id="sidebar-lyrics-title">
+                <p><a target="_blank" href="https://www.youtube.com/watch?v=U6y7YOlldek" title="credits">Tl;dr</a><span class="tldr-follow"> I am a thoughtful guy</span></p>
+              </div>
+              <div class="sidebar-box">
+                <p class="sidebar-lorem">I am a thoughtful guy. I think about a lot of things.</p>
+                <p class="sidebar-lorem">I am a thoughtful guy. I think a lot of thoughts; about a lot of things.</p>
+                <p class="sidebar-lorem">I think about space and the vastness of it. I think about cake and how much I love it. I think about if Wal Mart is good or evil. I think tattoos are cool - on other people.</p>
+                <p class="sidebar-lorem">I think about the unexplored depths of the ocean. I think about the difference in ointment and lotion. I think about if - I should wax my back. I think a handful of nuts is healthy snack.</p>
+                <p class="sidebar-lorem">I think of all the places that a penny has been. Like, seriously, think of all the places that a penny's been in. It could've been in the pocket of the President's suit, but it's probably also been in some toddler's poop. Cause little kids eat pennies like they're Flintstone Vitamins, accruing no interest while traveling inside of them. Re-entering circulation might boost the economy, but I'd rather not pay with a penny that's performed a colonoscopy.</p>
+                <p class="sidebar-lorem">I think that our universe is really one of many. With many parallel me's stretching to infinity, doing activities similarly to me yet, at the same time, done slightly differently. And seemingly, right now, they could be thinking this - same thought as me. Well, a similar thought but not the same thought exactly. That's pretty deep.</p>
+                <p class="sidebar-lorem">I am a thoughtful guy. Right now, I'm thinkin about the people who invented words... did they just look at stuff and say the first thing that came to their minds? And if so, how do you explain dufflebag?</p>
+                <p class="sidebar-lorem">I think how do I know that you and me see the same colors the same way when you and me see. Is my red blue for you, or my green your green too? Could it be true we see differing hues? And say we do - then how would we discover this fact? And even if we did, would there even be any impact? I don't think this would affect us personally, but I think it would have ripple effects through the interior design industry.</p>
+                <p class="sidebar-lorem">I am a thoughtful guy. Right now, I'm thinking about what if I was abducted by aliens while I had a really bad farmer's tan - the aliens might incorrectly conclude that our species was two-toned. And then somehow, through this error, my tan lines saved the human race.</p> 
+                <p class="sidebar-lorem">Yeah, I think a lot of thoughts like these.</p>
+                <p class="read-more"><a href="#" class="button">Read More</a></p>
+              </div>
+            </div>
           </div>
               
           <!-- sidebar right side options/links -->
@@ -256,6 +299,14 @@
 <!-- script for sliding sidebar left and right -->
 <script type="text/javascript">
   $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar").toggleClass("toggled");
+    $("#first-icon-bar").toggleClass("toggled");
+    $("#second-icon-bar").toggleClass("toggled");
+    $("#third-icon-bar").toggleClass("toggled");
+  });
+
+  $("#sidebar-close-btn").click(function(e) {
     e.preventDefault();
     $("#sidebar").toggleClass("toggled");
     $("#first-icon-bar").toggleClass("toggled");
@@ -311,5 +362,41 @@
 
       // animated top scrolling
       $('body, html').animate({scrollTop: pos});
+  });
+</script>
+
+<script type="text/javascript">
+  var $el, $ps, $up, totalHeight;
+
+  $(".sidebar-box .button").click(function() {
+        
+    totalHeight = 0
+
+    $el = $(this);
+    $p  = $el.parent();
+    $up = $p.parent();
+    $ps = $up.find("p:not('.read-more')");
+    
+    // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
+    $ps.each(function() {
+      totalHeight += $(this).outerHeight();
+    });
+          
+    $up
+      .css({
+        // Set height to prevent instant jumpdown when max height is removed
+        "height": $up.height(),
+        "max-height": 9999
+      })
+      .animate({
+        "height": totalHeight
+      });
+    
+    // fade out read-more
+    $p.fadeOut();
+    
+    // prevent jump-down
+    return false;
+      
   });
 </script>
