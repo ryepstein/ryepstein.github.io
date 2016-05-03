@@ -152,6 +152,14 @@
     $("#third-icon-bar").toggleClass("toggled");
   });
 
+  $("#sidebar-close-btn").click(function(e) {
+    e.preventDefault();
+    $("#sidebar").toggleClass("toggled");
+    $("#first-icon-bar").toggleClass("toggled");
+    $("#second-icon-bar").toggleClass("toggled");
+    $("#third-icon-bar").toggleClass("toggled");
+  });
+
   // In addition,
   // set 'home' as the active icon on this page
   $("#blog").toggleClass("active");
