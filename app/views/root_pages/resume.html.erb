@@ -24,9 +24,9 @@
     <!-- sidebar -->
     <div id="sidebar">
       <div id="sidebar-wrapper">
-              
+        <div id="about" class="nano">       
           <!-- sidebar main content -->
-          <div id="sidebar-main" class="mCustomScrollbar sidebarscroll" data-mcs-theme="minimal-dark">
+          <div id="sidebar-main" class="nano-content">
             
             <div id="sidebar-img-container">
               <%= image_tag("profile-pic.jpg", alt: "Profile Picture", id: "sidebar-profpic") %>
@@ -152,7 +152,7 @@
               <i class="fa fa-medium" aria-hidden="true"></i>
             <% end %>
           </div>
-        
+        </div>
     </div>
   </div>
 </div>
@@ -230,7 +230,5 @@
 </script>
 
 <script type="text/javascript">
-  $(".sidebarscroll").mCustomScrollbar({
-    mouseWheel:{ scrollAmount: 300 }
-  });
+  $(".nano").nanoScroller();
 </script>
