@@ -37,6 +37,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'font-awesome-rails'
 gem 'mail_form'
 gem 'simple_form'
+gem 'perfect-scrollbar-rails'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record

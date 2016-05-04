@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require perfect-scrollbar
 //= require turbolinks
 //= require_tree .

@@ -216,9 +216,8 @@
     <!-- sidebar -->
     <div id="sidebar">
       <div id="sidebar-wrapper">
-              
           <!-- sidebar main content -->
-          <div id="sidebar-main" class="sidebarscroll default-skin">
+          <div id="sidebar-main">
             
             <div id="sidebar-img-container">
               <%= image_tag("profile-pic.jpg", alt: "Profile Picture", id: "sidebar-profpic") %>
@@ -344,6 +343,8 @@
               <i class="fa fa-medium" aria-hidden="true"></i>
             <% end %>
           </div>
+              
+          
           
       </div>
     </div>
@@ -456,7 +457,5 @@
 </script>
 
 <script type="text/javascript">
-  $(document).ready(function() {
-    $(".sidebarscroll").customScrollbar();
-  });
+  $('#sidebar-main').perfectScrollbar();
 </script>
