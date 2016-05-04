@@ -218,7 +218,7 @@
       <div id="sidebar-wrapper">
               
           <!-- sidebar main content -->
-          <div id="sidebar-main" class="mCustomScrollbar sidebarscroll" data-mcs-theme="minimal-dark">
+          <div id="sidebar-main" class="sidebarscroll default-skin">
             
             <div id="sidebar-img-container">
               <%= image_tag("profile-pic.jpg", alt: "Profile Picture", id: "sidebar-profpic") %>
@@ -455,11 +455,8 @@
   });
 </script>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js"></script>
-
 <script type="text/javascript">
-  $(".sidebarscroll").mCustomScrollbar({
-    mouseWheel:{ scrollAmount: 300 }
+  $(document).ready(function() {
+    $(".sidebarscroll").customScrollbar();
   });
 </script>
