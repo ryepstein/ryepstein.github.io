@@ -218,7 +218,7 @@
       <div id="sidebar-wrapper">
               
           <!-- sidebar main content -->
-          <div id="sidebar-main" class="sidebarscroll">
+          <div id="sidebar-main" class="mCustomScrollbar sidebarscroll" data-mcs-theme="minimal-dark">
             
             <div id="sidebar-img-container">
               <%= image_tag("profile-pic.jpg", alt: "Profile Picture", id: "sidebar-profpic") %>
@@ -455,13 +455,8 @@
   });
 </script>
 
-<script>
-  (function($){
-    $(window).load(function(){
-      $(".sidebarscroll").mCustomScrollbar({
-        theme:"minimal-dark",
-        mouseWheel:{ scrollAmount: 300 }
-      });
-    });
-  })(jQuery);
+<script type="text/javascript">
+  $(".sidebarscroll").mCustomScrollbar({
+    mouseWheel:{ scrollAmount: 300 }
+  });
 </script>
