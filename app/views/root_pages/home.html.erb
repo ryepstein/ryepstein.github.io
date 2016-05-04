@@ -216,10 +216,9 @@
     <!-- sidebar -->
     <div id="sidebar">
       <div id="sidebar-wrapper">
-        <div id="about" class="nano">
               
           <!-- sidebar main content -->
-          <div id="sidebar-main" class="nano-content">
+          <div id="sidebar-main" class="mCustomScrollbar sidebarscroll" data-mcs-theme="minimal-dark">
             
             <div id="sidebar-img-container">
               <%= image_tag("profile-pic.jpg", alt: "Profile Picture", id: "sidebar-profpic") %>
@@ -346,7 +345,6 @@
             <% end %>
           </div>
           
-        </div>
       </div>
     </div>
 
@@ -396,11 +394,6 @@
       // 2 seconds
     }, 2000);
   })();
-</script>
-
-<!-- enable nano scroller in sidebar -->
-<script type="text/javascript">
-  $(".nano").nanoScroller();
 </script>
 
 <script type="text/javascript">
@@ -459,5 +452,11 @@
     // prevent jump-down
     return false;
       
+  });
+</script>
+
+<script type="text/javascript">
+  $(".sidebarscroll").mCustomScrollbar({
+    mouseWheel:{ scrollAmount: 300 }
   });
 </script>
