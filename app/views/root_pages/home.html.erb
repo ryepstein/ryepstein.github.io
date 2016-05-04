@@ -216,8 +216,9 @@
     <!-- sidebar -->
     <div id="sidebar">
       <div id="sidebar-wrapper">
+        <div id="about" class="nano">
           <!-- sidebar main content -->
-          <div id="sidebar-main">
+          <div id="sidebar-main" class="nano-content">
             
             <div id="sidebar-img-container">
               <%= image_tag("profile-pic.jpg", alt: "Profile Picture", id: "sidebar-profpic") %>
@@ -344,7 +345,7 @@
             <% end %>
           </div>
               
-          
+        </div>
           
       </div>
     </div>
@@ -454,4 +455,8 @@
     return false;
       
   });
+</script>
+
+<script type="text/javascript">
+  $(".nano").nanoScroller();
 </script>
