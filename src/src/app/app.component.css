@@ -1,1 +1,23 @@
+/* wrapper */
 
+.custom-wrapper {
+    width: calc(100% - 80px);
+    margin: 0 0 0 80px;
+    padding: 0;
+    background: #25272E;
+    height: 100vh;
+}
+
+/* sidebar */
+
+#sidebar {
+
+}
+
+/* hero section */
+
+#hero-wrapper {
+    background-color: #333;
+    height: 100vh;
+    padding: 0;
+}
