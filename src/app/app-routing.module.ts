@@ -4,8 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent }   from './app.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-    { path: 'dashboard',  component: AppComponent },
+    { path: '',  component: AppComponent },
 ];
 
 @NgModule({
@@ -13,4 +12,4 @@ const routes: Routes = [
     exports: [ RouterModule ]
 })
 
-export class RoutesModule {}
+export class AppRoutingModule {}
