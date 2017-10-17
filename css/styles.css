@@ -1,12 +1,87 @@
 /* Universal */
 
-/*  #22222A
-    #2F343F */
-
 body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #252932;
+    background-color: #FFFFFF;
     font-size: 62.5%;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    background-color: #22222A;
+    border-right: 1px solid #323238;
+}
+
+header .wrapper {
+    position: relative;
+    width: 70px;
+    height: 100%;
+}
+
+header .wrapper ul {
+    list-style-type: none;
+    position: absolute;
+    bottom: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+header .wrapper ul li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    line-height: 40px;
+    text-align: center;
+}
+
+header .wrapper ul li a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Hero */
+
+#hero {
+    width: calc(100% - 70px);
+    height: 100vh;
+    min-height: 600px;
+    background-color: #22222A;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 70px;
+}
+
+.hero-content {
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 4.5rem;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.hero-content p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: #E8EAF6;
 }
