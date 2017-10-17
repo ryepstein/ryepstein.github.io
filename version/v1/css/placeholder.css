@@ -1,0 +1,24 @@
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/alien1.jpg");
+}
+
+.placeholder {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 300px;
+}
+
+.placeholder h1 {
+	color: #ffffff;
+	font-family: adequate;
+	font-size: 60px !important;
+	font-weight: bold;
+	font-weight: bold;
+}
+
+.make-red {
+	color: red;
+}
