@@ -56,7 +56,7 @@ header .wrapper ul li a {
 #hero {
     width: calc(100% - 70px);
     height: 100vh;
-    min-height: 800px;
+    min-height: 925px;
     background-color: #22222A;
     position: relative;
     margin: 0;
@@ -84,4 +84,10 @@ header .wrapper ul li a {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
     color: #DDEEFD;
+}
+
+@media screen and (max-width: 400px) {
+    .hero-content h1 {
+        margin-top: 150px !important;
+    }
 }
