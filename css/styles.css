@@ -73,6 +73,29 @@ header .wrapper ul li a {
     background-color: #1B1B21;
 }
 
+.hero-menu {
+    left: 45vw;
+    position: absolute;
+    z-index: 500;
+    top: 30px;
+}
+
+.hero-menu a, .hero-menu i {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #BAC2C9;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hero-menu a:hover {
+    color: #FFFFFF;
+}
+
+.hero-menu i {
+    margin: 0 20px;
+}
+
 .hero-content {
     max-width: 600px;
     position: absolute;
@@ -104,6 +127,9 @@ header .wrapper ul li a {
     .hero-overlay {
         background-color: #22222A;
         border-left: 1px solid #323238;
+    }
+    .hero-menu {
+        left: 30px;
     }
     .hero-content {
         left: 50%;
